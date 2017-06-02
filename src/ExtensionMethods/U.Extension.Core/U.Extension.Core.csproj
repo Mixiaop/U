@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{625BBA45-38C1-4EC1-B0CB-58BB8ACF8CE4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>U.Extension.Core</RootNamespace>
+    <AssemblyName>U.Extension.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System.Boolean\Boolean.IfFalse.cs" />
+    <Compile Include="System.Boolean\Boolean.IfTrue.cs" />
+    <Compile Include="System.Boolean\Boolean.ToBinary.cs" />
+    <Compile Include="System.Boolean\Boolean.ToString.cs" />
+    <Compile Include="System.DateTime\DateTime.Age.cs" />
+    <Compile Include="System.DateTime\DateTime.Elapsed.cs" />
+    <Compile Include="System.DateTime\DateTime.EndOfDay.cs" />
+    <Compile Include="System.DateTime\DateTime.EndOfMonth.cs" />
+    <Compile Include="System.DateTime\DateTime.EndOfWeek.cs" />
+    <Compile Include="System.DateTime\DateTime.EndOfYear.cs" />
+    <Compile Include="System.DateTime\DateTime.FirstDayOfWeek.cs" />
+    <Compile Include="System.DateTime\DateTime.IsAfternoon.cs" />
+    <Compile Include="System.DateTime\DateTime.IsDateEqual.cs" />
+    <Compile Include="System.DateTime\DateTime.IsFuture.cs" />
+    <Compile Include="System.DateTime\DateTime.IsMorning.cs" />
+    <Compile Include="System.DateTime\DateTime.IsNow.cs" />
+    <Compile Include="System.DateTime\DateTime.IsPast.cs" />
+    <Compile Include="System.DateTime\DateTime.IsTimeEqual.cs" />
+    <Compile Include="System.DateTime\DateTime.IsToday.cs" />
+    <Compile Include="System.DateTime\DateTime.IsWeekDay.cs" />
+    <Compile Include="System.DateTime\DateTime.IsWeekendDay.cs" />
+    <Compile Include="System.DateTime\DateTime.LastDayOfWeek.cs" />
+    <Compile Include="System.DateTime\DateTime.SetTime.cs" />
+    <Compile Include="System.DateTime\DateTime.StartOfDay.cs" />
+    <Compile Include="System.DateTime\DateTime.StartOfMonth.cs" />
+    <Compile Include="System.DateTime\DateTime.StartOfWeek.cs" />
+    <Compile Include="System.DateTime\DateTime.StartOfYear.cs" />
+    <Compile Include="System.DateTime\DateTime.ToEpochTimeSpan.cs" />
+    <Compile Include="System.DateTime\DateTime.Tomorrow.cs" />
+    <Compile Include="System.DateTime\DateTime.Yesterday.cs" />
+    <Compile Include="System.DateTime\System.TimeZoneInfo\DateTime.ConvertTime.cs" />
+    <Compile Include="System.DateTime\System.TimeZoneInfo\DateTime.ConvertTimeBySystemTimeZoneId.cs" />
+    <Compile Include="System.DateTime\System.TimeZoneInfo\DateTime.ConvertTimeFromUtc.cs" />
+    <Compile Include="System.DateTime\System.TimeZoneInfo\DateTime.ConvertTimeToUtc.cs" />
+    <Compile Include="System.DateTime\System.TimeZone\DateTime.IsDaylightSavingTime.cs" />
+    <Compile Include="System.DateTime\ToDateTimeFormat\DateTime.ToFullDateTimeString.cs" />
+    <Compile Include="System.DateTime\ToDateTimeFormat\DateTime.ToLongDateShortTimeString.cs" />
+    <Compile Include="System.DateTime\ToDateTimeFormat\DateTime.ToLongDateString.cs" />
+    <Compile Include="System.DateTime\ToDateTimeFormat\DateTime.ToLongDateTimeString.cs" />
+    <Compile Include="System.DateTime\ToDateTimeFormat\DateTime.ToLongTimeString.cs" />
+    <Compile Include="System.DateTime\ToDateTimeFormat\DateTime.ToMonthDayString.cs" />
+    <Compile Include="System.DateTime\ToDateTimeFormat\DateTime.ToRFC1123String.cs" />
+    <Compile Include="System.DateTime\ToDateTimeFormat\DateTime.ToShortDateLongTimeString.cs" />
+    <Compile Include="System.DateTime\ToDateTimeFormat\DateTime.ToShortDateString.cs" />
+    <Compile Include="System.DateTime\ToDateTimeFormat\DateTime.ToShortDateTimeString.cs" />
+    <Compile Include="System.DateTime\ToDateTimeFormat\DateTime.ToShortTimeString.cs" />
+    <Compile Include="System.DateTime\ToDateTimeFormat\DateTime.ToSortableDateTimeString.cs" />
+    <Compile Include="System.DateTime\ToDateTimeFormat\DateTime.ToUniversalSortableDateTimeString.cs" />
+    <Compile Include="System.DateTime\ToDateTimeFormat\DateTime.ToUniversalSortableLongDateTimeString.cs" />
+    <Compile Include="System.DateTime\ToDateTimeFormat\DateTime.ToYearMonthString.cs" />
+    <Compile Include="System.DateTime\_CoreObject\DateTime.Between.cs" />
+    <Compile Include="System.DateTime\_CoreObject\DateTime.In.cs" />
+    <Compile Include="System.DateTime\_CoreObject\DateTime.InRange.cs" />
+    <Compile Include="System.DateTime\_CoreObject\DateTime.NotIn.cs" />
+    <Compile Include="System.Enum\Int.ExistIn.cs" />
+    <Compile Include="System.EventHandler\EventHandler.InvokeSafely.cs" />
+    <Compile Include="System.Exception\Exception.ReThrow.cs" />
+    <Compile Include="System.Int32\Int32.For.cs" />
+    <Compile Include="System.Int32\Int32.GetSpacesString.cs" />
+    <Compile Include="System.Int32\Int32.ToGuid.cs" />
+    <Compile Include="System.Int32\Int32.ToStringByArray.cs" />
+    <Compile Include="System.Linq\IQueryable[T].WhereIf.cs" />
+    <Compile Include="System.Linq\IQueryable[T].PageBy.cs" />
+    <Compile Include="System.Object\Object.As.cs" />
+    <Compile Include="System.Object\Object.Convert.cs" />
+    <Compile Include="System.Object\Object.If.cs" />
+    <Compile Include="System.Object\Object.IsIn.cs" />
+    <Compile Include="System.Object\Object.To.cs" />
+    <Compile Include="System.Reflection\MemberInfo.GetSingleAttributeOrNull.cs" />
+    <Compile Include="System.String\String.DecodeUTF8Base64.cs" />
+    <Compile Include="System.String\String.EncodeUTF8Base64.cs" />
+    <Compile Include="System.String\String.ToCamelCase.cs" />
+    <Compile Include="System.String\String.ToList.cs" />
+    <Compile Include="System.String\String.ToPascalCase.cs" />
+    <Compile Include="System.String\System.Utils\String.NthIndexOf.cs" />
+    <Compile Include="System.String\Validation\String.IsValidBase64String.cs" />
+    <Compile Include="System.String\Validation\String.IsValidSafeUserInfoString.cs" />
+    <Compile Include="System.String\String.Br2Nl.cs" />
+    <Compile Include="System.String\String.Concatenate.cs" />
+    <Compile Include="System.String\String.ConcatWith.cs" />
+    <Compile Include="System.String\String.Contains.cs" />
+    <Compile Include="System.String\String.ContainsAll.cs" />
+    <Compile Include="System.String\String.ContainsAny.cs" />
+    <Compile Include="System.String\String.Convert.cs" />
+    <Compile Include="System.String\System.Utils\String.CutString.cs" />
+    <Compile Include="System.String\String.DecodeBase64.cs" />
+    <Compile Include="System.String\String.DecryptRSA.cs" />
+    <Compile Include="System.String\String.EncodeBase64.cs" />
+    <Compile Include="System.String\String.EncryptRSA.cs" />
+    <Compile Include="System.String\String.EscapeXml.cs" />
+    <Compile Include="System.String\String.Extract.cs" />
+    <Compile Include="System.String\String.ExtractLetter.cs" />
+    <Compile Include="System.String\String.ExtractNumber.cs" />
+    <Compile Include="System.String\String.FormatWith.cs" />
+    <Compile Include="System.String\String.GetAfter.cs" />
+    <Compile Include="System.String\String.GetBefore.cs" />
+    <Compile Include="System.String\String.GetBetween.cs" />
+    <Compile Include="System.String\String.EscapeJson.cs" />
+    <Compile Include="System.String\System.Utils\String.GetSubString.cs" />
+    <Compile Include="System.String\String.IfEmpty.cs" />
+    <Compile Include="System.String\String.IsAlpha.cs" />
+    <Compile Include="System.String\String.IsAlphaNumeric.cs" />
+    <Compile Include="System.String\String.IsAnagram.cs" />
+    <Compile Include="System.String\String.IsEmpty.cs" />
+    <Compile Include="System.String\String.IsLike.cs" />
+    <Compile Include="System.String\String.IsNotEmpty.cs" />
+    <Compile Include="System.String\String.IsNotNullOrEmpty.cs" />
+    <Compile Include="System.String\String.IsNotNullOrWhiteSpace.cs" />
+    <Compile Include="System.String\String.IsNullOrEmpty.cs" />
+    <Compile Include="System.String\String.IsNumeric.cs" />
+    <Compile Include="System.String\String.IsPalindrome.cs" />
+    <Compile Include="System.String\String.Left.cs" />
+    <Compile Include="System.String\String.LeftSafe.cs" />
+    <Compile Include="System.String\String.Nl2Br.cs" />
+    <Compile Include="System.String\String.NullIfEmpty.cs" />
+    <Compile Include="System.String\String.PathCombine.cs" />
+    <Compile Include="System.String\String.RemoveDiacritics.cs" />
+    <Compile Include="System.String\String.RemoveLetter.cs" />
+    <Compile Include="System.String\String.RemoveNumber.cs" />
+    <Compile Include="System.String\String.RemoveWhere.cs" />
+    <Compile Include="System.String\String.Repeat.cs" />
+    <Compile Include="System.String\String.Replace.cs" />
+    <Compile Include="System.String\String.ReplaceByEmpty.cs" />
+    <Compile Include="System.String\String.ReplaceFirst.cs" />
+    <Compile Include="System.String\String.ReplaceLast.cs" />
+    <Compile Include="System.String\String.ReplaceWhenEquals.cs" />
+    <Compile Include="System.String\String.Reverse.cs" />
+    <Compile Include="System.String\String.Right.cs" />
+    <Compile Include="System.String\String.RightSafe.cs" />
+    <Compile Include="System.String\String.SaveAs.cs" />
+    <Compile Include="System.String\String.Split.cs" />
+    <Compile Include="System.String\String.SqlTypeNameToSqlDbType.cs" />
+    <Compile Include="System.String\String.StripHtml.cs" />
+    <Compile Include="System.String\String.ToByteArray.cs" />
+    <Compile Include="System.String\String.ToDirectoryInfo.cs" />
+    <Compile Include="System.String\String.ToEnum.cs" />
+    <Compile Include="System.String\String.ToFileInfo.cs" />
+    <Compile Include="System.String\String.ToMemoryStream.cs" />
+    <Compile Include="System.String\String.ToSecureString.cs" />
+    <Compile Include="System.String\String.ToTitleCase.cs" />
+    <Compile Include="System.String\String.ToXDocument.cs" />
+    <Compile Include="System.String\String.ToXmlDocument.cs" />
+    <Compile Include="System.String\String.TrimEnd.cs" />
+    <Compile Include="System.String\String.Truncate.cs" />
+    <Compile Include="System.String\System.Char\String.ConvertToUtf32.cs" />
+    <Compile Include="System.String\System.Char\String.GetNumericValue.cs" />
+    <Compile Include="System.String\System.Char\String.GetUnicodeCategory.cs" />
+    <Compile Include="System.String\System.Char\String.IsControl.cs" />
+    <Compile Include="System.String\System.Char\String.IsDigit.cs" />
+    <Compile Include="System.String\System.Char\String.IsHighSurrogate.cs" />
+    <Compile Include="System.String\System.Char\String.IsLetter.cs" />
+    <Compile Include="System.String\System.Char\String.IsLetterOrDigit.cs" />
+    <Compile Include="System.String\System.Char\String.IsLower.cs" />
+    <Compile Include="System.String\System.Char\String.IsLowSurrogate.cs" />
+    <Compile Include="System.String\System.Char\String.IsNumber.cs" />
+    <Compile Include="System.String\System.Char\String.IsPunctuation.cs" />
+    <Compile Include="System.String\System.Char\String.IsSeparator.cs" />
+    <Compile Include="System.String\System.Char\String.IsSurrogate.cs" />
+    <Compile Include="System.String\System.Char\String.IsSurrogatePair.cs" />
+    <Compile Include="System.String\System.Char\String.IsSymbol.cs" />
+    <Compile Include="System.String\System.Char\String.IsUpper.cs" />
+    <Compile Include="System.String\System.Char\String.IsWhiteSpace.cs" />
+    <Compile Include="System.String\System.Utils\String.NormalizeLineEndings.cs" />
+    <Compile Include="System.String\_CoreObject\String.CompareOrdinal.cs" />
+    <Compile Include="System.String\_CoreObject\String.Concat.cs" />
+    <Compile Include="System.String\_CoreObject\String.Copy.cs" />
+    <Compile Include="System.String\_CoreObject\String.Format.cs" />
+    <Compile Include="System.String\_CoreObject\String.Intern.cs" />
+    <Compile Include="System.String\_CoreObject\String.IsInterned.cs" />
+    <Compile Include="System.String\String.IsNullOrWhiteSpace.cs" />
+    <Compile Include="System.String\_CoreObject\String.Join.cs" />
+    <Compile Include="System.String\System.Text.RegularExpressions.Regex\String.IsMatch.cs" />
+    <Compile Include="System.String\System.Text.RegularExpressions.Regex\String.Match.cs" />
+    <Compile Include="System.String\System.Text.RegularExpressions.Regex\String.Matches.cs" />
+    <Compile Include="System.String\System.Utils\String.GetFileName.cs" />
+    <Compile Include="System.String\System.Utils\String.Utilities.cs" />
+    <Compile Include="System.String\System.Utils\String.GetEmailHostName.cs" />
+    <Compile Include="System.String\System.Utils\String.CleanInput.cs" />
+    <Compile Include="System.String\System.Web.HttpUtility\String.HtmlAttributeEncode.cs" />
+    <Compile Include="System.String\System.Web.HttpUtility\String.HtmlDecode.cs" />
+    <Compile Include="System.String\System.Web.HttpUtility\String.HtmlEncode.cs" />
+    <Compile Include="System.String\System.Web.HttpUtility\String.JavaScriptStringEncode.cs" />
+    <Compile Include="System.String\System.Web.HttpUtility\String.ParseQueryString.cs" />
+    <Compile Include="System.String\System.Web.HttpUtility\String.UrlDecode.cs" />
+    <Compile Include="System.String\System.Web.HttpUtility\String.UrlDecodeToBytes.cs" />
+    <Compile Include="System.String\System.Web.HttpUtility\String.UrlEncode.cs" />
+    <Compile Include="System.String\System.Web.HttpUtility\String.UrlEncodeToBytes.cs" />
+    <Compile Include="System.String\System.Web.HttpUtility\String.UrlPathEncode.cs" />
+    <Compile Include="System.String\Validation\String.IsValidSafeSqlString.cs" />
+    <Compile Include="System.String\Validation\String.IsValidEmail.cs" />
+    <Compile Include="System.String\Validation\String.IsValidIP.cs" />
+    <Compile Include="System.String\Validation\String.IsValidUrl.cs" />
+    <Compile Include="System.String\_CoreObject\String.EnsureEndsWith.cs" />
+    <Compile Include="System.String\_CoreObject\String.EnsureStartsWith.cs" />
+    <Compile Include="System.String\_CoreObject\String.In.cs" />
+    <Compile Include="System.String\_CoreObject\String.IsNotNull.cs" />
+    <Compile Include="System.String\_CoreObject\String.IsNull.cs" />
+    <Compile Include="System.String\_CoreObject\String.NotIn.cs" />
+    <Compile Include="System.String\_ExtractValueType\String.ExtractDecimal.cs" />
+    <Compile Include="System.String\_ExtractValueType\String.ExtractDouble.cs" />
+    <Compile Include="System.String\_ExtractValueType\String.ExtractInt16.cs" />
+    <Compile Include="System.String\_ExtractValueType\String.ExtractInt32.cs" />
+    <Compile Include="System.String\_ExtractValueType\String.ExtractInt64.cs" />
+    <Compile Include="System.String\_ExtractValueType\String.ExtractManyDecimal.cs" />
+    <Compile Include="System.String\_ExtractValueType\String.ExtractManyDouble.cs" />
+    <Compile Include="System.String\_ExtractValueType\String.ExtractManyInt16.cs" />
+    <Compile Include="System.String\_ExtractValueType\String.ExtractManyInt32.cs" />
+    <Compile Include="System.String\_ExtractValueType\String.ExtractManyInt64.cs" />
+    <Compile Include="System.String\_ExtractValueType\String.ExtractManyUInt16.cs" />
+    <Compile Include="System.String\_ExtractValueType\String.ExtractManyUInt32.cs" />
+    <Compile Include="System.String\_ExtractValueType\String.ExtractManyUInt64.cs" />
+    <Compile Include="System.String\_ExtractValueType\String.ExtractUInt16.cs" />
+    <Compile Include="System.String\_ExtractValueType\String.ExtractUInt32.cs" />
+    <Compile Include="System.String\_ExtractValueType\String.ExtractUInt64.cs" />
+    <Compile Include="System.Text.StringBuilder\Extract\ExtractChar.cs" />
+    <Compile Include="System.Text.StringBuilder\Extract\ExtractComment.cs" />
+    <Compile Include="System.Text.StringBuilder\Extract\ExtractCommentMultiLine.cs" />
+    <Compile Include="System.Text.StringBuilder\Extract\ExtractCommentSingleLine.cs" />
+    <Compile Include="System.Text.StringBuilder\Extract\ExtractHexadecimal.cs" />
+    <Compile Include="System.Text.StringBuilder\Extract\ExtractKeyword.cs" />
+    <Compile Include="System.Text.StringBuilder\Extract\ExtractNumber.cs" />
+    <Compile Include="System.Text.StringBuilder\Extract\ExtractOperator.cs" />
+    <Compile Include="System.Text.StringBuilder\Extract\ExtractString.cs" />
+    <Compile Include="System.Text.StringBuilder\Extract\ExtractStringArobasDoubleQuote.cs" />
+    <Compile Include="System.Text.StringBuilder\Extract\ExtractStringArobasSingleQuote.cs" />
+    <Compile Include="System.Text.StringBuilder\Extract\ExtractStringDoubleQuote.cs" />
+    <Compile Include="System.Text.StringBuilder\Extract\ExtractStringSingleQuote.cs" />
+    <Compile Include="System.Text.StringBuilder\Extract\ExtractToken.cs" />
+    <Compile Include="System.Text.StringBuilder\Extract\ExtractTriviaToken.cs" />
+    <Compile Include="System.Text.StringBuilder\StringBuilder.AppendIf.cs" />
+    <Compile Include="System.Text.StringBuilder\StringBuilder.AppendJoin.cs" />
+    <Compile Include="System.Text.StringBuilder\StringBuilder.AppendLineFormat.cs" />
+    <Compile Include="System.Text.StringBuilder\StringBuilder.AppendLineIf.cs" />
+    <Compile Include="System.Text.StringBuilder\StringBuilder.AppendLineJoin.cs" />
+    <Compile Include="System.Text.StringBuilder\StringBuilder.GetIndexAfterNextDoubleQuote.cs" />
+    <Compile Include="System.Text.StringBuilder\StringBuilder.GetIndexAfterNextSingleQuote.cs" />
+    <Compile Include="System.Text.StringBuilder\StringBuilder.Substring.cs" />
+    <Compile Include="System.Type\Type.Extensions.cs" />
+    <Compile Include="System.Xml\XmlNode.GetAttributeValueOrNull.cs" />
+    <Compile Include="UExtensionConsts.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

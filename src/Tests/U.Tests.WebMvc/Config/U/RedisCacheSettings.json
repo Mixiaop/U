@@ -1,0 +1,4 @@
+﻿{
+	ConnectionString: '106.75.10.63:19000,106.75.20.98:19000,proxy=Twemproxy',
+	DatabaseId : 0
+}

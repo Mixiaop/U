@@ -1,0 +1,71 @@
+﻿using U.Logging;
+using U.Dependency;
+using U.Startup;
+
+namespace U
+{
+    /// <summary>
+    /// U 引擎，IOC容器、日志、配置等应用
+    /// </summary>
+    public class UPrimeEngine
+    {
+        #region Fields & Ctor
+        private bool _initialized = false;
+
+        public static UPrimeEngine Instance { get; private set; }
+
+        public IIocManager IocManager { get; private set; }
+
+        public IUStartupConfiguration Configuration { get; private set; }
+
+        public ILogger Logger { get; private set; }
+        static UPrimeEngine()
+        {
+            Instance = new UPrimeEngine();
+        }
+        #endregion
+
+        #region Consts
+        public const string Log4netRelativePath = "Config/U/log4net.Config";
+        #endregion
+
+        public void Initialize(IIocManager iocManage)
+        {
+            if (!_initialized)
+            {
+                Logger = iocManage.Resolve<ILogger>();
+                IocManager = iocManage;
+                Configuration = IocManager.Resolve<IUStartupConfiguration>();
+                _initialized = true;
+            }
+            else
+            {
+                throw new UException("UPrime has been initialized!");
+            }
+        }
+
+        #region Ioc Methods
+        public void Register<T>(DependencyLifeStyle lifeStyle = DependencyLifeStyle.Singleton) where T : class
+        {
+            IocManager.Register(typeof(T), typeof(T), lifeStyle);
+        }
+
+        public void Register<TType, TImpl>(DependencyLifeStyle lifeStyle = DependencyLifeStyle.Singleton)
+        {
+            IocManager.Register(typeof(TType), typeof(TImpl));
+        }
+
+
+        public T Resolve<T>() where T : class
+        {
+            return IocManager.Resolve<T>();
+        }
+
+
+        public T ResolveUnregistered<T>() where T : class
+        {
+            return IocManager.ResolveUnregistered<T>();
+        }
+        #endregion
+    }
+}

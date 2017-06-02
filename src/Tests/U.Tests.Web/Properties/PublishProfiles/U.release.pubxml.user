@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\!DotNet项目\优志愿2016\YOUF.Release</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="BaseService/DistributedCache/Redis.aspx">
+      <publishTime>07/25/2016 14:44:58</publishTime>
+    </File>
+    <File Include="BaseService/DistributedCache/StackExchangeRedis.aspx">
+      <publishTime>07/25/2016 14:44:58</publishTime>
+    </File>
+    <File Include="bin/Autofac.dll">
+      <publishTime>04/06/2016 14:16:26</publishTime>
+    </File>
+    <File Include="bin/AutoMapper.dll">
+      <publishTime>02/24/2016 19:36:08</publishTime>
+    </File>
+    <File Include="bin/Castle.Core.dll">
+      <publishTime>03/15/2016 12:34:35</publishTime>
+    </File>
+    <File Include="bin/Dapper.dll">
+      <publishTime>04/07/2016 16:46:42</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>02/01/2016 16:08:02</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.DynamicFilters.dll">
+      <publishTime>02/01/2016 16:08:09</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>02/01/2016 16:08:02</publishTime>
+    </File>
+    <File Include="bin/Hangfire.Core.dll">
+      <publishTime>03/14/2016 17:58:11</publishTime>
+    </File>
+    <File Include="bin/Hangfire.SqlServer.dll">
+      <publishTime>03/14/2016 17:58:11</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>02/01/2016 15:55:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>03/14/2016 17:58:11</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>03/14/2016 17:58:11</publishTime>
+    </File>
+    <File Include="bin/MiniProfiler.dll">
+      <publishTime>03/11/2016 08:57:44</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>03/15/2016 16:11:57</publishTime>
+    </File>
+    <File Include="bin/Nito.AsyncEx.dll">
+      <publishTime>03/16/2016 15:08:47</publishTime>
+    </File>
+    <File Include="bin/Nito.AsyncEx.Enlightenment.dll">
+      <publishTime>03/16/2016 15:08:47</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>03/14/2016 17:58:11</publishTime>
+    </File>
+    <File Include="bin/ServiceStack.Common.dll">
+      <publishTime>02/01/2016 16:08:02</publishTime>
+    </File>
+    <File Include="bin/ServiceStack.Interfaces.dll">
+      <publishTime>02/01/2016 16:08:09</publishTime>
+    </File>
+    <File Include="bin/ServiceStack.Redis.dll">
+      <publishTime>02/01/2016 16:08:03</publishTime>
+    </File>
+    <File Include="bin/ServiceStack.Text.dll">
+      <publishTime>02/01/2016 16:08:28</publishTime>
+    </File>
+    <File Include="bin/StackExchange.Redis.dll">
+      <publishTime>03/09/2016 10:00:59</publishTime>
+    </File>
+    <File Include="bin/System.Collections.Immutable.dll">
+      <publishTime>02/01/2016 15:55:11</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>03/16/2016 11:15:43</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>03/16/2016 11:15:43</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>03/16/2016 11:15:43</publishTime>
+    </File>
+    <File Include="bin/U.AutoMapper.dll">
+      <publishTime>07/28/2016 11:08:08</publishTime>
+    </File>
+    <File Include="bin/U.Dapper.dll">
+      <publishTime>07/28/2016 11:08:07</publishTime>
+    </File>
+    <File Include="bin/U.dll">
+      <publishTime>07/28/2016 11:08:07</publishTime>
+    </File>
+    <File Include="bin/U.EntityFramework.dll">
+      <publishTime>07/28/2016 11:08:08</publishTime>
+    </File>
+    <File Include="bin/U.Extension.Collections.dll">
+      <publishTime>07/28/2016 11:08:06</publishTime>
+    </File>
+    <File Include="bin/U.Extension.Core.dll">
+      <publishTime>07/28/2016 11:08:06</publishTime>
+    </File>
+    <File Include="bin/U.Extension.Serialization.dll">
+      <publishTime>07/28/2016 11:08:06</publishTime>
+    </File>
+    <File Include="bin/U.Extension.Web.dll">
+      <publishTime>07/28/2016 11:08:06</publishTime>
+    </File>
+    <File Include="bin/U.Framework.dll">
+      <publishTime>06/24/2016 10:25:22</publishTime>
+    </File>
+    <File Include="bin/U.HangFire.dll">
+      <publishTime>07/28/2016 11:08:08</publishTime>
+    </File>
+    <File Include="bin/U.MongoDB.dll">
+      <publishTime>07/28/2016 11:08:06</publishTime>
+    </File>
+    <File Include="bin/U.Redis.dll">
+      <publishTime>07/28/2016 11:08:08</publishTime>
+    </File>
+    <File Include="bin/U.SDK.dll">
+      <publishTime>07/28/2016 11:08:08</publishTime>
+    </File>
+    <File Include="bin/U.Tests.Web.dll">
+      <publishTime>07/28/2016 11:08:09</publishTime>
+    </File>
+    <File Include="bin/U.Utilities.dll">
+      <publishTime>07/28/2016 11:08:06</publishTime>
+    </File>
+    <File Include="bin/U.Web.Api.dll">
+      <publishTime>07/28/2016 11:08:08</publishTime>
+    </File>
+    <File Include="bin/U.Web.dll">
+      <publishTime>07/28/2016 11:08:08</publishTime>
+    </File>
+    <File Include="Caches/AttrTests.aspx">
+      <publishTime>07/25/2016 14:44:57</publishTime>
+    </File>
+    <File Include="Caches/Default.aspx">
+      <publishTime>07/25/2016 14:44:57</publishTime>
+    </File>
+    <File Include="Config/TestSettings.json">
+      <publishTime>07/25/2016 14:44:57</publishTime>
+    </File>
+    <File Include="Config/U/DapperSettings.json">
+      <publishTime>07/25/2016 14:44:57</publishTime>
+    </File>
+    <File Include="Config/U/HangfireSettings.json">
+      <publishTime>07/25/2016 14:44:57</publishTime>
+    </File>
+    <File Include="Config/U/log4net.config">
+      <publishTime>07/25/2016 14:44:57</publishTime>
+    </File>
+    <File Include="Config/U/RedisCacheSettings.json">
+      <publishTime>07/27/2016 11:29:30</publishTime>
+    </File>
+    <File Include="Config/YOUF/DistributedCache.config">
+      <publishTime>07/25/2016 14:44:57</publishTime>
+    </File>
+    <File Include="Config/YOUF/DistributedCache_Redis.config">
+      <publishTime>07/25/2016 14:44:57</publishTime>
+    </File>
+    <File Include="Config/Zero_SoaClientImgSettings.json">
+      <publishTime>07/25/2016 14:44:57</publishTime>
+    </File>
+    <File Include="Dapper/Users.aspx">
+      <publishTime>07/25/2016 14:44:55</publishTime>
+    </File>
+    <File Include="Dependency/Test.aspx">
+      <publishTime>07/25/2016 14:44:55</publishTime>
+    </File>
+    <File Include="EntityFramework/RepositoryTests.aspx">
+      <publishTime>07/25/2016 14:44:56</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>07/25/2016 14:44:56</publishTime>
+    </File>
+    <File Include="HangFire/Job.aspx">
+      <publishTime>07/25/2016 14:44:56</publishTime>
+    </File>
+    <File Include="Intercepter/Test.aspx">
+      <publishTime>07/25/2016 14:44:56</publishTime>
+    </File>
+    <File Include="Jobs/JobTest.aspx">
+      <publishTime>07/25/2016 14:44:56</publishTime>
+    </File>
+    <File Include="Logging/log.aspx">
+      <publishTime>07/25/2016 14:44:57</publishTime>
+    </File>
+    <File Include="Mail/Sender.aspx">
+      <publishTime>07/25/2016 14:44:55</publishTime>
+    </File>
+    <File Include="Pages/Cache.aspx">
+      <publishTime>07/25/2016 14:44:56</publishTime>
+    </File>
+    <File Include="Pages/Settings.aspx">
+      <publishTime>07/25/2016 14:44:56</publishTime>
+    </File>
+    <File Include="Reflection/Finder.aspx">
+      <publishTime>07/25/2016 14:44:56</publishTime>
+    </File>
+    <File Include="Settings/Test.aspx">
+      <publishTime>07/25/2016 14:44:55</publishTime>
+    </File>
+    <File Include="Timing/DataTimeHelperTest.aspx">
+      <publishTime>07/25/2016 14:44:56</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/28/2016 11:08:09</publishTime>
+    </File>
+    <File Include="WebApi/Client.aspx">
+      <publishTime>07/25/2016 14:44:57</publishTime>
+    </File>
+    <File Include="WebForm1.aspx">
+      <publishTime>07/25/2016 14:44:56</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

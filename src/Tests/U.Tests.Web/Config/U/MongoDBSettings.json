@@ -1,0 +1,4 @@
+﻿{
+	ConnectionString: 'mongodb://localhost',
+	DatabaseName: 'ZeroFirewall'
+}
