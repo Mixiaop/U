@@ -4,7 +4,8 @@ using System.IO;
 using System.Data;
 using System.Data.OleDb;
 using System.Web;
-using System.Web.UI.WebControls;
+using System.Text;
+
 namespace U.Utilities.Excel
 {
     /// <summary>
@@ -197,6 +198,132 @@ namespace U.Utilities.Excel
         //    }
         //    return true;
         //}
+        #endregion
+
+        #region ToExcel
+        /// <summary>
+        /// 通过指定的表头与行生成Excel，直接输出下载
+        /// </summary>
+        /// <param name="fileName">输出文件名</param>
+        /// <param name="thead"></param>
+        /// <param name="rows"></param>
+        public static void ToExcelAndDownload(string fileName, ExcelThead thead, ExcelRow rows)
+        {
+            #region Thead and rows
+            StringBuilder sbRows = new StringBuilder();
+            if (thead != null && thead.Items.Count > 0)
+            {
+                sbRows.Append("<Row>");
+                foreach (var item in thead.Items)
+                {
+                    sbRows.Append(string.Format("<Cell ss:StyleID=\"s21\"><Data ss:Type=\"String\">{0}</Data></Cell>", item));
+                }
+                sbRows.Append("</Row>");
+            }
+            if (rows != null && rows.Rows.Count > 0)
+            {
+                foreach (var data in rows.Rows)
+                {
+                    sbRows.Append("<Row>");
+
+                    foreach (var rowItem in data)
+                    {
+                        sbRows.Append(string.Format("<Cell ss:StyleID=\"s21\"><Data ss:Type=\"String\">{0}</Data></Cell>", rowItem));
+                    }
+
+                    sbRows.Append("</Row>");
+                }
+            }
+            #endregion
+
+            #region ToExcel
+            int pageRecord = 65536;//显示表头时为65535,否则为65536
+            if (thead != null)
+            {
+                pageRecord = 65535;
+            }
+            
+            //worksheet
+            //int sheetCount = recordCount / pageRecord + 1;
+            //excel表头
+            string head = "<?xml version=\"1.0\"?>"
+                + "<?mso-application progid=\"Excel.Sheet\"?>"
+                + "<Workbook xmlns=\"urn:schemas-microsoft-com:office:spreadsheet\""
+                + " xmlns:o=\"urn:schemas-microsoft-com:office:office\""
+                + " xmlns:x=\"urn:schemas-microsoft-com:office:excel\""
+                + " xmlns:ss=\"urn:schemas-microsoft-com:office:spreadsheet\""
+                + " xmlns:html=\"http://www.w3.org/TR/REC-html40\">"
+                + " <Styles>"
+                + " <Style ss:ID=\"s11\">"
+                + " <Alignment ss:Horizontal=\"Center\" ss:Vertical=\"Center\"/>"
+                + " <Font ss:FontName=\"微软雅黑\" ss:Size=\"12\"/>"
+                + " <Interior/>"
+                + " <NumberFormat/>"
+                + " <Protection/>"
+                + " </Style>"
+                + " <Style ss:ID=\"s12\">"
+                + " <Borders>"
+                + " <Border ss:Position=\"Bottom\" ss:LineStyle=\"Continuous\" ss:Weight=\"1\"/>"
+                + " <Border ss:Position=\"Left\" ss:LineStyle=\"Continuous\" ss:Weight=\"1\"/>"
+                + " <Border ss:Position=\"Right\" ss:LineStyle=\"Continuous\" ss:Weight=\"1\"/>"
+                + " <Border ss:Position=\"Top\" ss:LineStyle=\"Continuous\" ss:Weight=\"1\"/>"
+                + " </Borders>"
+                + " <Font ss:FontName=\"微软雅黑\" ss:Size=\"11\" ss:Bold=\"1\"/>"
+                + " <Interior ss:Color=\"#CCFFCC\" ss:Pattern=\"Solid\"/>"
+                + " </Style>"
+                + " <Style ss:ID=\"s13\">"
+                + " <Alignment ss:Horizontal=\"Right\" ss:Vertical=\"Center\"/>"
+                + " <Font ss:FontName=\"微软雅黑\" ss:Size=\"11\"/>"
+                + " <Interior/>"
+                + " <NumberFormat/>"
+                + " <Protection/>"
+                + " </Style>"
+                + " <Style ss:ID=\"s14\">"
+                + " <Borders>"
+                + " <Border ss:Position=\"Bottom\" ss:LineStyle=\"Continuous\" ss:Weight=\"1\"/>"
+                + " <Border ss:Position=\"Left\" ss:LineStyle=\"Continuous\" ss:Weight=\"1\"/>"
+                + " <Border ss:Position=\"Right\" ss:LineStyle=\"Continuous\" ss:Weight=\"1\"/>"
+                + " <Border ss:Position=\"Top\" ss:LineStyle=\"Continuous\" ss:Weight=\"1\"/>"
+                + " </Borders>"
+                + " <Font x:Family=\"Swiss\" ss:Size=\"11\"/>"
+                + " </Style>"
+                + " <Style ss:ID=\"s21\">"
+                + " <Alignment ss:Horizontal=\"Center\" ss:Vertical=\"Center\"/>"
+                + " <Borders/>"
+                + " <Font ss:FontName=\"微软雅黑\" ss:Size=\"12\"/>"
+                + " <Interior/>"
+                + " <NumberFormat/>"
+                + " <Protection/>"
+                + " </Style>"
+                + " <Style ss:ID=\"s25\">"
+                + " <Alignment ss:Horizontal=\"Center\" ss:Vertical=\"Center\"/>"
+                + " <Borders/>"
+                + " <Font ss:FontName=\"微软雅黑\" ss:Size=\"12\"/>"
+                + " <Interior ss:Color=\"#99CCFF\" ss:Pattern=\"Solid\"/>"
+                + " <NumberFormat/>"
+                + " <Protection/>"
+                + " </Style>"
+                + " </Styles>";
+
+            //excel的xml格式
+            StringBuilder body = new StringBuilder(10000);
+            body.AppendFormat("<Worksheet ss:Name=\"{0}\">", "Sheet1");
+            body.Append("<Table>");
+            body.Append(sbRows.ToString());
+            body.Append("</Table>");
+            body.Append("</Worksheet>");
+            body.Append("</Workbook>");
+
+            //输出到客户端
+            HttpContext.Current.Response.Clear();
+            HttpContext.Current.Response.Buffer = true;
+            HttpContext.Current.Response.AppendHeader("Content-Disposition", "attachment;filename=" + HttpUtility.UrlPathEncode(fileName) + ".xls");
+            HttpContext.Current.Response.ContentEncoding = System.Text.Encoding.UTF8;
+            HttpContext.Current.Response.ContentType = "application/ms-excel";
+            HttpContext.Current.Response.Write(head + body.ToString());
+            HttpContext.Current.Response.End();
+            #endregion
+        }
         #endregion
 
         #region ExcelToData

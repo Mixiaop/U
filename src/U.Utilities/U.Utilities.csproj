@@ -55,6 +55,7 @@
     <Compile Include="Access\DatabaseConfigInfo.cs" />
     <Compile Include="Access\DatabaseConfigs.cs" />
     <Compile Include="Excel\ExcelHelper.cs" />
+    <Compile Include="Excel\ExcelModel.cs" />
     <Compile Include="IIS\BaseService.cs" />
     <Compile Include="IIS\Extensions.cs" />
     <Compile Include="IIS\IIISUtilService.cs" />

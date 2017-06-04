@@ -9,7 +9,7 @@ namespace U
         /// <summary>
         /// 当前版本
         /// </summary>
-        public const string CurrentVersion = "0.5.6.4";
+        public const string CurrentVersion = "0.5.7.4";
     }
     //0.5.4.1 修正了【AjaxProGeneratePageBase】生成ajaxservices兼容腾讯手机X5浏览器
     //0.5.4.2 CookHelper增加了重载支持存储domain

@@ -9,9 +9,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-    
-    </div>
+    <asp:Button runat="server" ID="btnToExcel" Text="输出Excel" />
     </form>
 </body>
 </html>
