@@ -56,6 +56,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{9BBBE6
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "U.Converters", "U.Converters\U.Converters.csproj", "{683B408E-EAB5-4480-8119-B42C8B049B93}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "U.WinService", "U.WinService\U.WinService.csproj", "{64856DCE-9123-4F99-ADA5-280B5433BC6A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -150,6 +152,10 @@ Global
 		{683B408E-EAB5-4480-8119-B42C8B049B93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{683B408E-EAB5-4480-8119-B42C8B049B93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{683B408E-EAB5-4480-8119-B42C8B049B93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64856DCE-9123-4F99-ADA5-280B5433BC6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64856DCE-9123-4F99-ADA5-280B5433BC6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64856DCE-9123-4F99-ADA5-280B5433BC6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64856DCE-9123-4F99-ADA5-280B5433BC6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
