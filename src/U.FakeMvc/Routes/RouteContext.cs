@@ -30,6 +30,12 @@ namespace U.FakeMvc.Routes
         public void AddRewriterRule(RewriterRule rule)
         {
             _rewriterRules.Add(rule);
+            var route = _routes.Where(x => x.Value.ToLower() == rule.LookFor.ToLower()).FirstOrDefault();
+            if (route != null)
+            {
+                route.RewriterRuleLookFor = rule.LookFor;
+                route.RewriterRuleSendTo = rule.SendTo;
+            }
         }
 
         public string GetRouteUrl(string routeName, params object[] paramValues)
