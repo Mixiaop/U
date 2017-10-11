@@ -6,6 +6,7 @@ namespace U.Utilities.IIS
 {
     /// <summary>
     /// IIS7工具类(IIS8适用)
+    /// 如遇到权限问题，可在配置文件里加上<identity impersonate="true" userName="administrator" password="youzy.cn123#@!"/>
     /// </summary>
     public class IIS7UtilService : BaseService, IIISUtilService
     {
@@ -514,6 +515,33 @@ namespace U.Utilities.IIS
 
         #region 域名绑定
         /// <summary>
+        /// 通过站点名获取绑定的域名列表
+        /// </summary>
+        /// <param name="siteName"></param>
+        /// <returns></returns>
+        public IList<IISDomain> GetSiteDomains(string siteName)
+        {
+            ServerManager server = new ServerManager();
+            IList<IISDomain> domains = new List<IISDomain>();
+            foreach (Site site in server.Sites)
+            {
+                if (site.Name == siteName.Trim())
+                {
+                    foreach (var bind in site.Bindings)
+                    {
+                        var domain = new IISDomain();
+                        domain.BindingInformation = bind.BindingInformation;
+                        domain.Host = bind.Host;
+                        domains.Add(domain);
+                    }
+                }
+            }
+
+            return domains;
+
+        }
+
+        /// <summary>
         /// 添加绑定域名
         /// </summary>
         /// <param name="siteName">站点名</param>
@@ -521,70 +549,90 @@ namespace U.Utilities.IIS
         /// <param name="port">端口</param>
         /// <param name="https">默认为http</param>
         /// <returns></returns>
-        public int AddSiteDomain(string siteName, string domainUrl, int port, bool https = false){
+        public int AddSiteDomain(string siteName, string domainUrl, int port = 80, bool https = false)
+        {
             int errorCode = IISErrorCode.Succeed;
             try
             {
-                //var server = new ServerManager();
-                //var site = GetSite(siteName);
-                //bool exists = false;
-                //foreach (var bind in site.Bindings) {
-                //    if (https)
-                //    {
-                //        if (bind.Host.EqualsEx(domainUrl) && bind.Protocol.EqualsEx("https") && bind.EndPoint.Port == port)
-                //        {
-                //            exists = true;
-                //            break;
-                //        }
-                //    }
-                //    else {
-                //        if (bind.Host.EqualsEx(domainUrl) && bind.Protocol.EqualsEx("http") && bind.EndPoint.Port == port)
-                //        {
-                //            exists = true;
-                //            break;
-                //        }
-                //    }
-                    
-                //}
+                var server = new ServerManager();
+                Site site = null;
+                //找指定站点
+                foreach (Site s in server.Sites)
+                {
+                    if (s.Name.EqualsEx(siteName))
+                    {
+                        site = s;
+                        break;
+                    }
+                }
+                if (site != null)
+                {
+                    bool exists = false;
+                    foreach (var bind in site.Bindings)
+                    {
+                        if (https)
+                        {
+                            if (bind.Host.EqualsEx(domainUrl) && bind.Protocol.EqualsEx("https") && bind.EndPoint.Port == port)
+                            {
+                                exists = true;
+                                break;
+                            }
+                        }
+                        else
+                        {
+                            if (bind.Host.EqualsEx(domainUrl) && bind.Protocol.EqualsEx("http") && bind.EndPoint.Port == port)
+                            {
+                                exists = true;
+                                break;
+                            }
+                        }
 
-                //if (!exists) { 
-                //    if(https){
-                //    site.Bindings.Add(string.Format("*:{0}:", port), HexString2Bytes(sslHash), "MY");
-                //    }
-                //    site.Bindings.Add(new Binding(){  EndPoint=new System.Net.IPEndPoint().})
-                //}
+                    }
+                    if (!exists)
+                    {
+                        site.Bindings.Add(string.Format("*:{1}:{0}", domainUrl, port), https ? "https" : "http");
+                        server.CommitChanges();
+                        //site.ServerAutoStart();
+                    }
+                }
+                else
+                {
+                    errorCode = IISErrorCode.SiteNotFound;
+                }
             }
-            catch (Exception ex) {
+            catch (Exception ex)
+            {
                 errorCode = IISErrorCode.Unknown;
+                throw new Exception(ex.Message);
             }
             return errorCode;
         }
 
-        //public Site GetSite(string siteName)
-        //{
-        //    var code = SiteExists(siteName);
-        //    Site site = null;
-        //    if (code == IISErrorCode.SiteExists)
-        //    {
-        //        var server = new ServerManager();
+        public Site GetSite(string siteName)
+        {
+            var code = SiteExists(siteName);
+            Site site = null;
+            if (code == IISErrorCode.SiteExists)
+            {
+                var server = new ServerManager();
 
-        //        //找指定站点
-        //        foreach (Site s in server.Sites)
-        //        {
-        //            if (site.Name.EqualsEx(siteName))
-        //            {
-        //                site = s;
-        //                break;
-        //            }
-        //        }
-        //    }
-        //    else
-        //    {
-        //        throw new Exception("IISErrorCode:" + code);
-        //    }
+                //找指定站点
+                foreach (Site s in server.Sites)
+                {
+                    if (s.Name.EqualsEx(siteName))
+                    {
+                        site = s;
+                        break;
+                    }
+                }
+            }
+            else
+            {
+                throw new Exception("IISErrorCode:" + code);
+            }
 
-        //    return site;
-        //}
+            return site;
+        }
         #endregion
 
         #region Utilities
@@ -615,7 +663,7 @@ namespace U.Utilities.IIS
             return errorCode;
         }
 
-       
+
 
         public int SetCertificate(string siteName, string sslHash)
         {

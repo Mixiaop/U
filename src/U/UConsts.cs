@@ -16,4 +16,5 @@ namespace U
     //0.5.5.2 新增加了U.Converters【用于处理特殊的HtmlToImage、WordToHtml、HtmlToWord】等转换功能
     //0.5.5.3 【U.Converters】URL转图片使用了Seliem.WebDriver
     //0.5.6.4 应用服务增加了对【实现的事件订阅与发布功能】
+    //0.5.7.4 增加了U.Utilites 对IIS7 8 域名的获取与添加
 }

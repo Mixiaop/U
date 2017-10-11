@@ -1,4 +1,5 @@
-﻿
+﻿using System.Collections.Generic;
+
 namespace U.Utilities.IIS
 {
     public interface IIISUtilService
@@ -80,8 +81,14 @@ namespace U.Utilities.IIS
         /// <param name="port">端口</param>
         /// <param name="https">默认为http</param>
         /// <returns></returns>
-        int AddSiteDomain(string siteName, string domainUrl, int port, bool https = false);
+        int AddSiteDomain(string siteName, string domainUrl, int port = 80, bool https = false);
 
+        /// <summary>
+        /// 通过站点名获取绑定的域名列表
+        /// </summary>
+        /// <param name="siteName"></param>
+        /// <returns></returns>
+        IList<IISDomain> GetSiteDomains(string siteName);
         #region Utilties
         /// <summary>
         /// 站点是否存在
@@ -108,5 +115,28 @@ namespace U.Utilities.IIS
         /// <returns></returns>
         int SetPort(string siteName, int httpPort, int httpsPort);
         #endregion
+    }
+
+    /// <summary>
+    /// IIS域名
+    /// </summary>
+    public class IISDomain
+    {
+        public string BindingInformation { get; set; }
+
+        public string Host { get; set; }
+
+        public string Port
+        {
+            get
+            {
+                var s =  BindingInformation.Replace(":", "").Replace("*", "");
+                if (Host.IsNotNullOrEmpty()) {
+                    s = s.Replace(Host, "");
+                }
+
+                return s.Trim();
+            }
+        }
     }
 }
