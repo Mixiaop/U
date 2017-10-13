@@ -15,6 +15,7 @@ namespace U.Tests.Web.Utilities
         {
             btnDomainList.Click += BtnDomainList_Click;
             btnAddDomain.Click += BtnAddDomain_Click;
+            btnRemoveDomain.Click += btnRemoveDomain_Click;
             //Response.Write(IISServiceFactory.GetIISMajorVersion());
 
             //IIISUtilService iisService = IISServiceFactory.GetUtilService();
@@ -39,6 +40,27 @@ namespace U.Tests.Web.Utilities
 
 
 
+        }
+
+        void btnRemoveDomain_Click(object sender, EventArgs e)
+        {
+            ServerManager server = new ServerManager();
+            IIS7UtilService iisService = (IIS7UtilService)IISServiceFactory.GetUtilService();
+            iisService.RemoveSiteDomain("U.Tests", "aa.youzy.cn");
+            //Site site = server.Sites["U.Tests"];
+            //for (int i = 0; i < site.Bindings.Count; i++)
+            //{
+            //    var bind = site.Bindings[i];
+            //    if (bind.Host.EqualsEx("test2.youzy.cn") && bind.BindingInformation.Contains("80"))
+            //    {
+            //        Response.Write("remove " + bind.BindingInformation);
+            //        site.Bindings.RemoveAt(i);
+            //        break;
+            //    }
+            //}
+            //site.ServerAutoStart = true;
+            //server.CommitChanges();
+            Response.Write("remove sus");
         }
 
         private void BtnAddDomain_Click(object sender, EventArgs e)

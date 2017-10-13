@@ -84,11 +84,21 @@ namespace U.Utilities.IIS
         int AddSiteDomain(string siteName, string domainUrl, int port = 80, bool https = false);
 
         /// <summary>
+        /// 移除绑定的域名
+        /// </summary>
+        /// <param name="siteName">站点名</param>
+        /// <param name="host">域名UR</param>
+        /// <param name="port">端口</param>
+        /// <returns></returns>
+        int RemoveSiteDomain(string siteName, string host, int port = 80);
+
+        /// <summary>
         /// 通过站点名获取绑定的域名列表
         /// </summary>
         /// <param name="siteName"></param>
         /// <returns></returns>
         IList<IISDomain> GetSiteDomains(string siteName);
+
         #region Utilties
         /// <summary>
         /// 站点是否存在

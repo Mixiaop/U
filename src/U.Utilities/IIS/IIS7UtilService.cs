@@ -608,6 +608,35 @@ namespace U.Utilities.IIS
             return errorCode;
         }
 
+        /// <summary>
+        /// 移除绑定的域名
+        /// </summary>
+        /// <param name="siteName">站点名</param>
+        /// <param name="host">域名UR</param>
+        /// <param name="port">端口</param>
+        /// <returns></returns>
+        public int RemoveSiteDomain(string siteName, string host, int port = 80) {
+            ServerManager server = new ServerManager();
+            Site site = server.Sites[siteName];
+            if (site != null)
+            {
+                for (int i = 0; i < site.Bindings.Count; i++)
+                {
+                    var bind = site.Bindings[i];
+                    if (bind.Host.EqualsEx(host) && bind.BindingInformation.Contains(port.ToString()))
+                    {
+                        site.Bindings.RemoveAt(i);
+                        break;
+                    }
+                }
+                site.ServerAutoStart = true;
+                server.CommitChanges();
+                return IISErrorCode.Succeed;
+            }
+            else
+                return IISErrorCode.SiteNotFound;
+        }
+
         public Site GetSite(string siteName)
         {
             var code = SiteExists(siteName);
