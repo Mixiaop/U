@@ -250,7 +250,13 @@
     <Content Include="Config\U\DapperSettings.json" />
     <Content Include="Config\U.Utilities\SqlServer\Database.config" />
     <Content Include="Config\U.Utilities\Access\Database.config" />
+    <Content Include="Config\U\Segmentation\Resources\cn_synonym.txt" />
+    <Content Include="Config\U\Segmentation\Resources\custom_dict.txt" />
+    <Content Include="Config\U\Segmentation\Resources\dict.txt" />
+    <Content Include="Config\U\Segmentation\Resources\idf.txt" />
+    <Content Include="Config\U\Segmentation\Resources\stopwords.txt" />
     <Content Include="JetBrainsAnnotationsTests.aspx" />
+    <Content Include="USegmentation\Tests.aspx" />
     <Content Include="WebForm2.aspx" />
     <None Include="Config\U\EFSettings.json" />
     <Content Include="Converters\HtmlPage1.html" />
@@ -514,6 +520,13 @@
     <Compile Include="UMongoDB\UMongoDBTests.aspx.designer.cs">
       <DependentUpon>UMongoDBTests.aspx</DependentUpon>
     </Compile>
+    <Compile Include="USegmentation\Tests.aspx.cs">
+      <DependentUpon>Tests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USegmentation\Tests.aspx.designer.cs">
+      <DependentUpon>Tests.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UTestsWebUPrime.cs" />
     <Compile Include="Jobs\JobTest.aspx.cs">
       <DependentUpon>JobTest.aspx</DependentUpon>
@@ -698,6 +711,13 @@
     <Content Include="packages.config" />
     <Content Include="Config\U\MongoDBSettings.json" />
     <Content Include="Dependency\AutofacRootTests.Master" />
+    <Content Include="Config\U\Segmentation\JiebaSettings.json" />
+    <Content Include="Config\U\Segmentation\Resources\char_state_tab.json" />
+    <Content Include="Config\U\Segmentation\Resources\pos_prob_emit.json" />
+    <Content Include="Config\U\Segmentation\Resources\pos_prob_start.json" />
+    <Content Include="Config\U\Segmentation\Resources\pos_prob_trans.json" />
+    <Content Include="Config\U\Segmentation\Resources\prob_emit.json" />
+    <Content Include="Config\U\Segmentation\Resources\prob_trans.json" />
     <None Include="Properties\PublishProfiles\U.release.pubxml" />
     <Content Include="Utilities\2014 0-2060.xls" />
     <Content Include="Utilities\2014 DoubanMovieLinks.xlsx" />
@@ -760,6 +780,10 @@
     <ProjectReference Include="..\..\U.Redis\U.Redis.csproj">
       <Project>{ab3356fd-1d8a-4725-99ed-33fe4b7a8387}</Project>
       <Name>U.Redis</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\U.Segmentation\U.Segmentation.csproj">
+      <Project>{fae89028-c02f-4a59-871e-0fd491cabaa7}</Project>
+      <Name>U.Segmentation</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\U.Utilities\U.Utilities.csproj">
       <Project>{250f5724-011b-44e0-b34c-7f7292318351}</Project>

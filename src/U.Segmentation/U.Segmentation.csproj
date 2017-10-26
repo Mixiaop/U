@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FAE89028-C02F-4A59-871E-0FD491CABAA7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>U</RootNamespace>
+    <AssemblyName>U.Segmentation</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Segmentation\DefaultDictionary.cs" />
+    <Compile Include="Segmentation\Jieba\Analyser\IdfLoader.cs" />
+    <Compile Include="Segmentation\Jieba\Analyser\KeywordExtractor.cs" />
+    <Compile Include="Segmentation\Jieba\Analyser\WordWeightPair.cs" />
+    <Compile Include="Segmentation\Constants.cs" />
+    <Compile Include="Segmentation\Extensions.cs" />
+    <Compile Include="Segmentation\Jieba\FinalSeg\IFinalSeg.cs" />
+    <Compile Include="Segmentation\Jieba\FinalSeg\Viterbi.cs" />
+    <Compile Include="Segmentation\ISegmenter.cs" />
+    <Compile Include="Segmentation\Jieba\JiebaSettings.cs" />
+    <Compile Include="Segmentation\Jieba\Node.cs" />
+    <Compile Include="Segmentation\Jieba\Pair.cs" />
+    <Compile Include="Segmentation\Jieba\PosSeg\Pair.cs" />
+    <Compile Include="Segmentation\Jieba\PosSeg\PosSegmenter.cs" />
+    <Compile Include="Segmentation\Jieba\PosSeg\Viterbi.cs" />
+    <Compile Include="Segmentation\Jieba\JiebaSegmenter.cs" />
+    <Compile Include="Segmentation\Jieba\Spelling\ISpellChecker.cs" />
+    <Compile Include="Segmentation\Token.cs" />
+    <Compile Include="Segmentation\Jieba\Trie.cs" />
+    <Compile Include="Segmentation\Jieba\WordDictionary.cs" />
+    <Compile Include="Segmentation\USegmentationUPrime.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\U.Utilities\U.Utilities.csproj">
+      <Project>{250f5724-011b-44e0-b34c-7f7292318351}</Project>
+      <Name>U.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\U\U.csproj">
+      <Project>{69c8db8b-1da8-4236-b2ac-7daf57064b2f}</Project>
+      <Name>U</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
