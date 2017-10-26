@@ -66,21 +66,21 @@ namespace U.Utilities.Access
                     HttpContext context = HttpContext.Current;
                     if (context != null)
                     {
-                        fileName = context.Server.MapPath("~/Config/U.Utilities/Access/Database.config");
+                        fileName = context.Server.MapPath("~/Config/U/Utilities/Access/Database.config");
                         if (!File.Exists(fileName))
                         {
-                            fileName = context.Server.MapPath("~/Config/U.Utilities/Access/Database.config");
+                            fileName = context.Server.MapPath("~/Config/U/Utilities/Access/Database.config");
                         }
                     }
                     else
                     {
-                        fileName = Path.Combine("~/Config/U.Utilities/Access/Database.config");
+                        fileName = Path.Combine("~/Config/U/Utilities/Access/Database.config");
                     }
 
                     if (!File.Exists(fileName))
                     {
 
-                        throw new Exception("发生错误: 虚拟目录或网站根目录下没有正确的~/Config/U.Utilities/Access/Database.config文件");
+                        throw new Exception("发生错误: 虚拟目录或网站根目录下没有正确的~/Config/U/Utilities/Access/Database.config文件");
                     }
                 }
                 return fileName;

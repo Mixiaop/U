@@ -63,12 +63,12 @@ namespace U.Utilities.SqlServer
             {
                 if (fileName == null)
                 {
-                    fileName = U.Utilities.Web.WebHelper.MapPath("/Config/U.Utilities/SqlServer/Database.config");
+                    fileName = U.Utilities.Web.WebHelper.MapPath("/Config/U/Utilities/SqlServer/Database.config");
 
                     if (!File.Exists(fileName))
                     {
 
-                        throw new Exception("发生错误: 虚拟目录或网站根目录下没有正确的~/Config/U.Utilities/SqlServer/Database.config文件");
+                        throw new Exception("发生错误: 虚拟目录或网站根目录下没有正确的~/Config/U/Utilities/SqlServer/Database.config文件");
                     }
                 }
                 return fileName;

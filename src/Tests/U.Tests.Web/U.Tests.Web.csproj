@@ -248,8 +248,8 @@
     <Content Include="Caches\Default.aspx" />
     <Content Include="chromedriver.exe" />
     <Content Include="Config\U\DapperSettings.json" />
-    <Content Include="Config\U.Utilities\SqlServer\Database.config" />
-    <Content Include="Config\U.Utilities\Access\Database.config" />
+    <Content Include="Config\U\Utilities\SqlServer\Database.config" />
+    <Content Include="Config\U\Utilities\Access\Database.config" />
     <Content Include="Config\U\Segmentation\Resources\cn_synonym.txt" />
     <Content Include="Config\U\Segmentation\Resources\custom_dict.txt" />
     <Content Include="Config\U\Segmentation\Resources\dict.txt" />

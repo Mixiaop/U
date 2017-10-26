@@ -19,4 +19,5 @@ namespace U
     //0.5.7.4 增加了U.Utilites 对IIS7 8 域名的获取与添加
     //0.5.7.5 增加了U.Utilites 对IIS7 8 域名的删除
     //0.5.8.5 增加了U.Segmentation 分词功能（Jieba分词的.NET实现 ISegmenter）
+    //        U.Utilites config路径变更 /Config/U/Utilities
 }

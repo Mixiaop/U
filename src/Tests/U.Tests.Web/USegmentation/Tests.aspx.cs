@@ -18,6 +18,9 @@ namespace U.Tests.Web.USegmentation
 
             var list = segmenter.Cut("北京大学能不能上？");
             Response.Write(string.Join(" / ", list));
+            Response.Write("<br />");
+            var list2 = segmenter.CutForSearch("北京大学能不能上？");
+            Response.Write(string.Join(" / ", list2));
         }
     }
 }
