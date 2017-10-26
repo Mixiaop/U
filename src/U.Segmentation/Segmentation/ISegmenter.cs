@@ -17,7 +17,7 @@ namespace U.Segmentation
         /// <returns></returns>
         IEnumerable<string> Cut(string text, bool cutAll = false, bool hmm = true);
 
-        IEnumerable<string> CutForSearch(string text, bool hmm = true);
+        IEnumerable<string> CutForSearch(string text, bool cutAll = false, bool hmm = true);
 
         IEnumerable<Token> Tokenize(string text, TokenizerMode mode = TokenizerMode.Default, bool hmm = true);
 

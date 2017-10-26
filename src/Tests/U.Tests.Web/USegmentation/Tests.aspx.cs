@@ -16,10 +16,10 @@ namespace U.Tests.Web.USegmentation
             ISegmenter segmenter = UPrimeEngine.Instance.Resolve<ISegmenter>();
             segmenter.LoadUserDict("custom_dict.txt");
 
-            var list = segmenter.Cut("北京大学能不能上？");
+            var list = segmenter.Cut("十九大，习近平总书记说：优先发展教育事业", true);
             Response.Write(string.Join(" / ", list));
             Response.Write("<br />");
-            var list2 = segmenter.CutForSearch("北京大学能不能上？");
+            var list2 = segmenter.CutForSearch("北京大学能不能上？", true);
             Response.Write(string.Join(" / ", list2));
         }
     }

@@ -75,11 +75,11 @@ namespace U.Segmentation.Jieba
             return CutIt(text, cutMethod, reHan, reSkip, cutAll);
         }
 
-        public IEnumerable<string> CutForSearch(string text, bool hmm = true)
+        public IEnumerable<string> CutForSearch(string text, bool cutAll = false, bool hmm = true)
         {
             var result = new List<string>();
 
-            var words = Cut(text, hmm: hmm);
+            var words = Cut(text, cutAll, hmm: hmm);
             foreach (var w in words)
             {
                 if (w.Length > 2)
