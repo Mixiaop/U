@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\packages\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
     <Reference Include="Interop.IISOle">
       <HintPath>..\packages\Interop.IISOle.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
@@ -54,6 +57,7 @@
     <Compile Include="Access\DatabaseConfigFileManager.cs" />
     <Compile Include="Access\DatabaseConfigInfo.cs" />
     <Compile Include="Access\DatabaseConfigs.cs" />
+    <Compile Include="Compress\ZipHelper.cs" />
     <Compile Include="Excel\ExcelHelper.cs" />
     <Compile Include="Excel\ExcelModel.cs" />
     <Compile Include="IIS\BaseService.cs" />

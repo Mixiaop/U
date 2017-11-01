@@ -257,6 +257,7 @@
     <Content Include="Config\U\Segmentation\Resources\stopwords.txt" />
     <Content Include="JetBrainsAnnotationsTests.aspx" />
     <Content Include="USegmentation\Tests.aspx" />
+    <Content Include="Utilities\ZipHelperTests.aspx" />
     <Content Include="WebForm2.aspx" />
     <None Include="Config\U\EFSettings.json" />
     <Content Include="Converters\HtmlPage1.html" />
@@ -670,6 +671,13 @@
     <Compile Include="Utilities\WordHelperTests.aspx.designer.cs">
       <DependentUpon>WordHelperTests.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Utilities\ZipHelperTests.aspx.cs">
+      <DependentUpon>ZipHelperTests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utilities\ZipHelperTests.aspx.designer.cs">
+      <DependentUpon>ZipHelperTests.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebApi\Client.aspx.cs">
       <DependentUpon>Client.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -809,6 +817,7 @@
   <ItemGroup>
     <Folder Include="Logs\" />
     <Folder Include="UFramework\" />
+    <Folder Include="USegmentation\Resources\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -825,7 +834,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>1569</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:1569/</IISUrl>
+          <IISUrl>http://localhost:15690/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

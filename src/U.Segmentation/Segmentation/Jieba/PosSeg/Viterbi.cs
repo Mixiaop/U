@@ -89,6 +89,7 @@ namespace U.Segmentation.Jieba.PosSeg
             memPath.Add(new Dictionary<string, string>());
             foreach (var state in _stateTab.GetDefault(sentence[0], allStates))
             {
+                var a = _emitProbs[state];
                 var emP = _emitProbs[state].GetDefault(sentence[0], Constants.MinProb);
                 v[0][state] = _startProbs[state] + emP;
                 memPath[0][state] = string.Empty;

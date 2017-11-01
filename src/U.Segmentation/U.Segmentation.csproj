@@ -47,6 +47,9 @@
     <Compile Include="Segmentation\DefaultDictionary.cs" />
     <Compile Include="Segmentation\Jieba\Analyser\IdfLoader.cs" />
     <Compile Include="Segmentation\Jieba\Analyser\KeywordExtractor.cs" />
+    <Compile Include="Segmentation\Jieba\Analyser\TextRankExtractor.cs" />
+    <Compile Include="Segmentation\Jieba\Analyser\TfidfExtractor.cs" />
+    <Compile Include="Segmentation\Jieba\Analyser\UndirectWeightedGraph.cs" />
     <Compile Include="Segmentation\Jieba\Analyser\WordWeightPair.cs" />
     <Compile Include="Segmentation\Constants.cs" />
     <Compile Include="Segmentation\Extensions.cs" />
