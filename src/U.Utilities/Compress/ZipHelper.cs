@@ -80,7 +80,7 @@ namespace U.Utilities.Compress
 
                         entry.DateTime = DateTime.Now;
                         entry.Size = fs.Length;
-
+                        
                         fs.Close();
 
                         crc.Reset();

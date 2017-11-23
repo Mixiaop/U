@@ -8,21 +8,70 @@
 <!--<![endif]-->
 <head>
 
-    <script src="http://192.168.1.165:14480/libs/jquery/jquery-1.9.min.js" type="text/javascript"></script>
-    <script src="http://192.168.1.165:14480/libs/requirejs/highcharts/highcharts3.js" type="text/javascript"></script>
+    <!--<script src="http://192.168.1.165:14480/libs/jquery/jquery-1.9.min.js" type="text/javascript"></script>
+    <script src="http://192.168.1.165:14480/libs/requirejs/highcharts/highcharts3.js" type="text/javascript"></script>-->
 
-
+    <style>
+        .table {
+            width:100%;
+            border:0;
+            
+        }
+        .text-left{
+            white-space:normal;
+            word-break:normal;
+            font-family:微软雅黑;
+        }
+    </style>
 </head>
-<body>
+<body >
+    <table class="table table-bordered" >
+        <tbody>
+            <tr>
+                <th colspan="2">霍兰德兴趣测评详解</th>
+            </tr>
+
+            <tr>
+                <td style="width: 150px;" class="text-center">现实型(R)</td>
+                <td class="text-left" >
+                    现实型(Realistic) 又称现实型具有这类倾向的个体，属于技术与运动取向往往身体技能及机械协调能力较强，对机械与物体的关心比较强烈稳健、务实，喜欢从事规则明确的活动及技术性工作，甚至热衷于亲自动手创造新事物不善言谈 ，对于人际交往及人员 管理、监督等活动不太感兴趣这一领域的职业有 :需熟练技能方面的职业、动植物管理方面的职业、机械管理方面的职业、生产技术方面的职业、手工艺技能方面的职业、机械装置与运转方面的职业等
+                </td>
+            </tr>
+            <tr>
+                <td class="text-center">研究型(I)</td>
+                <td class="text-left" >
+                    研究型(Investigative) 又称调查型具有这类倾向的个体，喜欢理论思维或偏爱数理统计工作，对于解决抽象性问题具有极大的热情他们通常倾向于通过思考、分析解决难题，而不一定落实到具体操作喜欢具有创造性、挑战性的工作，不太喜欢固定程式的任务对于人员的领导及人际交往也非情所愿，独立倾向明显适合的职业有:分析员、设计师、生物学家等
+                </td>
+            </tr>
+            <tr>
+                <td class="text-center">艺术型(A)</td>
+                <td class="text-left" >
+                    艺术型(Artistic) 具有此类倾向的个体，对具有创造、想象及自我表现空间的工作显示出明显偏好他们和研究型倾向的个体相同之处在于创造倾向明显，对于结构化程度较高的任务及环境都不太喜欢，对于机械性及程式化的工作了无兴趣也比较喜欢独立行事，不太合群但两者所不同的是艺术倾向明显的个体好自我表现 ，重视自己的感性，直觉力 较好，情绪变化较大这一领域的职业有:美术雕刻以及工艺方面，舞蹈、戏剧等
+                </td>
+            </tr>
+            <tr>
+                <td class="text-center">社会型(S)</td>
+                <td class="text-left" >
+                    社会型(Social) 具有此类倾向的个体，喜欢与人为对象的工作他们通常言语能力优于数理能力，善于言谈，乐于与人相处，给人提供帮助，具有人道主义倾向，责任心也较强习惯于与人商讨或调整人际关系来解决面临的问题不太喜欢以机械和物品为对象的工作适合从事咨询、培训、辅导、说劝类工作这一领域的职业有 :学校教育以及社会教育方面、社会福利事业、医疗与保健方面、各种直接为人服务的和商品营销方面的职业等
+                </td>
+            </tr>
+            <tr>
+                <td class="text-center">企业型(E)</td>
+                <td class="text-left" >
+                    经营型(Enterprising) 又称企业型具有这种兴趣倾向的个体，喜欢制定新的工作计划、事业规划以及设立新的组织，并积极地发挥组织的作用进行活动;喜欢影响、管理、领导他人；自信、支配欲、冒险性强他们不喜欢具体精细、或需要长时间集中心智的工作这一领域的职业有：管理，市场和销售类的职业
+                </td>
+            </tr>
+            <tr>
+                <td class="text-center">常规型(C)</td>
+                <td class="text-left" >
+                    常规型(Conventional) 又译事务型具有这类倾向的个体，喜欢高度有序、要求明晰的工作，对于规则模糊、自由度大的工作不太适应不喜欢主动决策，习惯于服从，一般较为忠诚、可靠，偏保守与人工作中的交往会保持一定的距离工作仔细、有毅力对社会地位、社会评价比较在意，通常愿意在大型机构做一般性工作相应的职业领域有：银行职员、图书管理员、会计、出纳、统计人员、计算机操作人员、办公室职员等
+                </td>
+            </tr>
+        </tbody>
+    </table>
 
 
-
-    <div id="resultColumn" class="mt10 mb50" style="width:840px;height: 420px;"></div>
-
-
-
-
-    <script>
+    <!--<script>
         $(function () {
 
             $('#resultColumn').highcharts({
@@ -75,7 +124,7 @@
             });
         })
 
-    </script>
+    </script>-->
 
 </body>
 </html>

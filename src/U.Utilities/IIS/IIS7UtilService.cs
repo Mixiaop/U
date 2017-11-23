@@ -664,6 +664,47 @@ namespace U.Utilities.IIS
         }
         #endregion
 
+        /// <summary>
+        /// 重启站点服务
+        /// </summary>
+        /// <param name="siteName"></param>
+        /// <returns></returns>
+        public int SiteServerRestart(string siteName) {
+            int errorCode = IISErrorCode.Succeed;
+            try
+            {
+                var server = new ServerManager();
+                Site site = null;
+                //找指定站点
+                foreach (Site s in server.Sites)
+                {
+                    if (s.Name.EqualsEx(siteName))
+                    {
+                        site = s;
+                        break;
+                    }
+                }
+                if (site != null)
+                {
+                    //site.ServerAutoStart = true;
+                    //server.CommitChanges();
+                    site.Stop();
+                    System.Threading.Thread.Sleep(3000);
+                    site.Start();
+                }
+                else
+                {
+                    errorCode = IISErrorCode.SiteNotFound;
+                }
+            }
+            catch (Exception ex)
+            {
+                errorCode = IISErrorCode.Unknown;
+                throw new Exception(ex.Message);
+            }
+            return errorCode;
+        }
+
         #region Utilities
         public int SiteExists(string siteName)
         {

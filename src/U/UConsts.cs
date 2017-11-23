@@ -9,7 +9,7 @@ namespace U
         /// <summary>
         /// 当前版本
         /// </summary>
-        public const string CurrentVersion = "0.5.9.5";
+        public const string CurrentVersion = "0.5.9.7";
     }
     //0.5.4.1 修正了【AjaxProGeneratePageBase】生成ajaxservices兼容腾讯手机X5浏览器
     //0.5.4.2 CookHelper增加了重载支持存储domain
@@ -21,4 +21,6 @@ namespace U
     //0.5.8.5 增加了U.Segmentation 分词功能（Jieba分词的.NET实现 ISegmenter）
     //        U.Utilites config路径变更 /Config/U/Utilities
     //0.5.9.5 增加了U.Utilities.Compress 压缩的命名空间 ZipHelper
+    //0.5.9.6 修复U.Utilities.Security签名问题，异常会自动给当前时间
+    //0.5.9.7 增加重启IIS7的站点业务
 }

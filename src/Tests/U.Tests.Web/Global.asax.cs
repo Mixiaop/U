@@ -3,6 +3,7 @@ using System.Net;
 using U.Settings;
 using U.Utilities.Web;
 using U.Tests.Web.Infrastructure;
+using U.Logging;
 namespace U.Tests.Web
 {
     public class Global : System.Web.HttpApplication
@@ -11,7 +12,7 @@ namespace U.Tests.Web
         protected void Application_Start(object sender, EventArgs e)
         {
             new UStarter().Startup();
-           
+            LogHelper.Logger.Information("已启动Application_Start");
         }
 
         protected void Session_Start(object sender, EventArgs e)

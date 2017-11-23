@@ -99,6 +99,13 @@ namespace U.Utilities.IIS
         /// <returns></returns>
         IList<IISDomain> GetSiteDomains(string siteName);
 
+        /// <summary>
+        /// 重启站点服务
+        /// </summary>
+        /// <param name="siteName"></param>
+        /// <returns></returns>
+        int SiteServerRestart(string siteName);
+
         #region Utilties
         /// <summary>
         /// 站点是否存在

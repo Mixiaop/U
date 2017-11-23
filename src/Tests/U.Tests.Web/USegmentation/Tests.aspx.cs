@@ -16,28 +16,30 @@ namespace U.Tests.Web.USegmentation
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //ISegmenter segmenter = UPrimeEngine.Instance.Resolve<ISegmenter>();
-            //segmenter.LoadUserDict("custom_dict.txt");
-            //var ss = "十九大，张海鹏总书记说：优先发展教育事业耿忠成、王力";
-            //var list = segmenter.Cut(ss, false);
-            //Response.Write(ss);
-            //Response.Write("<br />");
-            //foreach (string s in list) {
-            //    if (s.Length > 1 && s.IsNotNullOrEmpty()) {
-            //        Response.Write(s + " / ");
-            //    }
-            //}
-
-            var tfidf = new TfidfExtractor();
-            var text = GetFileContents(WebHelper.MapPath("/USegmentation/Resources/article_sports.txt"));
-            var result = tfidf.ExtractTags(text, 30);
-            Response.Write("TfidfExtractor：<br />");
-            foreach (var tag in result)
+            ISegmenter segmenter = UPrimeEngine.Instance.Resolve<ISegmenter>();
+            segmenter.LoadUserDict("custom_dict.txt");
+            var ss = "新乡医学院好还是不好";
+            var list = segmenter.Cut(ss, false);
+            Response.Write(ss);
+            Response.Write("<br />");
+            foreach (string s in list)
             {
-                Response.Write(tag + "<br />");
+                if (s.Length > 1 && s.IsNotNullOrEmpty())
+                {
+                    Response.Write(s + " / ");
+                }
             }
 
-            Response.Write("TextRankExtractor：<br />");
+            //var tfidf = new TfidfExtractor();
+            //var text = GetFileContents(WebHelper.MapPath("/USegmentation/Resources/article_sports.txt"));
+            //var result = tfidf.ExtractTags(text, 30);
+            //Response.Write("TfidfExtractor：<br />");
+            //foreach (var tag in result)
+            //{
+            //    Response.Write(tag + "<br />");
+            //}
+
+            //Response.Write("TextRankExtractor：<br />");
 
             //var s = GetFileContents(WebHelper.MapPath("/USegmentation/Resources/article.txt"));
             //var extractor = new TextRankExtractor();

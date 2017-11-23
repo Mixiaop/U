@@ -1,0 +1,1208 @@
+2017-11-16 14:01:48,238 [1] U.Logging.ULog4netLogger - (null) - Loading UPrimes...
+2017-11-16 14:01:50,353 [1] U.Logging.ULog4netLogger - (null) - Found 14 UPrimes in total.
+2017-11-16 14:01:50,359 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.FakeMvc.UFakeMvcUPrime, U.FakeMvc, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:01:50,360 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.AutoMapper.UAutoMapperUPrime, U.AutoMapper, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:01:50,360 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Web.UWebUPrime, U.Web, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:01:50,361 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Hangfire.UHangfireUPrime, U.HangFire, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:01:50,362 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Runtime.Caching.Redis.URedisCacheUPrime, U.Redis, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:01:50,362 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Dapper.UDapperUPrime, U.Dapper, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:01:50,363 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Segmentation.USegmentationUPrime, U.Segmentation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:01:50,364 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Tests.Web.UTestsWebUPrime, U.Tests.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:01:50,365 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.WebApi.UWebApiUPrime, U.Web.Api, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:01:50,365 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.EntityFramework.UEntityFrameworkUPrime, U.EntityFramework, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:01:50,366 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.ULeadershipUPrime, U, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:01:50,367 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Web.Mvc.UWebMvcUPrime, U.Web.Mvc, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:01:50,367 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Converters.UAsposeWordsUPrime, U.Converters, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:01:50,368 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.MongoDB.MongoDbUPrime, U.MongoDB, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:01:50,371 [1] U.Logging.ULog4netLogger - (null) - 14 UPrime loaded.
+2017-11-16 14:01:50,620 [1] Hangfire.SqlServer.SqlServerStorage - (null) - Start installing Hangfire SQL objects...
+2017-11-16 14:01:50,857 [1] Hangfire.SqlServer.SqlServerStorage - (null) - Hangfire SQL objects installed.
+2017-11-16 14:01:50,958 [1] U.Logging.ULog4netLogger - (null) - Start background worker：U.Hangfire.HangfireBackgroundJobManager
+2017-11-16 14:01:50,967 [1] Hangfire.BackgroundJobServer - (null) - Starting Hangfire Server
+2017-11-16 14:01:50,970 [1] Hangfire.BackgroundJobServer - (null) - Using job storage: 'SQL Server: 120.132.57.7,1444@Youzy.HangFire'.
+2017-11-16 14:01:50,970 [1] Hangfire.BackgroundJobServer - (null) - Using the following options for SQL Server job storage:
+2017-11-16 14:01:50,971 [1] Hangfire.BackgroundJobServer - (null) -     Queue poll interval: 00:00:15.
+2017-11-16 14:01:50,971 [1] Hangfire.BackgroundJobServer - (null) - Using the following options for Hangfire Server:
+2017-11-16 14:01:50,972 [1] Hangfire.BackgroundJobServer - (null) -     Worker count: 40.
+2017-11-16 14:01:50,972 [1] Hangfire.BackgroundJobServer - (null) -     Listening queues: 'default'.
+2017-11-16 14:01:50,973 [1] Hangfire.BackgroundJobServer - (null) -     Shutdown timeout: 00:00:15.
+2017-11-16 14:01:50,973 [1] Hangfire.BackgroundJobServer - (null) -     Schedule polling interval: 00:00:15.
+2017-11-16 14:01:50,979 [BackgroundProcessingServer] Hangfire.Server.BackgroundProcessingServer - (null) - Background process 'BackgroundProcessingServer' started.
+2017-11-16 14:01:51,028 [ServerHeartbeat] Hangfire.Server.ServerHeartbeat - (null) - Background process 'ServerHeartbeat' started.
+2017-11-16 14:01:51,028 [ServerWatchdog] Hangfire.Server.ServerWatchdog - (null) - Background process 'ServerWatchdog' started.
+2017-11-16 14:01:51,030 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+2017-11-16 14:01:51,031 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+2017-11-16 14:01:51,032 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'AggregatedCounter'...
+2017-11-16 14:01:51,032 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 14:01:51,033 [Worker #6275452f] Hangfire.Server.Worker - (null) - Background process 'Worker #6275452f' started.
+2017-11-16 14:01:51,033 [Worker #00c67cf5] Hangfire.Server.Worker - (null) - Background process 'Worker #00c67cf5' started.
+2017-11-16 14:01:51,036 [Worker #13522be3] Hangfire.Server.Worker - (null) - Background process 'Worker #13522be3' started.
+2017-11-16 14:01:51,037 [Worker #5c3a5bfe] Hangfire.Server.Worker - (null) - Background process 'Worker #5c3a5bfe' started.
+2017-11-16 14:01:51,037 [Worker #736c4e77] Hangfire.Server.Worker - (null) - Background process 'Worker #736c4e77' started.
+2017-11-16 14:01:51,038 [Worker #159d2e6e] Hangfire.Server.Worker - (null) - Background process 'Worker #159d2e6e' started.
+2017-11-16 14:01:51,038 [Worker #c695f5e7] Hangfire.Server.Worker - (null) - Background process 'Worker #c695f5e7' started.
+2017-11-16 14:01:51,038 [Worker #49b21775] Hangfire.Server.Worker - (null) - Background process 'Worker #49b21775' started.
+2017-11-16 14:01:51,039 [Worker #557404f8] Hangfire.Server.Worker - (null) - Background process 'Worker #557404f8' started.
+2017-11-16 14:01:51,040 [Worker #92c52499] Hangfire.Server.Worker - (null) - Background process 'Worker #92c52499' started.
+2017-11-16 14:01:51,040 [Worker #5c15f4db] Hangfire.Server.Worker - (null) - Background process 'Worker #5c15f4db' started.
+2017-11-16 14:01:51,041 [Worker #893fc835] Hangfire.Server.Worker - (null) - Background process 'Worker #893fc835' started.
+2017-11-16 14:01:51,042 [Worker #177b6c15] Hangfire.Server.Worker - (null) - Background process 'Worker #177b6c15' started.
+2017-11-16 14:01:51,042 [Worker #e2237811] Hangfire.Server.Worker - (null) - Background process 'Worker #e2237811' started.
+2017-11-16 14:01:51,042 [Worker #edf7bf9e] Hangfire.Server.Worker - (null) - Background process 'Worker #edf7bf9e' started.
+2017-11-16 14:01:51,043 [Worker #b04aa6bb] Hangfire.Server.Worker - (null) - Background process 'Worker #b04aa6bb' started.
+2017-11-16 14:01:51,044 [Worker #ed484574] Hangfire.Server.Worker - (null) - Background process 'Worker #ed484574' started.
+2017-11-16 14:01:51,045 [Worker #62d8b83a] Hangfire.Server.Worker - (null) - Background process 'Worker #62d8b83a' started.
+2017-11-16 14:01:51,043 [Worker #67782dea] Hangfire.Server.Worker - (null) - Background process 'Worker #67782dea' started.
+2017-11-16 14:01:51,046 [Worker #8d33acec] Hangfire.Server.Worker - (null) - Background process 'Worker #8d33acec' started.
+2017-11-16 14:01:51,046 [Worker #5111b1c0] Hangfire.Server.Worker - (null) - Background process 'Worker #5111b1c0' started.
+2017-11-16 14:01:51,047 [Worker #d1493844] Hangfire.Server.Worker - (null) - Background process 'Worker #d1493844' started.
+2017-11-16 14:01:51,048 [Worker #231ea6d5] Hangfire.Server.Worker - (null) - Background process 'Worker #231ea6d5' started.
+2017-11-16 14:01:51,048 [Worker #7cb76039] Hangfire.Server.Worker - (null) - Background process 'Worker #7cb76039' started.
+2017-11-16 14:01:51,049 [Worker #bbe9ce10] Hangfire.Server.Worker - (null) - Background process 'Worker #bbe9ce10' started.
+2017-11-16 14:01:51,049 [Worker #d2ec2c17] Hangfire.Server.Worker - (null) - Background process 'Worker #d2ec2c17' started.
+2017-11-16 14:01:51,050 [Worker #f7425fd0] Hangfire.Server.Worker - (null) - Background process 'Worker #f7425fd0' started.
+2017-11-16 14:01:51,050 [Worker #7000476c] Hangfire.Server.Worker - (null) - Background process 'Worker #7000476c' started.
+2017-11-16 14:01:51,051 [Worker #87f603e1] Hangfire.Server.Worker - (null) - Background process 'Worker #87f603e1' started.
+2017-11-16 14:01:51,051 [Worker #9ef4c7f9] Hangfire.Server.Worker - (null) - Background process 'Worker #9ef4c7f9' started.
+2017-11-16 14:01:51,052 [Worker #faf795f2] Hangfire.Server.Worker - (null) - Background process 'Worker #faf795f2' started.
+2017-11-16 14:01:51,052 [Worker #17bb01ff] Hangfire.Server.Worker - (null) - Background process 'Worker #17bb01ff' started.
+2017-11-16 14:01:51,053 [Worker #7dcfb6da] Hangfire.Server.Worker - (null) - Background process 'Worker #7dcfb6da' started.
+2017-11-16 14:01:51,053 [Worker #e5cabfcf] Hangfire.Server.Worker - (null) - Background process 'Worker #e5cabfcf' started.
+2017-11-16 14:01:51,054 [Worker #64130a1b] Hangfire.Server.Worker - (null) - Background process 'Worker #64130a1b' started.
+2017-11-16 14:01:51,054 [Worker #ab336af5] Hangfire.Server.Worker - (null) - Background process 'Worker #ab336af5' started.
+2017-11-16 14:01:51,054 [Worker #6952357f] Hangfire.Server.Worker - (null) - Background process 'Worker #6952357f' started.
+2017-11-16 14:01:51,055 [Worker #49268559] Hangfire.Server.Worker - (null) - Background process 'Worker #49268559' started.
+2017-11-16 14:01:51,055 [Worker #ac82f192] Hangfire.Server.Worker - (null) - Background process 'Worker #ac82f192' started.
+2017-11-16 14:01:51,055 [Worker #d20b3451] Hangfire.Server.Worker - (null) - Background process 'Worker #d20b3451' started.
+2017-11-16 14:01:51,056 [DelayedJobScheduler] Hangfire.Server.DelayedJobScheduler - (null) - Background process 'DelayedJobScheduler' started.
+2017-11-16 14:01:51,056 [RecurringJobScheduler] Hangfire.Server.RecurringJobScheduler - (null) - Background process 'RecurringJobScheduler' started.
+2017-11-16 14:01:51,159 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'Job'...
+2017-11-16 14:01:51,394 [1] U.Logging.ULog4netLogger - (null) - Found 0 classes defines auto mapping attributes
+2017-11-16 14:01:51,410 [1] U.Logging.ULog4netLogger - (null) - (^_^)(^_^)(^_^) UStarter startup completed.
+2017-11-16 14:01:52,112 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'List'...
+2017-11-16 14:01:52,214 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'Set'...
+2017-11-16 14:01:52,303 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'Hash'...
+2017-11-16 14:02:02,500 [1] U.Logging.ULog4netLogger - (null) - Loading UPrimes...
+2017-11-16 14:02:03,254 [1] U.Logging.ULog4netLogger - (null) - Found 14 UPrimes in total.
+2017-11-16 14:02:03,261 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.MongoDB.MongoDbUPrime, U.MongoDB, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:03,262 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.WebApi.UWebApiUPrime, U.Web.Api, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:03,262 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Tests.Web.UTestsWebUPrime, U.Tests.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:03,263 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.AutoMapper.UAutoMapperUPrime, U.AutoMapper, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:03,264 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.FakeMvc.UFakeMvcUPrime, U.FakeMvc, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:03,264 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Hangfire.UHangfireUPrime, U.HangFire, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:03,265 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.ULeadershipUPrime, U, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:03,266 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Converters.UAsposeWordsUPrime, U.Converters, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:03,266 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Web.UWebUPrime, U.Web, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:03,267 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Runtime.Caching.Redis.URedisCacheUPrime, U.Redis, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:03,267 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Segmentation.USegmentationUPrime, U.Segmentation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:03,268 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Web.Mvc.UWebMvcUPrime, U.Web.Mvc, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:03,269 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Dapper.UDapperUPrime, U.Dapper, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:03,269 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.EntityFramework.UEntityFrameworkUPrime, U.EntityFramework, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:03,272 [1] U.Logging.ULog4netLogger - (null) - 14 UPrime loaded.
+2017-11-16 14:02:03,500 [1] Hangfire.SqlServer.SqlServerStorage - (null) - Start installing Hangfire SQL objects...
+2017-11-16 14:02:03,697 [1] Hangfire.SqlServer.SqlServerStorage - (null) - Hangfire SQL objects installed.
+2017-11-16 14:02:03,766 [1] U.Logging.ULog4netLogger - (null) - Start background worker：U.Hangfire.HangfireBackgroundJobManager
+2017-11-16 14:02:03,773 [1] Hangfire.BackgroundJobServer - (null) - Starting Hangfire Server
+2017-11-16 14:02:03,776 [1] Hangfire.BackgroundJobServer - (null) - Using job storage: 'SQL Server: 120.132.57.7,1444@Youzy.HangFire'.
+2017-11-16 14:02:03,776 [1] Hangfire.BackgroundJobServer - (null) - Using the following options for SQL Server job storage:
+2017-11-16 14:02:03,777 [1] Hangfire.BackgroundJobServer - (null) -     Queue poll interval: 00:00:15.
+2017-11-16 14:02:03,777 [1] Hangfire.BackgroundJobServer - (null) - Using the following options for Hangfire Server:
+2017-11-16 14:02:03,778 [1] Hangfire.BackgroundJobServer - (null) -     Worker count: 40.
+2017-11-16 14:02:03,778 [1] Hangfire.BackgroundJobServer - (null) -     Listening queues: 'default'.
+2017-11-16 14:02:03,778 [1] Hangfire.BackgroundJobServer - (null) -     Shutdown timeout: 00:00:15.
+2017-11-16 14:02:03,779 [1] Hangfire.BackgroundJobServer - (null) -     Schedule polling interval: 00:00:15.
+2017-11-16 14:02:03,785 [BackgroundProcessingServer] Hangfire.Server.BackgroundProcessingServer - (null) - Background process 'BackgroundProcessingServer' started.
+2017-11-16 14:02:03,855 [ServerHeartbeat] Hangfire.Server.ServerHeartbeat - (null) - Background process 'ServerHeartbeat' started.
+2017-11-16 14:02:03,856 [ServerWatchdog] Hangfire.Server.ServerWatchdog - (null) - Background process 'ServerWatchdog' started.
+2017-11-16 14:02:03,858 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+2017-11-16 14:02:03,858 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+2017-11-16 14:02:03,859 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'AggregatedCounter'...
+2017-11-16 14:02:03,859 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 14:02:03,860 [Worker #d1aa7d21] Hangfire.Server.Worker - (null) - Background process 'Worker #d1aa7d21' started.
+2017-11-16 14:02:03,861 [Worker #edfaef54] Hangfire.Server.Worker - (null) - Background process 'Worker #edfaef54' started.
+2017-11-16 14:02:03,865 [Worker #4c2cd5e8] Hangfire.Server.Worker - (null) - Background process 'Worker #4c2cd5e8' started.
+2017-11-16 14:02:03,866 [Worker #c103948c] Hangfire.Server.Worker - (null) - Background process 'Worker #c103948c' started.
+2017-11-16 14:02:03,867 [Worker #f3c0a070] Hangfire.Server.Worker - (null) - Background process 'Worker #f3c0a070' started.
+2017-11-16 14:02:03,867 [Worker #fc9e8dff] Hangfire.Server.Worker - (null) - Background process 'Worker #fc9e8dff' started.
+2017-11-16 14:02:03,869 [Worker #70be4ff9] Hangfire.Server.Worker - (null) - Background process 'Worker #70be4ff9' started.
+2017-11-16 14:02:03,870 [Worker #ca967dcb] Hangfire.Server.Worker - (null) - Background process 'Worker #ca967dcb' started.
+2017-11-16 14:02:03,871 [Worker #ef063f9c] Hangfire.Server.Worker - (null) - Background process 'Worker #ef063f9c' started.
+2017-11-16 14:02:03,872 [Worker #0eb5de67] Hangfire.Server.Worker - (null) - Background process 'Worker #0eb5de67' started.
+2017-11-16 14:02:03,873 [Worker #f6285087] Hangfire.Server.Worker - (null) - Background process 'Worker #f6285087' started.
+2017-11-16 14:02:03,873 [Worker #48acf578] Hangfire.Server.Worker - (null) - Background process 'Worker #48acf578' started.
+2017-11-16 14:02:03,874 [Worker #ad857c95] Hangfire.Server.Worker - (null) - Background process 'Worker #ad857c95' started.
+2017-11-16 14:02:03,875 [Worker #f357ae1c] Hangfire.Server.Worker - (null) - Background process 'Worker #f357ae1c' started.
+2017-11-16 14:02:03,876 [Worker #b65805ae] Hangfire.Server.Worker - (null) - Background process 'Worker #b65805ae' started.
+2017-11-16 14:02:03,877 [Worker #4cc05f0e] Hangfire.Server.Worker - (null) - Background process 'Worker #4cc05f0e' started.
+2017-11-16 14:02:03,878 [Worker #633139ea] Hangfire.Server.Worker - (null) - Background process 'Worker #633139ea' started.
+2017-11-16 14:02:03,879 [Worker #abcd965a] Hangfire.Server.Worker - (null) - Background process 'Worker #abcd965a' started.
+2017-11-16 14:02:03,880 [Worker #9e20c858] Hangfire.Server.Worker - (null) - Background process 'Worker #9e20c858' started.
+2017-11-16 14:02:03,881 [Worker #47b2f7e8] Hangfire.Server.Worker - (null) - Background process 'Worker #47b2f7e8' started.
+2017-11-16 14:02:03,882 [Worker #9ff34876] Hangfire.Server.Worker - (null) - Background process 'Worker #9ff34876' started.
+2017-11-16 14:02:03,882 [Worker #5abe35ec] Hangfire.Server.Worker - (null) - Background process 'Worker #5abe35ec' started.
+2017-11-16 14:02:03,884 [Worker #89c45409] Hangfire.Server.Worker - (null) - Background process 'Worker #89c45409' started.
+2017-11-16 14:02:03,885 [Worker #6b69db50] Hangfire.Server.Worker - (null) - Background process 'Worker #6b69db50' started.
+2017-11-16 14:02:03,886 [Worker #f3f41530] Hangfire.Server.Worker - (null) - Background process 'Worker #f3f41530' started.
+2017-11-16 14:02:03,887 [Worker #1e6ccb83] Hangfire.Server.Worker - (null) - Background process 'Worker #1e6ccb83' started.
+2017-11-16 14:02:03,889 [Worker #a6f481e7] Hangfire.Server.Worker - (null) - Background process 'Worker #a6f481e7' started.
+2017-11-16 14:02:03,889 [Worker #5f6678a5] Hangfire.Server.Worker - (null) - Background process 'Worker #5f6678a5' started.
+2017-11-16 14:02:03,890 [Worker #6947470e] Hangfire.Server.Worker - (null) - Background process 'Worker #6947470e' started.
+2017-11-16 14:02:03,891 [Worker #71488f30] Hangfire.Server.Worker - (null) - Background process 'Worker #71488f30' started.
+2017-11-16 14:02:03,894 [Worker #29bf95e4] Hangfire.Server.Worker - (null) - Background process 'Worker #29bf95e4' started.
+2017-11-16 14:02:03,896 [Worker #4a37bd16] Hangfire.Server.Worker - (null) - Background process 'Worker #4a37bd16' started.
+2017-11-16 14:02:03,896 [Worker #7aaa9d1a] Hangfire.Server.Worker - (null) - Background process 'Worker #7aaa9d1a' started.
+2017-11-16 14:02:03,899 [Worker #01fde653] Hangfire.Server.Worker - (null) - Background process 'Worker #01fde653' started.
+2017-11-16 14:02:03,901 [Worker #5d747cf6] Hangfire.Server.Worker - (null) - Background process 'Worker #5d747cf6' started.
+2017-11-16 14:02:03,902 [Worker #0e3aae9b] Hangfire.Server.Worker - (null) - Background process 'Worker #0e3aae9b' started.
+2017-11-16 14:02:03,902 [Worker #88810b88] Hangfire.Server.Worker - (null) - Background process 'Worker #88810b88' started.
+2017-11-16 14:02:03,903 [Worker #03e8a94b] Hangfire.Server.Worker - (null) - Background process 'Worker #03e8a94b' started.
+2017-11-16 14:02:03,907 [DelayedJobScheduler] Hangfire.Server.DelayedJobScheduler - (null) - Background process 'DelayedJobScheduler' started.
+2017-11-16 14:02:03,904 [Worker #4be29d36] Hangfire.Server.Worker - (null) - Background process 'Worker #4be29d36' started.
+2017-11-16 14:02:03,904 [Worker #826b3466] Hangfire.Server.Worker - (null) - Background process 'Worker #826b3466' started.
+2017-11-16 14:02:03,910 [RecurringJobScheduler] Hangfire.Server.RecurringJobScheduler - (null) - Background process 'RecurringJobScheduler' started.
+2017-11-16 14:02:03,992 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'Job'...
+2017-11-16 14:02:04,250 [1] U.Logging.ULog4netLogger - (null) - Found 0 classes defines auto mapping attributes
+2017-11-16 14:02:04,264 [1] U.Logging.ULog4netLogger - (null) - (^_^)(^_^)(^_^) UStarter startup completed.
+2017-11-16 14:02:05,073 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'List'...
+2017-11-16 14:02:05,176 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'Set'...
+2017-11-16 14:02:05,267 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'Hash'...
+2017-11-16 14:02:18,072 [1] U.Logging.ULog4netLogger - (null) - Loading UPrimes...
+2017-11-16 14:02:18,674 [1] U.Logging.ULog4netLogger - (null) - Found 14 UPrimes in total.
+2017-11-16 14:02:18,680 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Runtime.Caching.Redis.URedisCacheUPrime, U.Redis, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:18,681 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Tests.Web.UTestsWebUPrime, U.Tests.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:18,682 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.EntityFramework.UEntityFrameworkUPrime, U.EntityFramework, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:18,682 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Dapper.UDapperUPrime, U.Dapper, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:18,683 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.ULeadershipUPrime, U, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:18,684 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.FakeMvc.UFakeMvcUPrime, U.FakeMvc, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:18,684 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.AutoMapper.UAutoMapperUPrime, U.AutoMapper, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:18,685 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Converters.UAsposeWordsUPrime, U.Converters, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:18,686 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Hangfire.UHangfireUPrime, U.HangFire, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:18,686 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Web.Mvc.UWebMvcUPrime, U.Web.Mvc, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:18,687 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Segmentation.USegmentationUPrime, U.Segmentation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:18,688 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Web.UWebUPrime, U.Web, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:18,690 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.WebApi.UWebApiUPrime, U.Web.Api, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:18,690 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.MongoDB.MongoDbUPrime, U.MongoDB, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:18,693 [1] U.Logging.ULog4netLogger - (null) - 14 UPrime loaded.
+2017-11-16 14:02:19,143 [1] Hangfire.SqlServer.SqlServerStorage - (null) - Start installing Hangfire SQL objects...
+2017-11-16 14:02:19,631 [1] Hangfire.SqlServer.SqlServerStorage - (null) - Hangfire SQL objects installed.
+2017-11-16 14:02:19,722 [1] U.Logging.ULog4netLogger - (null) - Start background worker：U.Hangfire.HangfireBackgroundJobManager
+2017-11-16 14:02:19,729 [1] Hangfire.BackgroundJobServer - (null) - Starting Hangfire Server
+2017-11-16 14:02:19,731 [1] Hangfire.BackgroundJobServer - (null) - Using job storage: 'SQL Server: 120.132.57.7,1444@Youzy.HangFire'.
+2017-11-16 14:02:19,732 [1] Hangfire.BackgroundJobServer - (null) - Using the following options for SQL Server job storage:
+2017-11-16 14:02:19,732 [1] Hangfire.BackgroundJobServer - (null) -     Queue poll interval: 00:00:15.
+2017-11-16 14:02:19,733 [1] Hangfire.BackgroundJobServer - (null) - Using the following options for Hangfire Server:
+2017-11-16 14:02:19,733 [1] Hangfire.BackgroundJobServer - (null) -     Worker count: 40.
+2017-11-16 14:02:19,734 [1] Hangfire.BackgroundJobServer - (null) -     Listening queues: 'default'.
+2017-11-16 14:02:19,734 [1] Hangfire.BackgroundJobServer - (null) -     Shutdown timeout: 00:00:15.
+2017-11-16 14:02:19,735 [1] Hangfire.BackgroundJobServer - (null) -     Schedule polling interval: 00:00:15.
+2017-11-16 14:02:19,741 [BackgroundProcessingServer] Hangfire.Server.BackgroundProcessingServer - (null) - Background process 'BackgroundProcessingServer' started.
+2017-11-16 14:02:19,786 [ServerHeartbeat] Hangfire.Server.ServerHeartbeat - (null) - Background process 'ServerHeartbeat' started.
+2017-11-16 14:02:19,787 [ServerWatchdog] Hangfire.Server.ServerWatchdog - (null) - Background process 'ServerWatchdog' started.
+2017-11-16 14:02:19,789 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+2017-11-16 14:02:19,790 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+2017-11-16 14:02:19,791 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'AggregatedCounter'...
+2017-11-16 14:02:19,791 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 14:02:19,791 [Worker #e23abf78] Hangfire.Server.Worker - (null) - Background process 'Worker #e23abf78' started.
+2017-11-16 14:02:19,792 [Worker #270f4633] Hangfire.Server.Worker - (null) - Background process 'Worker #270f4633' started.
+2017-11-16 14:02:19,796 [Worker #1c84214f] Hangfire.Server.Worker - (null) - Background process 'Worker #1c84214f' started.
+2017-11-16 14:02:19,796 [Worker #d44ea741] Hangfire.Server.Worker - (null) - Background process 'Worker #d44ea741' started.
+2017-11-16 14:02:19,797 [Worker #0202a475] Hangfire.Server.Worker - (null) - Background process 'Worker #0202a475' started.
+2017-11-16 14:02:19,797 [Worker #971910ae] Hangfire.Server.Worker - (null) - Background process 'Worker #971910ae' started.
+2017-11-16 14:02:19,798 [Worker #fc7c4214] Hangfire.Server.Worker - (null) - Background process 'Worker #fc7c4214' started.
+2017-11-16 14:02:19,798 [Worker #c64bf361] Hangfire.Server.Worker - (null) - Background process 'Worker #c64bf361' started.
+2017-11-16 14:02:19,799 [Worker #1f16a251] Hangfire.Server.Worker - (null) - Background process 'Worker #1f16a251' started.
+2017-11-16 14:02:19,799 [Worker #eb2e11c6] Hangfire.Server.Worker - (null) - Background process 'Worker #eb2e11c6' started.
+2017-11-16 14:02:19,800 [Worker #55ea20f8] Hangfire.Server.Worker - (null) - Background process 'Worker #55ea20f8' started.
+2017-11-16 14:02:19,800 [Worker #c0f16f27] Hangfire.Server.Worker - (null) - Background process 'Worker #c0f16f27' started.
+2017-11-16 14:02:19,801 [Worker #1701ebce] Hangfire.Server.Worker - (null) - Background process 'Worker #1701ebce' started.
+2017-11-16 14:02:19,801 [Worker #772d9e33] Hangfire.Server.Worker - (null) - Background process 'Worker #772d9e33' started.
+2017-11-16 14:02:19,802 [Worker #48745a84] Hangfire.Server.Worker - (null) - Background process 'Worker #48745a84' started.
+2017-11-16 14:02:19,802 [Worker #73b29c32] Hangfire.Server.Worker - (null) - Background process 'Worker #73b29c32' started.
+2017-11-16 14:02:19,803 [Worker #b231b064] Hangfire.Server.Worker - (null) - Background process 'Worker #b231b064' started.
+2017-11-16 14:02:19,803 [Worker #16cfc1c2] Hangfire.Server.Worker - (null) - Background process 'Worker #16cfc1c2' started.
+2017-11-16 14:02:19,804 [Worker #bc927f5a] Hangfire.Server.Worker - (null) - Background process 'Worker #bc927f5a' started.
+2017-11-16 14:02:19,805 [Worker #e1e94ae1] Hangfire.Server.Worker - (null) - Background process 'Worker #e1e94ae1' started.
+2017-11-16 14:02:19,805 [Worker #d34162e1] Hangfire.Server.Worker - (null) - Background process 'Worker #d34162e1' started.
+2017-11-16 14:02:19,806 [Worker #4c476c1e] Hangfire.Server.Worker - (null) - Background process 'Worker #4c476c1e' started.
+2017-11-16 14:02:19,806 [Worker #d8625df3] Hangfire.Server.Worker - (null) - Background process 'Worker #d8625df3' started.
+2017-11-16 14:02:19,807 [Worker #7078fa4f] Hangfire.Server.Worker - (null) - Background process 'Worker #7078fa4f' started.
+2017-11-16 14:02:19,807 [Worker #c6140671] Hangfire.Server.Worker - (null) - Background process 'Worker #c6140671' started.
+2017-11-16 14:02:19,809 [Worker #d9e4fcd8] Hangfire.Server.Worker - (null) - Background process 'Worker #d9e4fcd8' started.
+2017-11-16 14:02:19,809 [Worker #99cbed71] Hangfire.Server.Worker - (null) - Background process 'Worker #99cbed71' started.
+2017-11-16 14:02:19,810 [Worker #1a57d169] Hangfire.Server.Worker - (null) - Background process 'Worker #1a57d169' started.
+2017-11-16 14:02:19,810 [Worker #2440f790] Hangfire.Server.Worker - (null) - Background process 'Worker #2440f790' started.
+2017-11-16 14:02:19,812 [Worker #af22ee3e] Hangfire.Server.Worker - (null) - Background process 'Worker #af22ee3e' started.
+2017-11-16 14:02:19,813 [Worker #5ebbd6ab] Hangfire.Server.Worker - (null) - Background process 'Worker #5ebbd6ab' started.
+2017-11-16 14:02:19,813 [Worker #c50689e8] Hangfire.Server.Worker - (null) - Background process 'Worker #c50689e8' started.
+2017-11-16 14:02:19,814 [Worker #2ed16c34] Hangfire.Server.Worker - (null) - Background process 'Worker #2ed16c34' started.
+2017-11-16 14:02:19,814 [Worker #a7ed0248] Hangfire.Server.Worker - (null) - Background process 'Worker #a7ed0248' started.
+2017-11-16 14:02:19,815 [Worker #b916dc4c] Hangfire.Server.Worker - (null) - Background process 'Worker #b916dc4c' started.
+2017-11-16 14:02:19,816 [Worker #5b965bf3] Hangfire.Server.Worker - (null) - Background process 'Worker #5b965bf3' started.
+2017-11-16 14:02:19,817 [Worker #3ce8a46f] Hangfire.Server.Worker - (null) - Background process 'Worker #3ce8a46f' started.
+2017-11-16 14:02:19,817 [Worker #8a8b63a3] Hangfire.Server.Worker - (null) - Background process 'Worker #8a8b63a3' started.
+2017-11-16 14:02:19,819 [Worker #86edf293] Hangfire.Server.Worker - (null) - Background process 'Worker #86edf293' started.
+2017-11-16 14:02:19,821 [Worker #dd2c8644] Hangfire.Server.Worker - (null) - Background process 'Worker #dd2c8644' started.
+2017-11-16 14:02:19,822 [DelayedJobScheduler] Hangfire.Server.DelayedJobScheduler - (null) - Background process 'DelayedJobScheduler' started.
+2017-11-16 14:02:19,823 [RecurringJobScheduler] Hangfire.Server.RecurringJobScheduler - (null) - Background process 'RecurringJobScheduler' started.
+2017-11-16 14:02:19,919 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'Job'...
+2017-11-16 14:02:20,198 [1] U.Logging.ULog4netLogger - (null) - Found 0 classes defines auto mapping attributes
+2017-11-16 14:02:20,214 [1] U.Logging.ULog4netLogger - (null) - (^_^)(^_^)(^_^) UStarter startup completed.
+2017-11-16 14:02:20,780 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'List'...
+2017-11-16 14:02:20,868 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'Set'...
+2017-11-16 14:02:21,276 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'Hash'...
+2017-11-16 14:02:32,817 [1] U.Logging.ULog4netLogger - (null) - Loading UPrimes...
+2017-11-16 14:02:33,544 [1] U.Logging.ULog4netLogger - (null) - Found 14 UPrimes in total.
+2017-11-16 14:02:33,551 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Hangfire.UHangfireUPrime, U.HangFire, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:33,551 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.EntityFramework.UEntityFrameworkUPrime, U.EntityFramework, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:33,552 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Tests.Web.UTestsWebUPrime, U.Tests.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:33,553 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.FakeMvc.UFakeMvcUPrime, U.FakeMvc, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:33,553 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.ULeadershipUPrime, U, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:33,554 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Runtime.Caching.Redis.URedisCacheUPrime, U.Redis, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:33,555 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.AutoMapper.UAutoMapperUPrime, U.AutoMapper, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:33,556 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Dapper.UDapperUPrime, U.Dapper, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:33,556 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Web.UWebUPrime, U.Web, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:33,557 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.MongoDB.MongoDbUPrime, U.MongoDB, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:33,558 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Segmentation.USegmentationUPrime, U.Segmentation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:33,558 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.WebApi.UWebApiUPrime, U.Web.Api, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:33,559 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Converters.UAsposeWordsUPrime, U.Converters, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:33,560 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Web.Mvc.UWebMvcUPrime, U.Web.Mvc, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:02:33,562 [1] U.Logging.ULog4netLogger - (null) - 14 UPrime loaded.
+2017-11-16 14:02:33,820 [1] Hangfire.SqlServer.SqlServerStorage - (null) - Start installing Hangfire SQL objects...
+2017-11-16 14:02:34,381 [1] Hangfire.SqlServer.SqlServerStorage - (null) - Hangfire SQL objects installed.
+2017-11-16 14:02:34,469 [1] U.Logging.ULog4netLogger - (null) - Start background worker：U.Hangfire.HangfireBackgroundJobManager
+2017-11-16 14:02:34,477 [1] Hangfire.BackgroundJobServer - (null) - Starting Hangfire Server
+2017-11-16 14:02:34,479 [1] Hangfire.BackgroundJobServer - (null) - Using job storage: 'SQL Server: 120.132.57.7,1444@Youzy.HangFire'.
+2017-11-16 14:02:34,479 [1] Hangfire.BackgroundJobServer - (null) - Using the following options for SQL Server job storage:
+2017-11-16 14:02:34,480 [1] Hangfire.BackgroundJobServer - (null) -     Queue poll interval: 00:00:15.
+2017-11-16 14:02:34,480 [1] Hangfire.BackgroundJobServer - (null) - Using the following options for Hangfire Server:
+2017-11-16 14:02:34,480 [1] Hangfire.BackgroundJobServer - (null) -     Worker count: 40.
+2017-11-16 14:02:34,481 [1] Hangfire.BackgroundJobServer - (null) -     Listening queues: 'default'.
+2017-11-16 14:02:34,481 [1] Hangfire.BackgroundJobServer - (null) -     Shutdown timeout: 00:00:15.
+2017-11-16 14:02:34,482 [1] Hangfire.BackgroundJobServer - (null) -     Schedule polling interval: 00:00:15.
+2017-11-16 14:02:34,488 [BackgroundProcessingServer] Hangfire.Server.BackgroundProcessingServer - (null) - Background process 'BackgroundProcessingServer' started.
+2017-11-16 14:02:34,857 [ServerHeartbeat] Hangfire.Server.ServerHeartbeat - (null) - Background process 'ServerHeartbeat' started.
+2017-11-16 14:02:34,858 [ServerWatchdog] Hangfire.Server.ServerWatchdog - (null) - Background process 'ServerWatchdog' started.
+2017-11-16 14:02:34,860 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+2017-11-16 14:02:34,860 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+2017-11-16 14:02:34,861 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'AggregatedCounter'...
+2017-11-16 14:02:34,862 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 14:02:34,862 [Worker #238fad70] Hangfire.Server.Worker - (null) - Background process 'Worker #238fad70' started.
+2017-11-16 14:02:34,863 [Worker #8f6d3e45] Hangfire.Server.Worker - (null) - Background process 'Worker #8f6d3e45' started.
+2017-11-16 14:02:34,865 [Worker #5dbc3670] Hangfire.Server.Worker - (null) - Background process 'Worker #5dbc3670' started.
+2017-11-16 14:02:34,867 [Worker #f657f948] Hangfire.Server.Worker - (null) - Background process 'Worker #f657f948' started.
+2017-11-16 14:02:34,867 [Worker #098ac533] Hangfire.Server.Worker - (null) - Background process 'Worker #098ac533' started.
+2017-11-16 14:02:34,868 [Worker #b8d12265] Hangfire.Server.Worker - (null) - Background process 'Worker #b8d12265' started.
+2017-11-16 14:02:34,869 [Worker #350fd058] Hangfire.Server.Worker - (null) - Background process 'Worker #350fd058' started.
+2017-11-16 14:02:34,869 [Worker #2d33f1c0] Hangfire.Server.Worker - (null) - Background process 'Worker #2d33f1c0' started.
+2017-11-16 14:02:34,870 [Worker #fe5f97b1] Hangfire.Server.Worker - (null) - Background process 'Worker #fe5f97b1' started.
+2017-11-16 14:02:34,870 [Worker #6786e1ff] Hangfire.Server.Worker - (null) - Background process 'Worker #6786e1ff' started.
+2017-11-16 14:02:34,871 [Worker #8d61048b] Hangfire.Server.Worker - (null) - Background process 'Worker #8d61048b' started.
+2017-11-16 14:02:34,871 [Worker #029078b5] Hangfire.Server.Worker - (null) - Background process 'Worker #029078b5' started.
+2017-11-16 14:02:34,872 [Worker #8435e293] Hangfire.Server.Worker - (null) - Background process 'Worker #8435e293' started.
+2017-11-16 14:02:34,872 [Worker #b1cb83b4] Hangfire.Server.Worker - (null) - Background process 'Worker #b1cb83b4' started.
+2017-11-16 14:02:34,873 [Worker #591b2a7a] Hangfire.Server.Worker - (null) - Background process 'Worker #591b2a7a' started.
+2017-11-16 14:02:34,873 [Worker #c63a4452] Hangfire.Server.Worker - (null) - Background process 'Worker #c63a4452' started.
+2017-11-16 14:02:34,874 [Worker #65f6fe82] Hangfire.Server.Worker - (null) - Background process 'Worker #65f6fe82' started.
+2017-11-16 14:02:34,874 [Worker #967ff81c] Hangfire.Server.Worker - (null) - Background process 'Worker #967ff81c' started.
+2017-11-16 14:02:34,875 [Worker #1a147d80] Hangfire.Server.Worker - (null) - Background process 'Worker #1a147d80' started.
+2017-11-16 14:02:34,875 [Worker #554717ba] Hangfire.Server.Worker - (null) - Background process 'Worker #554717ba' started.
+2017-11-16 14:02:34,876 [Worker #999d77f6] Hangfire.Server.Worker - (null) - Background process 'Worker #999d77f6' started.
+2017-11-16 14:02:34,876 [Worker #c10ddbc3] Hangfire.Server.Worker - (null) - Background process 'Worker #c10ddbc3' started.
+2017-11-16 14:02:34,877 [Worker #cc9309ce] Hangfire.Server.Worker - (null) - Background process 'Worker #cc9309ce' started.
+2017-11-16 14:02:34,877 [Worker #47c20638] Hangfire.Server.Worker - (null) - Background process 'Worker #47c20638' started.
+2017-11-16 14:02:34,878 [Worker #c3ff6e49] Hangfire.Server.Worker - (null) - Background process 'Worker #c3ff6e49' started.
+2017-11-16 14:02:34,878 [Worker #ce91b221] Hangfire.Server.Worker - (null) - Background process 'Worker #ce91b221' started.
+2017-11-16 14:02:34,879 [Worker #319d4107] Hangfire.Server.Worker - (null) - Background process 'Worker #319d4107' started.
+2017-11-16 14:02:34,879 [Worker #e01089c6] Hangfire.Server.Worker - (null) - Background process 'Worker #e01089c6' started.
+2017-11-16 14:02:34,880 [Worker #402e3bfd] Hangfire.Server.Worker - (null) - Background process 'Worker #402e3bfd' started.
+2017-11-16 14:02:34,880 [Worker #5e6295ed] Hangfire.Server.Worker - (null) - Background process 'Worker #5e6295ed' started.
+2017-11-16 14:02:34,881 [Worker #61810356] Hangfire.Server.Worker - (null) - Background process 'Worker #61810356' started.
+2017-11-16 14:02:34,881 [Worker #3154a313] Hangfire.Server.Worker - (null) - Background process 'Worker #3154a313' started.
+2017-11-16 14:02:34,882 [Worker #6b920dd7] Hangfire.Server.Worker - (null) - Background process 'Worker #6b920dd7' started.
+2017-11-16 14:02:34,882 [Worker #52ca1f46] Hangfire.Server.Worker - (null) - Background process 'Worker #52ca1f46' started.
+2017-11-16 14:02:34,883 [Worker #0de2270f] Hangfire.Server.Worker - (null) - Background process 'Worker #0de2270f' started.
+2017-11-16 14:02:34,883 [Worker #681651d2] Hangfire.Server.Worker - (null) - Background process 'Worker #681651d2' started.
+2017-11-16 14:02:34,884 [Worker #f9e7cd34] Hangfire.Server.Worker - (null) - Background process 'Worker #f9e7cd34' started.
+2017-11-16 14:02:34,884 [Worker #abedcf58] Hangfire.Server.Worker - (null) - Background process 'Worker #abedcf58' started.
+2017-11-16 14:02:34,885 [Worker #dd530e8d] Hangfire.Server.Worker - (null) - Background process 'Worker #dd530e8d' started.
+2017-11-16 14:02:34,886 [Worker #1c1f118b] Hangfire.Server.Worker - (null) - Background process 'Worker #1c1f118b' started.
+2017-11-16 14:02:34,886 [DelayedJobScheduler] Hangfire.Server.DelayedJobScheduler - (null) - Background process 'DelayedJobScheduler' started.
+2017-11-16 14:02:34,887 [RecurringJobScheduler] Hangfire.Server.RecurringJobScheduler - (null) - Background process 'RecurringJobScheduler' started.
+2017-11-16 14:02:34,938 [1] U.Logging.ULog4netLogger - (null) - Found 0 classes defines auto mapping attributes
+2017-11-16 14:02:34,952 [1] U.Logging.ULog4netLogger - (null) - (^_^)(^_^)(^_^) UStarter startup completed.
+2017-11-16 14:02:35,003 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'Job'...
+2017-11-16 14:02:35,962 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'List'...
+2017-11-16 14:02:36,053 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'Set'...
+2017-11-16 14:02:36,143 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'Hash'...
+2017-11-16 14:07:35,149 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 14:12:35,482 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 14:17:35,515 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 14:22:35,846 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 14:27:36,296 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 14:32:36,335 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 14:32:58,325 [1] U.Logging.ULog4netLogger - (null) - Loading UPrimes...
+2017-11-16 14:32:59,049 [1] U.Logging.ULog4netLogger - (null) - Found 14 UPrimes in total.
+2017-11-16 14:32:59,055 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Segmentation.USegmentationUPrime, U.Segmentation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:32:59,056 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Converters.UAsposeWordsUPrime, U.Converters, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:32:59,057 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Dapper.UDapperUPrime, U.Dapper, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:32:59,057 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.EntityFramework.UEntityFrameworkUPrime, U.EntityFramework, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:32:59,058 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Hangfire.UHangfireUPrime, U.HangFire, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:32:59,059 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Web.UWebUPrime, U.Web, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:32:59,059 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.MongoDB.MongoDbUPrime, U.MongoDB, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:32:59,060 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Web.Mvc.UWebMvcUPrime, U.Web.Mvc, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:32:59,060 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.FakeMvc.UFakeMvcUPrime, U.FakeMvc, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:32:59,061 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.ULeadershipUPrime, U, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:32:59,062 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Tests.Web.UTestsWebUPrime, U.Tests.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:32:59,062 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.WebApi.UWebApiUPrime, U.Web.Api, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:32:59,063 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.Runtime.Caching.Redis.URedisCacheUPrime, U.Redis, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:32:59,064 [1] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.AutoMapper.UAutoMapperUPrime, U.AutoMapper, Version=0.5.9.5, Culture=neutral, PublicKeyToken=null
+2017-11-16 14:32:59,067 [1] U.Logging.ULog4netLogger - (null) - 14 UPrime loaded.
+2017-11-16 14:32:59,236 [1] Hangfire.SqlServer.SqlServerStorage - (null) - Start installing Hangfire SQL objects...
+2017-11-16 14:33:00,089 [1] Hangfire.SqlServer.SqlServerStorage - (null) - Hangfire SQL objects installed.
+2017-11-16 14:33:00,162 [1] U.Logging.ULog4netLogger - (null) - Start background worker：U.Hangfire.HangfireBackgroundJobManager
+2017-11-16 14:33:00,169 [1] Hangfire.BackgroundJobServer - (null) - Starting Hangfire Server
+2017-11-16 14:33:00,172 [1] Hangfire.BackgroundJobServer - (null) - Using job storage: 'SQL Server: 120.132.57.7,1444@Youzy.HangFire'.
+2017-11-16 14:33:00,172 [1] Hangfire.BackgroundJobServer - (null) - Using the following options for SQL Server job storage:
+2017-11-16 14:33:00,173 [1] Hangfire.BackgroundJobServer - (null) -     Queue poll interval: 00:00:15.
+2017-11-16 14:33:00,173 [1] Hangfire.BackgroundJobServer - (null) - Using the following options for Hangfire Server:
+2017-11-16 14:33:00,174 [1] Hangfire.BackgroundJobServer - (null) -     Worker count: 40.
+2017-11-16 14:33:00,174 [1] Hangfire.BackgroundJobServer - (null) -     Listening queues: 'default'.
+2017-11-16 14:33:00,175 [1] Hangfire.BackgroundJobServer - (null) -     Shutdown timeout: 00:00:15.
+2017-11-16 14:33:00,175 [1] Hangfire.BackgroundJobServer - (null) -     Schedule polling interval: 00:00:15.
+2017-11-16 14:33:00,182 [BackgroundProcessingServer] Hangfire.Server.BackgroundProcessingServer - (null) - Background process 'BackgroundProcessingServer' started.
+2017-11-16 14:33:00,240 [ServerHeartbeat] Hangfire.Server.ServerHeartbeat - (null) - Background process 'ServerHeartbeat' started.
+2017-11-16 14:33:00,241 [ServerWatchdog] Hangfire.Server.ServerWatchdog - (null) - Background process 'ServerWatchdog' started.
+2017-11-16 14:33:00,243 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+2017-11-16 14:33:00,244 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+2017-11-16 14:33:00,245 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'AggregatedCounter'...
+2017-11-16 14:33:00,246 [Worker #bb8f6d43] Hangfire.Server.Worker - (null) - Background process 'Worker #bb8f6d43' started.
+2017-11-16 14:33:00,246 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 14:33:00,247 [Worker #51661c2a] Hangfire.Server.Worker - (null) - Background process 'Worker #51661c2a' started.
+2017-11-16 14:33:00,249 [Worker #452bc78e] Hangfire.Server.Worker - (null) - Background process 'Worker #452bc78e' started.
+2017-11-16 14:33:00,250 [Worker #67a68b25] Hangfire.Server.Worker - (null) - Background process 'Worker #67a68b25' started.
+2017-11-16 14:33:00,251 [Worker #f6c618c7] Hangfire.Server.Worker - (null) - Background process 'Worker #f6c618c7' started.
+2017-11-16 14:33:00,252 [Worker #6af6dbf2] Hangfire.Server.Worker - (null) - Background process 'Worker #6af6dbf2' started.
+2017-11-16 14:33:00,253 [Worker #9849fc06] Hangfire.Server.Worker - (null) - Background process 'Worker #9849fc06' started.
+2017-11-16 14:33:00,254 [Worker #d5260783] Hangfire.Server.Worker - (null) - Background process 'Worker #d5260783' started.
+2017-11-16 14:33:00,255 [Worker #d8e2cf84] Hangfire.Server.Worker - (null) - Background process 'Worker #d8e2cf84' started.
+2017-11-16 14:33:00,255 [Worker #1814d920] Hangfire.Server.Worker - (null) - Background process 'Worker #1814d920' started.
+2017-11-16 14:33:00,256 [Worker #93af34b8] Hangfire.Server.Worker - (null) - Background process 'Worker #93af34b8' started.
+2017-11-16 14:33:00,257 [Worker #72b05c33] Hangfire.Server.Worker - (null) - Background process 'Worker #72b05c33' started.
+2017-11-16 14:33:00,257 [Worker #a77011bb] Hangfire.Server.Worker - (null) - Background process 'Worker #a77011bb' started.
+2017-11-16 14:33:00,258 [Worker #82db18f5] Hangfire.Server.Worker - (null) - Background process 'Worker #82db18f5' started.
+2017-11-16 14:33:00,258 [Worker #ca02d511] Hangfire.Server.Worker - (null) - Background process 'Worker #ca02d511' started.
+2017-11-16 14:33:00,259 [Worker #3e147c70] Hangfire.Server.Worker - (null) - Background process 'Worker #3e147c70' started.
+2017-11-16 14:33:00,259 [Worker #48ec4c5e] Hangfire.Server.Worker - (null) - Background process 'Worker #48ec4c5e' started.
+2017-11-16 14:33:00,260 [Worker #ecc9aac7] Hangfire.Server.Worker - (null) - Background process 'Worker #ecc9aac7' started.
+2017-11-16 14:33:00,260 [Worker #40d55220] Hangfire.Server.Worker - (null) - Background process 'Worker #40d55220' started.
+2017-11-16 14:33:00,261 [Worker #3dc460fe] Hangfire.Server.Worker - (null) - Background process 'Worker #3dc460fe' started.
+2017-11-16 14:33:00,261 [Worker #e1b41f22] Hangfire.Server.Worker - (null) - Background process 'Worker #e1b41f22' started.
+2017-11-16 14:33:00,262 [Worker #01c10681] Hangfire.Server.Worker - (null) - Background process 'Worker #01c10681' started.
+2017-11-16 14:33:00,262 [Worker #7d43b79d] Hangfire.Server.Worker - (null) - Background process 'Worker #7d43b79d' started.
+2017-11-16 14:33:00,263 [Worker #c545db0c] Hangfire.Server.Worker - (null) - Background process 'Worker #c545db0c' started.
+2017-11-16 14:33:00,263 [Worker #457d2ea3] Hangfire.Server.Worker - (null) - Background process 'Worker #457d2ea3' started.
+2017-11-16 14:33:00,264 [Worker #b43bc9c2] Hangfire.Server.Worker - (null) - Background process 'Worker #b43bc9c2' started.
+2017-11-16 14:33:00,265 [Worker #7e2ff902] Hangfire.Server.Worker - (null) - Background process 'Worker #7e2ff902' started.
+2017-11-16 14:33:00,266 [Worker #7dc65c9b] Hangfire.Server.Worker - (null) - Background process 'Worker #7dc65c9b' started.
+2017-11-16 14:33:00,266 [Worker #934408e5] Hangfire.Server.Worker - (null) - Background process 'Worker #934408e5' started.
+2017-11-16 14:33:00,267 [Worker #aa312f5d] Hangfire.Server.Worker - (null) - Background process 'Worker #aa312f5d' started.
+2017-11-16 14:33:00,268 [Worker #1a2681b4] Hangfire.Server.Worker - (null) - Background process 'Worker #1a2681b4' started.
+2017-11-16 14:33:00,269 [Worker #45e165ad] Hangfire.Server.Worker - (null) - Background process 'Worker #45e165ad' started.
+2017-11-16 14:33:00,269 [Worker #da7ba9b9] Hangfire.Server.Worker - (null) - Background process 'Worker #da7ba9b9' started.
+2017-11-16 14:33:00,269 [Worker #65903fdf] Hangfire.Server.Worker - (null) - Background process 'Worker #65903fdf' started.
+2017-11-16 14:33:00,270 [Worker #f5acfbb3] Hangfire.Server.Worker - (null) - Background process 'Worker #f5acfbb3' started.
+2017-11-16 14:33:00,270 [Worker #c090b277] Hangfire.Server.Worker - (null) - Background process 'Worker #c090b277' started.
+2017-11-16 14:33:00,271 [Worker #2ff6b351] Hangfire.Server.Worker - (null) - Background process 'Worker #2ff6b351' started.
+2017-11-16 14:33:00,272 [Worker #885f18ef] Hangfire.Server.Worker - (null) - Background process 'Worker #885f18ef' started.
+2017-11-16 14:33:00,278 [Worker #95fcc813] Hangfire.Server.Worker - (null) - Background process 'Worker #95fcc813' started.
+2017-11-16 14:33:00,280 [Worker #80e0883c] Hangfire.Server.Worker - (null) - Background process 'Worker #80e0883c' started.
+2017-11-16 14:33:00,281 [DelayedJobScheduler] Hangfire.Server.DelayedJobScheduler - (null) - Background process 'DelayedJobScheduler' started.
+2017-11-16 14:33:00,283 [RecurringJobScheduler] Hangfire.Server.RecurringJobScheduler - (null) - Background process 'RecurringJobScheduler' started.
+2017-11-16 14:33:00,382 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'Job'...
+2017-11-16 14:33:00,657 [1] U.Logging.ULog4netLogger - (null) - Found 0 classes defines auto mapping attributes
+2017-11-16 14:33:00,658 [1] U.Logging.ULog4netLogger - (null) - (^_^)(^_^)(^_^) UStarter startup completed.
+2017-11-16 14:33:01,416 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'List'...
+2017-11-16 14:33:01,503 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'Set'...
+2017-11-16 14:33:01,592 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'Hash'...
+2017-11-16 14:38:00,414 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 14:43:00,981 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 14:48:01,018 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 14:53:01,051 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 14:58:01,383 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 15:03:01,416 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 15:08:01,451 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 15:13:01,486 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 15:18:01,518 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 15:23:01,551 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 15:28:01,599 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 15:33:01,631 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 15:33:01,681 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'AggregatedCounter'...
+2017-11-16 15:33:01,776 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'Job'...
+2017-11-16 15:33:01,871 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'List'...
+2017-11-16 15:33:01,967 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'Set'...
+2017-11-16 15:33:02,062 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'Hash'...
+2017-11-16 15:38:01,666 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 15:43:02,140 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 15:48:02,176 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 15:53:02,512 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 15:57:49,278 [Worker #01c10681] Hangfire.Server.Worker - (null) - Error occurred during execution of 'Worker #01c10681' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:01 seconds.
+System.Data.SqlClient.SqlException (0x80131904): 在从服务器接收结果时发生传输级错误。 (provider: TCP Provider, error: 0 - 指定的网络名不再可用。) ---> System.ComponentModel.Win32Exception (0x80004005): 指定的网络名不再可用。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   在 System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransaction(TransactionRequest transactionRequest, String name, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnection.BeginSqlTransaction(IsolationLevel iso, String transactionName, Boolean shouldReconnect)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso)
+   在 Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   在 Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   在 Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:c9f79f31-3ba1-4b0c-bafb-5917147b160e
+Error Number:64,State:0,Class:20
+2017-11-16 15:57:50,469 [Worker #80e0883c] Hangfire.Server.Worker - (null) - Error occurred during execution of 'Worker #80e0883c' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:01 seconds.
+System.Data.SqlClient.SqlException (0x80131904): 在从服务器接收结果时发生传输级错误。 (provider: TCP Provider, error: 0 - 指定的网络名不再可用。) ---> System.ComponentModel.Win32Exception (0x80004005): 指定的网络名不再可用。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   在 System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransaction(TransactionRequest transactionRequest, String name, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnection.BeginSqlTransaction(IsolationLevel iso, String transactionName, Boolean shouldReconnect)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso)
+   在 Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   在 Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   在 Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:ac1215a5-5277-429c-8845-66b59e6ce62e
+Error Number:64,State:0,Class:20
+2017-11-16 15:57:54,099 [Worker #934408e5] Hangfire.Server.Worker - (null) - Error occurred during execution of 'Worker #934408e5' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:01 seconds.
+System.Data.SqlClient.SqlException (0x80131904): Timeout 时间已到。在操作完成之前超时时间已过或服务器未响应。 ---> System.ComponentModel.Win32Exception (0x80004005): 等待的操作过时。
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   在 System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransaction(TransactionRequest transactionRequest, String name, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnection.BeginSqlTransaction(IsolationLevel iso, String transactionName, Boolean shouldReconnect)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso)
+   在 Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   在 Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   在 Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:3fe82d06-de2c-4429-99de-ff62ce52a2cd
+Error Number:-2,State:0,Class:11
+2017-11-16 15:57:54,099 [Worker #f6c618c7] Hangfire.Server.Worker - (null) - Error occurred during execution of 'Worker #f6c618c7' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:01 seconds.
+System.Data.SqlClient.SqlException (0x80131904): Timeout 时间已到。在操作完成之前超时时间已过或服务器未响应。 ---> System.ComponentModel.Win32Exception (0x80004005): 等待的操作过时。
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   在 System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransaction(TransactionRequest transactionRequest, String name, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnection.BeginSqlTransaction(IsolationLevel iso, String transactionName, Boolean shouldReconnect)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso)
+   在 Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   在 Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   在 Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:0b0efc7b-44ba-44e2-a3d6-a7238e64d74d
+Error Number:-2,State:0,Class:11
+2017-11-16 15:57:54,102 [Worker #b43bc9c2] Hangfire.Server.Worker - (null) - Error occurred during execution of 'Worker #b43bc9c2' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:00 seconds.
+System.Data.SqlClient.SqlException (0x80131904): Timeout 时间已到。在操作完成之前超时时间已过或服务器未响应。 ---> System.ComponentModel.Win32Exception (0x80004005): 等待的操作过时。
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   在 System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransaction(TransactionRequest transactionRequest, String name, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnection.BeginSqlTransaction(IsolationLevel iso, String transactionName, Boolean shouldReconnect)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso)
+   在 Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   在 Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   在 Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:c1cbf55d-3c07-4ea1-a25f-53717914ff70
+Error Number:-2,State:0,Class:11
+2017-11-16 15:57:54,104 [Worker #da7ba9b9] Hangfire.Server.Worker - (null) - Error occurred during execution of 'Worker #da7ba9b9' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:01 seconds.
+System.Data.SqlClient.SqlException (0x80131904): Timeout 时间已到。在操作完成之前超时时间已过或服务器未响应。 ---> System.ComponentModel.Win32Exception (0x80004005): 等待的操作过时。
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   在 System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransaction(TransactionRequest transactionRequest, String name, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnection.BeginSqlTransaction(IsolationLevel iso, String transactionName, Boolean shouldReconnect)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso)
+   在 Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   在 Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   在 Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:670c301f-cf7e-4309-854b-f5d3c40395d4
+Error Number:-2,State:0,Class:11
+2017-11-16 15:58:02,548 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 16:03:02,583 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 16:08:02,617 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 16:13:02,654 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 16:18:02,691 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 16:23:02,724 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 16:28:03,055 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 16:33:02,158 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'AggregatedCounter'...
+2017-11-16 16:33:02,247 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'Job'...
+2017-11-16 16:33:02,337 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'List'...
+2017-11-16 16:33:02,429 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'Set'...
+2017-11-16 16:33:02,523 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'Hash'...
+2017-11-16 16:33:03,088 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 16:38:03,121 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 16:43:03,154 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 16:48:03,188 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 16:53:03,226 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 16:58:03,260 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 17:01:29,031 [ServerHeartbeat] Hangfire.Server.ServerHeartbeat - (null) - Error occurred during execution of 'ServerHeartbeat' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:01 seconds.
+System.Data.SqlClient.SqlException (0x80131904): 在从服务器接收结果时发生传输级错误。 (provider: TCP Provider, error: 0 - 指定的网络名不再可用。) ---> System.ComponentModel.Win32Exception (0x80004005): 指定的网络名不再可用。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   在 System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader)
+   在 Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command)
+   在 Hangfire.SqlServer.SqlServerConnection.<>c__DisplayClass2a.<Heartbeat>b__29(SqlConnection connection)
+   在 Hangfire.SqlServer.SqlServerStorage.<>c__DisplayClassc.<UseConnection>b__b(SqlConnection connection)
+   在 Hangfire.SqlServer.SqlServerStorage.UseConnection[T](Func`2 func)
+   在 Hangfire.SqlServer.SqlServerStorage.UseConnection(Action`1 action)
+   在 Hangfire.SqlServer.SqlServerConnection.Heartbeat(String serverId)
+   在 Hangfire.Server.ServerHeartbeat.Execute(BackgroundProcessContext context)
+   在 Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   在 Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:7083860f-bca9-4061-bb4f-56391e9b2b0f
+Error Number:64,State:0,Class:20
+2017-11-16 17:03:03,306 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 17:08:03,338 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 17:13:03,372 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 17:18:03,405 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 17:23:03,603 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 17:28:03,640 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 17:33:02,629 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'AggregatedCounter'...
+2017-11-16 17:33:02,718 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'Job'...
+2017-11-16 17:33:02,808 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'List'...
+2017-11-16 17:33:02,898 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'Set'...
+2017-11-16 17:33:02,987 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'Hash'...
+2017-11-16 17:33:03,675 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 17:38:03,708 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 17:43:03,743 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 17:48:03,775 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 17:53:03,807 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 17:58:03,840 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 18:03:03,872 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 18:04:20,672 [Worker #b43bc9c2] Hangfire.Server.Worker - (null) - Error occurred during execution of 'Worker #b43bc9c2' process. Execution will be retried (attempt 2 of 2147483647) in 00:00:02 seconds.
+System.Data.SqlClient.SqlException (0x80131904): 在从服务器接收结果时发生传输级错误。 (provider: TCP Provider, error: 0 - 指定的网络名不再可用。) ---> System.ComponentModel.Win32Exception (0x80004005): 指定的网络名不再可用。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   在 System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransaction(TransactionRequest transactionRequest, String name, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnection.BeginSqlTransaction(IsolationLevel iso, String transactionName, Boolean shouldReconnect)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso)
+   在 Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   在 Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   在 Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:8756120d-480e-436c-a3e4-9cff540933a6
+Error Number:64,State:0,Class:20
+2017-11-16 18:04:23,035 [Worker #e1b41f22] Hangfire.Server.Worker - (null) - Error occurred during execution of 'Worker #e1b41f22' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:00 seconds.
+System.Data.SqlClient.SqlException (0x80131904): 在从服务器接收结果时发生传输级错误。 (provider: TCP Provider, error: 0 - 指定的网络名不再可用。) ---> System.ComponentModel.Win32Exception (0x80004005): 指定的网络名不再可用。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   在 System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransaction(TransactionRequest transactionRequest, String name, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnection.BeginSqlTransaction(IsolationLevel iso, String transactionName, Boolean shouldReconnect)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso)
+   在 Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   在 Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   在 Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:62fe03fc-517c-47a6-91d5-62b7c73f20df
+Error Number:64,State:0,Class:20
+2017-11-16 18:04:23,035 [Worker #95fcc813] Hangfire.Server.Worker - (null) - Error occurred during execution of 'Worker #95fcc813' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:01 seconds.
+System.Data.SqlClient.SqlException (0x80131904): 在从服务器接收结果时发生传输级错误。 (provider: TCP Provider, error: 0 - 指定的网络名不再可用。) ---> System.ComponentModel.Win32Exception (0x80004005): 指定的网络名不再可用。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   在 System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransaction(TransactionRequest transactionRequest, String name, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnection.BeginSqlTransaction(IsolationLevel iso, String transactionName, Boolean shouldReconnect)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso)
+   在 Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   在 Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   在 Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:d6e3793f-42d0-457a-b568-640dd2ef87e7
+Error Number:64,State:0,Class:20
+2017-11-16 18:04:23,037 [Worker #aa312f5d] Hangfire.Server.Worker - (null) - Error occurred during execution of 'Worker #aa312f5d' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:00 seconds.
+System.Data.SqlClient.SqlException (0x80131904): 在从服务器接收结果时发生传输级错误。 (provider: TCP Provider, error: 0 - 指定的网络名不再可用。) ---> System.ComponentModel.Win32Exception (0x80004005): 指定的网络名不再可用。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   在 System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransaction(TransactionRequest transactionRequest, String name, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnection.BeginSqlTransaction(IsolationLevel iso, String transactionName, Boolean shouldReconnect)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso)
+   在 Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   在 Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   在 Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:0b231481-c31f-4b7f-bbaa-4e0fc0f87288
+Error Number:64,State:0,Class:20
+2017-11-16 18:04:23,037 [ServerHeartbeat] Hangfire.Server.ServerHeartbeat - (null) - Error occurred during execution of 'ServerHeartbeat' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:01 seconds.
+System.Data.SqlClient.SqlException (0x80131904): 在从服务器接收结果时发生传输级错误。 (provider: TCP Provider, error: 0 - 指定的网络名不再可用。) ---> System.ComponentModel.Win32Exception (0x80004005): 指定的网络名不再可用。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   在 System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader)
+   在 Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command)
+   在 Hangfire.SqlServer.SqlServerConnection.<>c__DisplayClass2a.<Heartbeat>b__29(SqlConnection connection)
+   在 Hangfire.SqlServer.SqlServerStorage.<>c__DisplayClassc.<UseConnection>b__b(SqlConnection connection)
+   在 Hangfire.SqlServer.SqlServerStorage.UseConnection[T](Func`2 func)
+   在 Hangfire.SqlServer.SqlServerStorage.UseConnection(Action`1 action)
+   在 Hangfire.SqlServer.SqlServerConnection.Heartbeat(String serverId)
+   在 Hangfire.Server.ServerHeartbeat.Execute(BackgroundProcessContext context)
+   在 Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   在 Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:d3ade0ae-d51f-49a7-9d8d-0aa3cd4fd3ef
+Error Number:64,State:0,Class:20
+2017-11-16 18:04:23,038 [Worker #9849fc06] Hangfire.Server.Worker - (null) - Error occurred during execution of 'Worker #9849fc06' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:00 seconds.
+System.Data.SqlClient.SqlException (0x80131904): 在从服务器接收结果时发生传输级错误。 (provider: TCP Provider, error: 0 - 指定的网络名不再可用。) ---> System.ComponentModel.Win32Exception (0x80004005): 指定的网络名不再可用。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   在 System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransaction(TransactionRequest transactionRequest, String name, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnection.BeginSqlTransaction(IsolationLevel iso, String transactionName, Boolean shouldReconnect)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso)
+   在 Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   在 Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   在 Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:a3ce77f9-35f9-46c6-b4c1-a05442543cdf
+Error Number:64,State:0,Class:20
+2017-11-16 18:04:23,040 [Worker #b43bc9c2] Hangfire.Server.Worker - (null) - Error occurred during execution of 'Worker #b43bc9c2' process. Execution will be retried (attempt 3 of 2147483647) in 00:00:06 seconds.
+System.Data.SqlClient.SqlException (0x80131904): 在从服务器接收结果时发生传输级错误。 (provider: TCP Provider, error: 0 - 指定的网络名不再可用。) ---> System.ComponentModel.Win32Exception (0x80004005): 指定的网络名不再可用。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   在 System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 Dapper.SqlMapper.<QueryImpl>d__61`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   在 Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   在 Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:f333ae40-6c45-4c3c-bbe5-e8cf81461517
+Error Number:64,State:0,Class:20
+2017-11-16 18:08:03,904 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 18:13:03,941 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 18:18:03,991 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 18:23:04,026 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 18:28:04,061 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 18:33:03,077 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'AggregatedCounter'...
+2017-11-16 18:33:03,168 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'Job'...
+2017-11-16 18:33:03,258 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'List'...
+2017-11-16 18:33:03,348 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'Set'...
+2017-11-16 18:33:03,439 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'Hash'...
+2017-11-16 18:33:04,096 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 18:38:04,679 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 18:43:04,711 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 18:48:04,744 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 18:53:04,781 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 18:58:05,344 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 19:03:05,376 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 19:08:05,410 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 19:13:05,442 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 19:18:05,475 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 19:23:05,509 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 19:28:05,544 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 19:33:03,530 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'AggregatedCounter'...
+2017-11-16 19:33:03,626 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'Job'...
+2017-11-16 19:33:03,717 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'List'...
+2017-11-16 19:33:03,810 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'Set'...
+2017-11-16 19:33:03,905 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'Hash'...
+2017-11-16 19:33:05,577 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 19:38:05,611 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 19:43:06,412 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 19:48:06,446 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 19:53:06,480 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 19:58:06,530 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 20:03:06,563 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 20:08:06,596 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 20:11:43,265 [Worker #3e147c70] Hangfire.Server.Worker - (null) - Error occurred during execution of 'Worker #3e147c70' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:00 seconds.
+System.Data.SqlClient.SqlException (0x80131904): 在从服务器接收结果时发生传输级错误。 (provider: TCP Provider, error: 0 - 指定的网络名不再可用。) ---> System.ComponentModel.Win32Exception (0x80004005): 指定的网络名不再可用。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   在 System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransaction(TransactionRequest transactionRequest, String name, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnection.BeginSqlTransaction(IsolationLevel iso, String transactionName, Boolean shouldReconnect)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso)
+   在 Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   在 Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   在 Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:9f345622-7cd2-40dd-bc96-3e07f351b3a5
+Error Number:64,State:0,Class:20
+2017-11-16 20:11:43,266 [Worker #6af6dbf2] Hangfire.Server.Worker - (null) - Error occurred during execution of 'Worker #6af6dbf2' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:01 seconds.
+System.Data.SqlClient.SqlException (0x80131904): 在从服务器接收结果时发生传输级错误。 (provider: TCP Provider, error: 0 - 指定的网络名不再可用。) ---> System.ComponentModel.Win32Exception (0x80004005): 指定的网络名不再可用。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   在 System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransaction(TransactionRequest transactionRequest, String name, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnection.BeginSqlTransaction(IsolationLevel iso, String transactionName, Boolean shouldReconnect)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso)
+   在 Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   在 Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   在 Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:5a4d5e4c-4e38-4cfe-9657-a1738b2a1a73
+Error Number:64,State:0,Class:20
+2017-11-16 20:11:43,267 [Worker #65903fdf] Hangfire.Server.Worker - (null) - Error occurred during execution of 'Worker #65903fdf' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:01 seconds.
+System.Data.SqlClient.SqlException (0x80131904): 在从服务器接收结果时发生传输级错误。 (provider: TCP Provider, error: 0 - 指定的网络名不再可用。) ---> System.ComponentModel.Win32Exception (0x80004005): 指定的网络名不再可用。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   在 System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransaction(TransactionRequest transactionRequest, String name, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnection.BeginSqlTransaction(IsolationLevel iso, String transactionName, Boolean shouldReconnect)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso)
+   在 Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   在 Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   在 Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:918c2220-10ea-4aad-96ee-7432cb38a47f
+Error Number:64,State:0,Class:20
+2017-11-16 20:11:43,267 [Worker #80e0883c] Hangfire.Server.Worker - (null) - Error occurred during execution of 'Worker #80e0883c' process. Execution will be retried (attempt 2 of 2147483647) in 00:00:01 seconds.
+System.Data.SqlClient.SqlException (0x80131904): 在从服务器接收结果时发生传输级错误。 (provider: TCP Provider, error: 0 - 指定的网络名不再可用。) ---> System.ComponentModel.Win32Exception (0x80004005): 指定的网络名不再可用。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   在 System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransaction(TransactionRequest transactionRequest, String name, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnection.BeginSqlTransaction(IsolationLevel iso, String transactionName, Boolean shouldReconnect)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso)
+   在 Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   在 Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   在 Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:a3876414-082a-4fe3-9ef6-179fbef3e886
+Error Number:64,State:0,Class:20
+2017-11-16 20:11:43,265 [ServerHeartbeat] Hangfire.Server.ServerHeartbeat - (null) - Error occurred during execution of 'ServerHeartbeat' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:01 seconds.
+System.Data.SqlClient.SqlException (0x80131904): 在从服务器接收结果时发生传输级错误。 (provider: TCP Provider, error: 0 - 指定的网络名不再可用。) ---> System.ComponentModel.Win32Exception (0x80004005): 指定的网络名不再可用。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   在 System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader)
+   在 Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command)
+   在 Hangfire.SqlServer.SqlServerConnection.<>c__DisplayClass2a.<Heartbeat>b__29(SqlConnection connection)
+   在 Hangfire.SqlServer.SqlServerStorage.<>c__DisplayClassc.<UseConnection>b__b(SqlConnection connection)
+   在 Hangfire.SqlServer.SqlServerStorage.UseConnection[T](Func`2 func)
+   在 Hangfire.SqlServer.SqlServerStorage.UseConnection(Action`1 action)
+   在 Hangfire.SqlServer.SqlServerConnection.Heartbeat(String serverId)
+   在 Hangfire.Server.ServerHeartbeat.Execute(BackgroundProcessContext context)
+   在 Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   在 Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:4670b699-f0b0-4cbc-a5ef-1c9b3465d877
+Error Number:64,State:0,Class:20
+2017-11-16 20:12:40,807 [Worker #c090b277] Hangfire.Server.Worker - (null) - Error occurred during execution of 'Worker #c090b277' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:01 seconds.
+System.Data.SqlClient.SqlException (0x80131904): 在从服务器接收结果时发生传输级错误。 (provider: TCP Provider, error: 0 - 指定的网络名不再可用。) ---> System.ComponentModel.Win32Exception (0x80004005): 指定的网络名不再可用。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   在 System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransaction(TransactionRequest transactionRequest, String name, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnection.BeginSqlTransaction(IsolationLevel iso, String transactionName, Boolean shouldReconnect)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso)
+   在 Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   在 Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   在 Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:952faf8d-1031-4a90-944f-b46b3a14b613
+Error Number:64,State:0,Class:20
+2017-11-16 20:12:40,807 [Worker #01c10681] Hangfire.Server.Worker - (null) - Error occurred during execution of 'Worker #01c10681' process. Execution will be retried (attempt 2 of 2147483647) in 00:00:03 seconds.
+System.Data.SqlClient.SqlException (0x80131904): 在从服务器接收结果时发生传输级错误。 (provider: TCP Provider, error: 0 - 指定的网络名不再可用。) ---> System.ComponentModel.Win32Exception (0x80004005): 指定的网络名不再可用。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   在 System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransaction(TransactionRequest transactionRequest, String name, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnection.BeginSqlTransaction(IsolationLevel iso, String transactionName, Boolean shouldReconnect)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso)
+   在 Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   在 Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   在 Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:fef3c55c-b402-4e9f-9ef8-3980ecb35b35
+Error Number:64,State:0,Class:20
+2017-11-16 20:12:40,807 [Worker #457d2ea3] Hangfire.Server.Worker - (null) - Error occurred during execution of 'Worker #457d2ea3' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:01 seconds.
+System.Data.SqlClient.SqlException (0x80131904): 在从服务器接收结果时发生传输级错误。 (provider: TCP Provider, error: 0 - 指定的网络名不再可用。) ---> System.ComponentModel.Win32Exception (0x80004005): 指定的网络名不再可用。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   在 System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransaction(TransactionRequest transactionRequest, String name, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnection.BeginSqlTransaction(IsolationLevel iso, String transactionName, Boolean shouldReconnect)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso)
+   在 Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   在 Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   在 Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:08a65bd6-a4eb-41a0-ae23-4b0f769ed6da
+Error Number:64,State:0,Class:20
+2017-11-16 20:12:40,809 [Worker #7dc65c9b] Hangfire.Server.Worker - (null) - Error occurred during execution of 'Worker #7dc65c9b' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:00 seconds.
+System.Data.SqlClient.SqlException (0x80131904): 在从服务器接收结果时发生传输级错误。 (provider: TCP Provider, error: 0 - 指定的网络名不再可用。) ---> System.ComponentModel.Win32Exception (0x80004005): 指定的网络名不再可用。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   在 System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransaction(TransactionRequest transactionRequest, String name, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnection.BeginSqlTransaction(IsolationLevel iso, String transactionName, Boolean shouldReconnect)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso)
+   在 Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   在 Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   在 Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:d6bb8d92-57fb-443e-95d1-bf4e22c16bb5
+Error Number:64,State:0,Class:20
+2017-11-16 20:12:40,807 [Worker #da7ba9b9] Hangfire.Server.Worker - (null) - Error occurred during execution of 'Worker #da7ba9b9' process. Execution will be retried (attempt 2 of 2147483647) in 00:00:03 seconds.
+System.Data.SqlClient.SqlException (0x80131904): 在从服务器接收结果时发生传输级错误。 (provider: TCP Provider, error: 0 - 指定的网络名不再可用。) ---> System.ComponentModel.Win32Exception (0x80004005): 指定的网络名不再可用。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   在 System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransaction(TransactionRequest transactionRequest, String name, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnection.BeginSqlTransaction(IsolationLevel iso, String transactionName, Boolean shouldReconnect)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso)
+   在 Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   在 Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   在 Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:20c54b6f-e254-4580-93b4-b319d3b02d62
+Error Number:64,State:0,Class:20
+2017-11-16 20:12:40,808 [Worker #f5acfbb3] Hangfire.Server.Worker - (null) - Error occurred during execution of 'Worker #f5acfbb3' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:01 seconds.
+System.Data.SqlClient.SqlException (0x80131904): 在从服务器接收结果时发生传输级错误。 (provider: TCP Provider, error: 0 - 指定的网络名不再可用。) ---> System.ComponentModel.Win32Exception (0x80004005): 指定的网络名不再可用。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   在 System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransaction(TransactionRequest transactionRequest, String name, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnection.BeginSqlTransaction(IsolationLevel iso, String transactionName, Boolean shouldReconnect)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso)
+   在 Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   在 Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   在 Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:eee85a0a-4648-478e-9a0f-14126541da82
+Error Number:64,State:0,Class:20
+2017-11-16 20:12:40,807 [Worker #1814d920] Hangfire.Server.Worker - (null) - Error occurred during execution of 'Worker #1814d920' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:01 seconds.
+System.Data.SqlClient.SqlException (0x80131904): 在从服务器接收结果时发生传输级错误。 (provider: TCP Provider, error: 0 - 指定的网络名不再可用。) ---> System.ComponentModel.Win32Exception (0x80004005): 指定的网络名不再可用。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   在 System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransaction(TransactionRequest transactionRequest, String name, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnection.BeginSqlTransaction(IsolationLevel iso, String transactionName, Boolean shouldReconnect)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso)
+   在 Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   在 Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   在 Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:5663d71f-14e6-4d61-858f-5ef2343e60c3
+Error Number:64,State:0,Class:20
+2017-11-16 20:13:06,630 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 20:18:06,665 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 20:23:06,698 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 20:28:06,962 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 20:33:03,998 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'AggregatedCounter'...
+2017-11-16 20:33:04,094 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'Job'...
+2017-11-16 20:33:04,190 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'List'...
+2017-11-16 20:33:04,286 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'Set'...
+2017-11-16 20:33:04,381 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'Hash'...
+2017-11-16 20:33:06,996 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 20:38:07,029 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 20:43:07,068 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 20:48:07,400 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 20:53:07,438 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 20:58:07,470 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 21:03:07,505 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 21:08:07,540 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 21:13:07,575 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 21:18:07,610 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 21:23:07,643 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 21:28:07,678 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 21:33:04,475 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'AggregatedCounter'...
+2017-11-16 21:33:04,571 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'Job'...
+2017-11-16 21:33:04,666 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'List'...
+2017-11-16 21:33:04,760 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'Set'...
+2017-11-16 21:33:04,856 [Hangfire.SqlServer.ExpirationManager] Hangfire.SqlServer.ExpirationManager - (null) - Removing outdated records from table 'Hash'...
+2017-11-16 21:33:07,713 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 21:38:08,057 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...
+2017-11-16 21:43:08,093 [Hangfire.SqlServer.CountersAggregator] Hangfire.SqlServer.CountersAggregator - (null) - Aggregating records in 'Counter' table...

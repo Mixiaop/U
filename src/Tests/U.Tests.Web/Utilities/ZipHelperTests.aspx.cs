@@ -12,7 +12,7 @@ namespace U.Tests.Web.Utilities
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            ZipHelper.ZipDirectory(@"D:\!Github\U\src\Tests\U.Tests.Web\USegmentation\Resources\", U.Utilities.Web.WebHelper.MapPath("/Utilities/"), "article");
+            ZipHelper.ZipDirectory(@"D:\!Github\U\src\Tests\U.Tests.Web\USegmentation\Resources\", U.Utilities.Web.WebHelper.MapPath("/Utilities/"), "article1", "");
         }
     }
 }

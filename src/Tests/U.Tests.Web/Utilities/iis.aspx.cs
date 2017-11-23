@@ -16,6 +16,7 @@ namespace U.Tests.Web.Utilities
             btnDomainList.Click += BtnDomainList_Click;
             btnAddDomain.Click += BtnAddDomain_Click;
             btnRemoveDomain.Click += btnRemoveDomain_Click;
+            btnRestart.Click += BtnRestart_Click;
             //Response.Write(IISServiceFactory.GetIISMajorVersion());
 
             //IIISUtilService iisService = IISServiceFactory.GetUtilService();
@@ -40,6 +41,37 @@ namespace U.Tests.Web.Utilities
 
 
 
+        }
+
+        private void BtnRestart_Click(object sender, EventArgs e)
+        {
+            IIS7UtilService iisService = (IIS7UtilService)IISServiceFactory.GetUtilService();
+            //Response.Write(iisService.SiteServerRestart("U.Tests"));
+
+            var server = new ServerManager();
+            Site site = null;
+            //找指定站点
+            foreach (Site s in server.Sites)
+            {
+                if (s.Name.EqualsEx("U.Tests"))
+                {
+                    site = s;
+                    break;
+                }
+            }
+            if (site != null)
+            {
+                //site.ServerAutoStart = true;
+                site.Stop();
+                System.Threading.Thread.Sleep(3000);
+                site.Start();
+                //site.Start();
+                //server.CommitChanges();
+                Response.Write("success");
+            }
+            else{
+                Response.Write("failed");
+            }
         }
 
         void btnRemoveDomain_Click(object sender, EventArgs e)

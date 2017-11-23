@@ -240,6 +240,7 @@
     <Content Include="AsposeWords\Hello.aspx" />
     <Content Include="AsposeWords\Result.aspx" />
     <Content Include="AsposeWords\Result.html" />
+    <Content Include="AsposeWords\StyleTests.aspx" />
     <Content Include="AsposeWords\Tests.aspx" />
     <Content Include="AsposeWords\WebBrowserTests.aspx" />
     <Content Include="BaseService\DistributedCache\Redis.aspx" />
@@ -324,6 +325,13 @@
     </Compile>
     <Compile Include="AsposeWords\Result.aspx.designer.cs">
       <DependentUpon>Result.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AsposeWords\StyleTests.aspx.cs">
+      <DependentUpon>StyleTests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AsposeWords\StyleTests.aspx.designer.cs">
+      <DependentUpon>StyleTests.aspx</DependentUpon>
     </Compile>
     <Compile Include="AsposeWords\Tests.aspx.cs">
       <DependentUpon>Tests.aspx</DependentUpon>

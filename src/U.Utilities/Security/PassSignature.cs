@@ -86,7 +86,7 @@ namespace U.Utilities.Security
                 try
                 {
                     DateTime now = DateTime.Now;
-                    DateTime signTime = signTimeString.ToDateTime();
+                    DateTime signTime = DateTime.Parse(signTimeString);
                     TimeSpan span = now - signTime;
 
                     //是否过期
