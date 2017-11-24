@@ -1,0 +1,11 @@
+﻿{
+  "IdfFileName": "idf.txt",
+  "StopWordsFileName": "stopwords.txt",
+  "MainDictFileName": "dict.txt",
+  "ProbTransFileName": "prob_trans.json",
+  "ProbEmitFileName": "prob_emit.json",
+  "PosProbStartFileName": "pos_prob_start.json",
+  "PosProbTransFileName": "pos_prob_trans.json",
+  "PosProbEmitFileName": "pos_prob_emit.json",
+  "CharStateTabFileName": "char_state_tab.json"
+}

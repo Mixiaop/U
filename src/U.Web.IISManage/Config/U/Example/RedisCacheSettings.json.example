@@ -1,0 +1,4 @@
+﻿{
+	ConnectionString: '120.132.94.138:6379',
+	DatabaseId : 1
+}

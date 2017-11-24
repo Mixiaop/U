@@ -1,0 +1,5 @@
+2017-11-24 10:18:21,852 [9] U.Logging.ULog4netLogger - (null) - Loading UPrimes...
+2017-11-24 10:18:22,256 [9] U.Logging.ULog4netLogger - (null) - Found 1 UPrimes in total.
+2017-11-24 10:18:22,260 [9] U.Logging.ULog4netLogger - (null) - Loaded UPrime: U.ULeadershipUPrime, U, Version=0.5.9.7, Culture=neutral, PublicKeyToken=null
+2017-11-24 10:18:22,261 [9] U.Logging.ULog4netLogger - (null) - 1 UPrime loaded.
+2017-11-24 10:18:22,278 [9] U.Logging.ULog4netLogger - (null) - (^_^)(^_^)(^_^) UStarter startup completed.

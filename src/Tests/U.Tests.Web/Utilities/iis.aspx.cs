@@ -39,8 +39,18 @@ namespace U.Tests.Web.Utilities
             //        //}
             //    }
 
+            //添加域名
+            //var res = UIISManageClient.SiteAddDomain("http://106.75.50.137:8012", "U.Tests", "www.youzy.cn2");
+            //Response.Write(JsonConvert.SerializeObject(res));
 
+            //var res = UIISManageClient.SiteGetDomains("http://106.75.50.137:8012", "U.Tests");
+            //Response.Write(JsonConvert.SerializeObject(res));
 
+            //var res = UIISManageClient.SiteRemoveDomain("http://106.75.50.137:8012", "U.Tests", "www.youzy.cn2");
+            //Response.Write(JsonConvert.SerializeObject(res));
+
+            var res = UIISManageClient.SiteAutoStart("http://106.75.50.137:8012", "U.Tests");
+            Response.Write(JsonConvert.SerializeObject(res));
         }
 
         private void BtnRestart_Click(object sender, EventArgs e)
