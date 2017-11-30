@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace U.Utilities.Security
 {
@@ -70,19 +71,99 @@ namespace U.Utilities.Security
             sign = sign.Replace(_table.RandStr, "");
             if (sign.Length == 19)
             {
-                var signTimeString = sign.Replace(_table.Num0, "0")
-                                         .Replace(_table.Num1, "1")
-                                         .Replace(_table.Num2, "2")
-                                         .Replace(_table.Num3, "3")
-                                         .Replace(_table.Num4, "4")
-                                         .Replace(_table.Num5, "5")
-                                         .Replace(_table.Num6, "6")
-                                         .Replace(_table.Num7, "7")
-                                         .Replace(_table.Num8, "8")
-                                         .Replace(_table.Num9, "9")
-                                         .Replace(_table.Str1, "-")
-                                         .Replace(_table.Str2, ":")
-                                         .Replace(_table.Space, " ");
+                string signTimeString = "";
+                foreach (var s in sign) {
+                    var num = s.ToString().Replace(_table.Num0, "0");
+                    if (num != s.ToString()) {
+                        signTimeString += num;
+                        continue;
+                    }
+                    num = s.ToString().Replace(_table.Num1, "1");
+                    if (num != s.ToString())
+                    {
+                        signTimeString += num;
+                        continue;
+                    }
+                    num = s.ToString().Replace(_table.Num2, "2");
+                    if (num != s.ToString())
+                    {
+                        signTimeString += num;
+                        continue;
+                    }
+                    num = s.ToString().Replace(_table.Num3, "3");
+                    if (num != s.ToString())
+                    {
+                        signTimeString += num;
+                        continue;
+                    }
+                    num = s.ToString().Replace(_table.Num4, "4");
+                    if (num != s.ToString())
+                    {
+                        signTimeString += num;
+                        continue;
+                    }
+                    num = s.ToString().Replace(_table.Num5, "5");
+                    if (num != s.ToString())
+                    {
+                        signTimeString += num;
+                        continue;
+                    }
+                    num = s.ToString().Replace(_table.Num6, "6");
+                    if (num != s.ToString())
+                    {
+                        signTimeString += num;
+                        continue;
+                    }
+                    num = s.ToString().Replace(_table.Num7, "7");
+                    if (num != s.ToString())
+                    {
+                        signTimeString += num;
+                        continue;
+                    }
+                    num = s.ToString().Replace(_table.Num8, "8");
+                    if (num != s.ToString())
+                    {
+                        signTimeString += num;
+                        continue;
+                    }
+                    num = s.ToString().Replace(_table.Num9, "9");
+                    if (num != s.ToString())
+                    {
+                        signTimeString += num;
+                        continue;
+                    }
+                    num = s.ToString().Replace(_table.Str1, "-");
+                    if (num != s.ToString())
+                    {
+                        signTimeString += num;
+                        continue;
+                    }
+                    num = s.ToString().Replace(_table.Str2, ":");
+                    if (num != s.ToString())
+                    {
+                        signTimeString += num;
+                        continue;
+                    }
+                    num = s.ToString().Replace(_table.Space, " ");
+                    if (num != s.ToString())
+                    {
+                        signTimeString += num;
+                        continue;
+                    }
+                }
+                //var signTimeString = sign.Replace(_table.Num0, "0")
+                //                         .Replace(_table.Num1, "1")
+                //                         .Replace(_table.Num2, "2")
+                //                         .Replace(_table.Num3, "3")
+                //                         .Replace(_table.Num4, "4")
+                //                         .Replace(_table.Num5, "5")
+                //                         .Replace(_table.Num6, "6")
+                //                         .Replace(_table.Num7, "7")
+                //                         .Replace(_table.Num8, "8")
+                //                         .Replace(_table.Num9, "9")
+                //                         .Replace(_table.Str1, "-")
+                //                         .Replace(_table.Str2, ":")
+                //                         .Replace(_table.Space, " ");
                 try
                 {
                     DateTime now = DateTime.Now;
