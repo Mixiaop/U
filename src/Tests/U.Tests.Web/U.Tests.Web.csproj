@@ -449,6 +449,7 @@
     <Content Include="Config\U\Segmentation\Resources\stopwords.txt" />
     <Content Include="JetBrainsAnnotationsTests.aspx" />
     <Content Include="USegmentation\Tests.aspx" />
+    <Content Include="Utilities\CookieHelperTests.aspx" />
     <Content Include="Utilities\WebSiteTests.aspx" />
     <Content Include="Utilities\ZipHelperTests.aspx" />
     <Content Include="WebForm2.aspx" />
@@ -847,6 +848,13 @@
     </Compile>
     <Compile Include="Utilities\Access.aspx.designer.cs">
       <DependentUpon>Access.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\CookieHelperTests.aspx.cs">
+      <DependentUpon>CookieHelperTests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utilities\CookieHelperTests.aspx.designer.cs">
+      <DependentUpon>CookieHelperTests.aspx</DependentUpon>
     </Compile>
     <Compile Include="Utilities\encryption.aspx.cs">
       <DependentUpon>encryption.aspx</DependentUpon>

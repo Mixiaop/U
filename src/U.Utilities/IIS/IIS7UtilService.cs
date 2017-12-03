@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Management;
+using U.Logging;
 using Microsoft.Web.Administration;
 
 namespace U.Utilities.IIS
@@ -615,7 +618,8 @@ namespace U.Utilities.IIS
         /// <param name="host">域名UR</param>
         /// <param name="port">端口</param>
         /// <returns></returns>
-        public int RemoveSiteDomain(string siteName, string host, int port = 80) {
+        public int RemoveSiteDomain(string siteName, string host, int port = 80)
+        {
             ServerManager server = new ServerManager();
             Site site = server.Sites[siteName];
             if (site != null)
@@ -669,7 +673,8 @@ namespace U.Utilities.IIS
         /// </summary>
         /// <param name="siteName"></param>
         /// <returns></returns>
-        public int SiteServerRestart(string siteName) {
+        public int SiteServerRestart(string siteName)
+        {
             int errorCode = IISErrorCode.Succeed;
             try
             {
@@ -686,11 +691,24 @@ namespace U.Utilities.IIS
                 }
                 if (site != null)
                 {
-                    //site.ServerAutoStart = true;
+                    // site.ServerAutoStart = true;
                     //server.CommitChanges();
-                    site.Stop();
-                    System.Threading.Thread.Sleep(3000);
-                    site.Start();
+                    //site.Stop();
+                    //System.Threading.Thread.Sleep(3000);
+                    //site.Start();
+                    //上面代码没起效果，使用杀死进程
+                    var processList = Process.GetProcessesByName("w3wp");
+                    if (processList != null)
+                    {
+                        foreach (Process p in processList)
+                        {
+                            var username = GetProcessUsername(p.Id);
+                            if (username.IsNotNullOrEmpty() && username.ToLower() == siteName.ToLower()) {
+                                p.Kill();
+                            }
+
+                        }
+                    }
                 }
                 else
                 {
@@ -830,6 +848,36 @@ namespace U.Utilities.IIS
             }
 
             return errorCode;
+        }
+
+        private static string GetProcessUsername(int pid)
+        {
+            string text1 = null;
+
+            SelectQuery query1 = new SelectQuery("Select * from Win32_Process WHERE processID=" + pid);
+            ManagementObjectSearcher searcher1 = new ManagementObjectSearcher(query1);
+
+            try
+            {
+                foreach (ManagementObject disk in searcher1.Get())
+                {
+                    ManagementBaseObject inPar = null;
+                    ManagementBaseObject outPar = null;
+
+                    inPar = disk.GetMethodParameters("GetOwner");
+
+                    outPar = disk.InvokeMethod("GetOwner", inPar, null);
+
+                    text1 = outPar["User"].ToString();
+                    break;
+                }
+            }
+            catch
+            {
+                text1 = "SYSTEM";
+            }
+
+            return text1;
         }
         #endregion
     }
