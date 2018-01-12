@@ -243,6 +243,13 @@
     <Compile Include="Messaging\IMessagePublisher.cs" />
     <Compile Include="NameValue.cs" />
     <Compile Include="NullDisposable.cs" />
+    <Compile Include="Realtime\IOnlineClient.cs" />
+    <Compile Include="Realtime\IOnlineClientManager.cs" />
+    <Compile Include="Realtime\OnlineClient.cs" />
+    <Compile Include="Realtime\OnlineClientEventArgs.cs" />
+    <Compile Include="Realtime\OnlineClientManager.cs" />
+    <Compile Include="Realtime\OnlineClientManagerExtensions.cs" />
+    <Compile Include="Realtime\OnlineUserEventArgs.cs" />
     <Compile Include="Reflection\BuildManagerAssemblyFinder.cs" />
     <Compile Include="Reflection\ReflectionHelper.cs" />
     <Compile Include="Reflection\TypeHelper.cs" />

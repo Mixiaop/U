@@ -135,6 +135,14 @@ namespace U.Utilities.Net
                 return HttpPost(url, ms, fileDict, refererUrl, headers, encoding, cookieContainer, cer, timeout);
         }
 
+        public static string HttpPost(string url, string formData = null, Dictionary<string, string> fileDict = null, string refererUrl = null, Dictionary<string, string> headers = null,
+            Encoding encoding = null, CookieContainer cookieContainer = null, X509Certificate cer = null, int timeout = 10000)
+        {
+            MemoryStream ms = new MemoryStream();
+            formData.FillFormDataStream(ms);//填充formData
+            return HttpPost(url, ms, fileDict, refererUrl, headers, encoding, cookieContainer, cer, timeout);
+        }
+
         /// <summary>
         /// 使用POST方式获取结果
         /// </summary>
@@ -293,6 +301,12 @@ namespace U.Utilities.Net
         {
             string dataString = GetQueryString(formData);
             var formDataBytes = formData == null ? new byte[0] : Encoding.UTF8.GetBytes(dataString);
+            stream.Write(formDataBytes, 0, formDataBytes.Length);
+            stream.Seek(0, SeekOrigin.Begin);//设置指针读取位置
+        }
+
+        public static void FillFormDataStream(this string data, Stream stream) {
+            var formDataBytes = data == null ? new byte[0] : Encoding.UTF8.GetBytes(data);
             stream.Write(formDataBytes, 0, formDataBytes.Length);
             stream.Seek(0, SeekOrigin.Begin);//设置指针读取位置
         }
