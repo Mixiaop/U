@@ -116,6 +116,7 @@
     <Compile Include="System.String\String.ToCamelCase.cs" />
     <Compile Include="System.String\String.ToList.cs" />
     <Compile Include="System.String\String.ToPascalCase.cs" />
+    <Compile Include="System.String\System.Utils\String.Md5.cs" />
     <Compile Include="System.String\System.Utils\String.NthIndexOf.cs" />
     <Compile Include="System.String\Validation\String.IsValidBase64String.cs" />
     <Compile Include="System.String\Validation\String.IsValidSafeUserInfoString.cs" />

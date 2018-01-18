@@ -46,31 +46,43 @@ namespace U.Dependency
             }
         }
 
-        public void Register<T>(DependencyLifeStyle lifeStyle = DependencyLifeStyle.Singleton) where T : class
+        public void Register<T>(DependencyLifeStyle lifeStyle = DependencyLifeStyle.Singleton, string namedAlias = "") where T : class
         {
-            Register(typeof(T), typeof(T), lifeStyle);
+            Register(typeof(T), typeof(T), lifeStyle, namedAlias);
         }
 
-        public void Register(Type type, DependencyLifeStyle lifeStyle = DependencyLifeStyle.Singleton)
+        public void Register(Type type, DependencyLifeStyle lifeStyle = DependencyLifeStyle.Singleton, string namedAlias = "")
         {
-            Register(type, type, lifeStyle);
+            Register(type, type, lifeStyle, namedAlias);
         }
 
-        public void Register<TType, TImpl>(DependencyLifeStyle lifeStyle = DependencyLifeStyle.Singleton)
+        public void Register<TType, TImpl>(DependencyLifeStyle lifeStyle = DependencyLifeStyle.Singleton, string namedAlias = "")
         {
-            Register(typeof(TType), typeof(TImpl), lifeStyle);
+            Register(typeof(TType), typeof(TImpl), lifeStyle, namedAlias);
         }
 
-        public void Register(Type type, Type impl, DependencyLifeStyle lifeStyle = DependencyLifeStyle.Singleton)
+        public void Register(Type type, Type impl, DependencyLifeStyle lifeStyle = DependencyLifeStyle.Singleton, string namedAlias = "")
         {
             var builder = new ContainerBuilder();
             switch (lifeStyle)
             {
                 case DependencyLifeStyle.Singleton:
-                    builder.RegisterType(impl).As(type).SingleInstance();
+                    if (namedAlias.IsNotNullOrEmpty())
+                    {
+                        builder.RegisterType(impl).As(type).Named(namedAlias, type).SingleInstance();
+                    }
+                    else {
+                        builder.RegisterType(impl).As(type).SingleInstance();
+                    }
                     break;
                 case DependencyLifeStyle.Transient:
-                    builder.RegisterType(impl).As(type).InstancePerDependency();
+                    if (namedAlias.IsNotNullOrEmpty())
+                    {
+                        builder.RegisterType(impl).As(type).Named(namedAlias, type).InstancePerDependency();
+                    }
+                    else {
+                        builder.RegisterType(impl).As(type).InstancePerDependency();
+                    }
                     break;
             }
             builder.Update(IocContainer);
@@ -79,17 +91,22 @@ namespace U.Dependency
         #endregion
 
         #region IIocResolver
-        public T Resolve<T>() where T : class
+        public T Resolve<T>(string namedAlias = "") where T : class
         {
-            var obj = Resolve(typeof(T));
+            var obj = Resolve(typeof(T), namedAlias);
             return obj as T;
         }
 
-        public object Resolve(Type type)
+        public object Resolve(Type type, string namedAlias = "")
         {
             var scope = Scope();
-
-            return scope.Resolve(type);
+            if (namedAlias.IsNotNullOrEmpty())
+            {
+                return scope.ResolveNamed(namedAlias, type);
+            }
+            else {
+                return scope.Resolve(type);
+            }
         }
 
         public T[] ResolveAll<T>() {
@@ -139,16 +156,10 @@ namespace U.Dependency
         public void Release(object obj)
         {
         }
-        #endregion
 
-        /// <summary>
-        /// 检查指定的类型是否注册（泛型）
-        /// </summary>
-        /// <typeparam name="T">检查的类型</typeparam>
-        /// <returns></returns>
-        public bool IsRegistered<T>()
+        public bool IsRegistered<T>(string namedAlias = "")
         {
-            return IsRegistered(typeof(T));
+            return IsRegistered(typeof(T), namedAlias);
         }
 
         /// <summary>
@@ -156,11 +167,19 @@ namespace U.Dependency
         /// </summary>
         /// <param name="type">检查的类型</param>
         /// <returns></returns>
-        public bool IsRegistered(Type type)
+        public bool IsRegistered(Type type, string namedAlias = "")
         {
             var scope = Scope();
-            return scope.IsRegistered(type);
+            if (namedAlias.IsNotNullOrEmpty())
+            {
+                return scope.IsRegisteredWithName(namedAlias, type);
+            }
+            else
+            {
+                return scope.IsRegistered(type);
+            }
         }
+        #endregion
 
         public void Dispose()
         {

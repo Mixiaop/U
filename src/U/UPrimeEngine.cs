@@ -45,22 +45,21 @@ namespace U
         }
 
         #region Ioc Methods
-        public void Register<T>(DependencyLifeStyle lifeStyle = DependencyLifeStyle.Singleton) where T : class
+        public void Register<T>(DependencyLifeStyle lifeStyle = DependencyLifeStyle.Singleton, string namedAlias = "") where T : class
         {
-            IocManager.Register(typeof(T), typeof(T), lifeStyle);
+            IocManager.Register(typeof(T), typeof(T), lifeStyle, namedAlias);
         }
 
-        public void Register<TType, TImpl>(DependencyLifeStyle lifeStyle = DependencyLifeStyle.Singleton)
+        public void Register<TType, TImpl>(DependencyLifeStyle lifeStyle = DependencyLifeStyle.Singleton, string namedAlias = "")
         {
-            IocManager.Register(typeof(TType), typeof(TImpl));
+            IocManager.Register(typeof(TType), typeof(TImpl), lifeStyle, namedAlias);
         }
 
 
-        public T Resolve<T>() where T : class
+        public T Resolve<T>(string namedAlias = "") where T : class
         {
-            return IocManager.Resolve<T>();
+            return IocManager.Resolve<T>(namedAlias);
         }
-
 
         public T ResolveUnregistered<T>() where T : class
         {

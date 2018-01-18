@@ -13,14 +13,14 @@ namespace U.Tests.Web.Intercepter
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var context = new DynamicProxyContext();
+            //var context = new DynamicProxyContext();
 
-            var builder1 = new ContainerBuilder();
-            builder1.RegisterType<SimpleComponent>().As<SimpleComponent>().EnableDynamicProxy(context);
-            builder1.RegisterModule(new SimpleInterceptorModule());
-            var container1 = builder1.Build();
+            //var builder1 = new ContainerBuilder();
+            //builder1.RegisterType<SimpleComponent>().As<SimpleComponent>().EnableDynamicProxy(context);
+            //builder1.RegisterModule(new SimpleInterceptorModule());
+            //var container1 = builder1.Build();
 
-            var simple1 = container1.Resolve<SimpleComponent>();
+            //var simple1 = container1.Resolve<SimpleComponent>();
 
             //var builder2 = new ContainerBuilder();
             //builder2.RegisterType<SimpleComponent>().EnableDynamicProxy(context);
@@ -29,11 +29,13 @@ namespace U.Tests.Web.Intercepter
             //var simple2 = container2.Resolve<SimpleComponent>();
 
             //Response.Write(simple2.SimpleMethod());
-            Response.Write(simple1.SimpleMethod());
+            //Response.Write(simple1.SimpleMethod());
+            var simple = UPrimeEngine.Instance.Resolve<SimpleComponent>();
+            Response.Write(simple.SimpleMethod());
         }
     }
 
-    public class SimpleComponent
+    public class SimpleComponent : U.Application.Services.IApplicationService
     {
         public virtual string SimpleMethod()
         {

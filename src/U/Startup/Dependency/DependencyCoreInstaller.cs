@@ -11,6 +11,7 @@ using U.Logging;
 using U.Settings;
 using U.Dependency;
 using U.Domain.Uow;
+using U.Runtime.Caching;
 using U.Startup.Configuration;
 
 namespace U.Startup
@@ -28,6 +29,7 @@ namespace U.Startup
             builder.RegisterModule(new LoggingModule());
             builder.RegisterModule(new EventBusModule());
             builder.RegisterModule(new UnitOfWorkModule());
+            //builder.RegisterModule(new CachingModule());
             builder.RegisterSource(new SettingsSource());
 
             builder.RegisterType<UnitOfWorkDefaultOptions>().As<IUnitOfWorkDefaultOptions>().SingleInstance();
@@ -42,7 +44,8 @@ namespace U.Startup
 
             builder.RegisterType<DefaultUPrimeFinder>().As<IUPrimeFinder>().SingleInstance();
             builder.RegisterType<JSONSettingsManager>().As<ISettingsManager>().SingleInstance();
-            
+
+            builder.RegisterType<CachingInterceptor>().As<CachingInterceptor>();
 
             var iocManager = new IocManager(builder.Build());
             return iocManager;

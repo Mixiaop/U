@@ -35,6 +35,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Autofac.3.5.0\lib\net40\Autofac.dll</HintPath>
     </Reference>
+    <Reference Include="Autofac.Extras.DynamicProxy2">
+      <HintPath>..\packages\Autofac.Extras.DynamicProxy2.3.0.7\lib\net40\Autofac.Extras.DynamicProxy2.dll</HintPath>
+    </Reference>
     <Reference Include="Autofac.Integration.Mvc">
       <HintPath>..\packages\Autofac.Mvc5.3.3.1\lib\net45\Autofac.Integration.Mvc.dll</HintPath>
     </Reference>
@@ -254,6 +257,11 @@
     <Compile Include="Reflection\ReflectionHelper.cs" />
     <Compile Include="Reflection\TypeHelper.cs" />
     <Compile Include="RegularGuidGenerator.cs" />
+    <Compile Include="Runtime\Caching\CachingInterceptor.cs" />
+    <Compile Include="Runtime\Caching\CachingHelper.cs" />
+    <Compile Include="Runtime\Caching\CachingAttribute.cs" />
+    <Compile Include="Runtime\Caching\CachingBehavior.cs" />
+    <Compile Include="Runtime\Caching\NullCache.cs" />
     <Compile Include="SequentialGuidGenerator.cs" />
     <Compile Include="Startup\Configuration\IUnitOfWorkConfiguration.cs" />
     <Compile Include="Startup\Configuration\UnitOfWorkConfiguration.cs" />

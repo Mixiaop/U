@@ -28,7 +28,7 @@ namespace U.Dependency
         /// <typeparam name="T">注册的类型</typeparam>
         /// <param name="lifeStyle">对象的生命周期</param>
         /// <param name="name"></param>
-        void Register<T>(DependencyLifeStyle lifeStyle = DependencyLifeStyle.Singleton) where T : class;
+        void Register<T>(DependencyLifeStyle lifeStyle = DependencyLifeStyle.Singleton, string namedAlias = "") where T : class;
 
         /// <summary>
         /// 注册一个类型
@@ -36,7 +36,7 @@ namespace U.Dependency
         /// <param name="type">类型</param>
         /// <param name="lifeStyle">对象的生命周期</param>
         /// <param name="name"></param>
-        void Register(Type type, DependencyLifeStyle lifeStyle = DependencyLifeStyle.Singleton);
+        void Register(Type type, DependencyLifeStyle lifeStyle = DependencyLifeStyle.Singleton, string namedAlias = "");
 
         /// <summary>
         /// 注册一个类型和它的实现类型
@@ -44,8 +44,8 @@ namespace U.Dependency
         /// <typeparam name="TType">注册类型</typeparam>
         /// <typeparam name="TImpl">实现类型</typeparam>
         /// <param name="lifeStyle">对象的生命周期</param>
-        /// <param name="name"></param>
-        void Register<TType, TImpl>(DependencyLifeStyle lifeStyle = DependencyLifeStyle.Singleton);
+        /// <param name="namedAlias"></param>
+        void Register<TType, TImpl>(DependencyLifeStyle lifeStyle = DependencyLifeStyle.Singleton, string namedAlias = "");
 
         /// <summary>
         /// 注册一个类型和它的实现类型（泛型）
@@ -53,21 +53,22 @@ namespace U.Dependency
         /// <param name="type">注册类型</param>
         /// <param name="impl">实现类型</param>
         /// <param name="lifeStyle">对象的生命周期</param>
-        /// <param name="name"></param>
-        void Register(Type type, Type impl, DependencyLifeStyle lifeStyle = DependencyLifeStyle.Singleton);
-
-        /// <summary>
-        /// 检查指定的类型是否注册
-        /// </summary>
-        /// <param name="type">检查的类型</param>
-        /// <returns></returns>
-        bool IsRegistered(Type type);
+        /// <param name="namedAlias">别名</param>
+        void Register(Type type, Type impl, DependencyLifeStyle lifeStyle = DependencyLifeStyle.Singleton, string namedAlias = "");
 
         /// <summary>
         /// 检查指定的类型是否注册（泛型）
         /// </summary>
         /// <typeparam name="T">检查的类型</typeparam>
         /// <returns></returns>
-        bool IsRegistered<T>();
+        bool IsRegistered<T>(string namedAlias = "");
+
+        /// <summary>
+        /// 检查指定的类型是否注册
+        /// </summary>
+        /// <param name="type">检查的类型</param>
+        /// <param name="namedAlias"></param>
+        /// <returns></returns>
+        bool IsRegistered(Type type, string namedAlias = "");
     }
 }

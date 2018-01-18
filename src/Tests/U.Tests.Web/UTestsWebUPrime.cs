@@ -6,6 +6,9 @@ using U.Runtime.Caching.Redis;
 using U.Dapper;
 using U.EntityFramework;
 using U.Utilities.Web;
+using U.Runtime.Caching;
+using U.Tests.Web.Caching;
+
 namespace U.Tests.Web
 {
     [DependsOn(
@@ -21,7 +24,12 @@ namespace U.Tests.Web
         public override void PreInitialize()
         {
             Engine.Configuration.BackgroundJob.IsJobExecutionEnabled = true;
-            var a = 1;
+
+            UPrimeEngine.Instance.Register<OneRedisCacheDatabaseProvider, OneRedisCacheDatabaseProvider>();
+            UPrimeEngine.Instance.Register<ZeroRedisCacheDatabaseProvider, ZeroRedisCacheDatabaseProvider>();
+
+            UPrimeEngine.Instance.Register<ICacheManager, ZeroCacheManager>(U.Dependency.DependencyLifeStyle.Singleton, "zero");
+            UPrimeEngine.Instance.Register<ICacheManager, OneCacheManager>(U.Dependency.DependencyLifeStyle.Singleton, "one");
         }
 
         public override void Initialize()

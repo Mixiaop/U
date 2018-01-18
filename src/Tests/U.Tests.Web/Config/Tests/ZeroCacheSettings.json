@@ -1,0 +1,6 @@
+﻿{
+  "Enabled": 0,
+  "RedisEnabled": 1,
+  "RedisConnectionString": "106.75.93.52:6379,allowAdmin=true,abortConnect=false",
+  "RedisDatabaseId": 1
+}

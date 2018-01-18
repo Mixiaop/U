@@ -50,13 +50,17 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\Autofac.3.5.0\lib\net40\Autofac.dll</HintPath>
     </Reference>
+    <Reference Include="Autofac.Extras.DynamicProxy2, Version=3.0.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Autofac.Extras.DynamicProxy2.3.0.7\lib\net40\Autofac.Extras.DynamicProxy2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Autofac.Integration.Mvc, Version=3.3.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\Autofac.Mvc5.3.3.1\lib\net45\Autofac.Integration.Mvc.dll</HintPath>
     </Reference>
-    <Reference Include="Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Castle.Core.3.3.3\lib\net45\Castle.Core.dll</HintPath>
+    <Reference Include="Castle.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Castle.Core.3.3.0\lib\net45\Castle.Core.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -438,6 +442,7 @@
     <Content Include="Blockly\python_compressed.js" />
     <Content Include="Caches\AttrTests.aspx" />
     <Content Include="Caches\Default.aspx" />
+    <Content Include="Caching\RedisCachingTests.aspx" />
     <Content Include="chromedriver.exe" />
     <Content Include="Config\U\DapperSettings.json" />
     <Content Include="Config\U\Utilities\SqlServer\Database.config" />
@@ -494,6 +499,8 @@
     <Content Include="Blockly\demos\plane\xlf\translated_msgs_vi.xlf" />
     <Content Include="Blockly\demos\plane\xlf\translated_msgs_zh-hans.xlf" />
     <Content Include="Blockly\demos\plane\xlf\translated_msgs_zh-hant.xlf" />
+    <Content Include="Config\Tests\OneCacheSettings.json" />
+    <Content Include="Config\Tests\ZeroCacheSettings.json" />
     <None Include="Config\U\EFSettings.json" />
     <Content Include="Converters\HtmlPage1.html" />
     <Content Include="Converters\HtmlToWordTests.aspx" />
@@ -595,6 +602,13 @@
     </Compile>
     <Compile Include="Caches\AttrTests.aspx.designer.cs">
       <DependentUpon>AttrTests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Caching\RedisCachingTests.aspx.cs">
+      <DependentUpon>RedisCachingTests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Caching\RedisCachingTests.aspx.designer.cs">
+      <DependentUpon>RedisCachingTests.aspx</DependentUpon>
     </Compile>
     <Compile Include="Converters\HtmlToWordTests.aspx.cs">
       <DependentUpon>HtmlToWordTests.aspx</DependentUpon>

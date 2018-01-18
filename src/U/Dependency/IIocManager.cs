@@ -14,17 +14,19 @@ namespace U.Dependency
         IContainer IocContainer { get; }
 
         /// <summary>
-        /// 检查指定的类型是否注册
-        /// </summary>
-        /// <param name="type">检查的类型</param>
-        /// <returns></returns>
-        new bool IsRegistered(Type type);
-
-        /// <summary>
         /// 检查指定的类型是否注册（泛型）
         /// </summary>
         /// <typeparam name="T">检查的类型</typeparam>
+        /// <param name="namedAlias"></param>
         /// <returns></returns>
-        new bool IsRegistered<T>();
+        new bool IsRegistered<T>(string namedAlias = "");
+
+        /// <summary>
+        /// 检查指定的类型是否注册
+        /// </summary>
+        /// <param name="type">检查的类型</param>
+        /// <param name="namedAlias"></param>
+        /// <returns></returns>
+        new bool IsRegistered(Type type, string namedAlias = "");
     }
 }

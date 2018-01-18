@@ -1,4 +1,6 @@
 ﻿using Autofac;
+using Autofac.Extras.DynamicProxy2;
+using U.Runtime.Caching;
 
 namespace U.Dependency
 {
@@ -9,6 +11,7 @@ namespace U.Dependency
     {
         public void RegisterAssembly(IConventionalRegistrationContext context)
         {
+            //var proxyContext = new DynamicProxyContext();
 
             ContainerBuilder builder = new ContainerBuilder();
             //Transient
@@ -16,14 +19,19 @@ namespace U.Dependency
                 .As<ITransientDependency>()
                 .AsSelf()
                 .AsImplementedInterfaces()
-                .InstancePerDependency();
+                .InstancePerDependency()
+                .EnableClassInterceptors()
+                .InterceptedBy(typeof(CachingInterceptor));
+
 
             //Singleton
             builder.RegisterAssemblyTypes(context.Assembly)
                 .As<ISingletonDependency>()
                 .AsSelf()
                 .AsImplementedInterfaces()
-                .SingleInstance();
+                .SingleInstance()
+                .EnableClassInterceptors()
+                .InterceptedBy(typeof(CachingInterceptor));
 
             builder.Update(context.IocManager.IocContainer);
         }

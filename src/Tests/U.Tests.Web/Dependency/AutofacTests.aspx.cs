@@ -17,8 +17,35 @@ namespace U.Tests.Web.Dependency
         protected void Page_Load(object sender, EventArgs e)
         {
             //var builder = new ContainerBuilder();
-            //builder.RegisterType<WebWorkContext>().As<IWorkContext>().InstancePerLifetimeScope();
+            //builder.RegisterType<RedisCacheProvider>()
+            //    .Named<ICacheProvider>("redis")
+            //    .As<ICacheProvider>()
+            //    .InstancePerLifetimeScope();
+            //builder.RegisterType<RedisCacheProvider>()
+            //    .Named<ICacheProvider>("memory")
+            //    .As<ICacheProvider>()
+            //    .InstancePerLifetimeScope();
 
+            //var container = builder.Build();
+
+            //var redisManager = container.ResolveNamed<ICacheProvider>("redis");
+            //Response.Write(redisManager.Get("1"));
+
+            //var memoryManager = container.ResolveNamed<ICacheProvider>("memory");
+            //Response.Write(memoryManager.Get("1"));
+
+
+
+            UPrimeEngine.Instance.Register<ICacheProvider, RedisCacheProvider> (DependencyLifeStyle.Singleton, "redis");
+            UPrimeEngine.Instance.Register<ICacheProvider, MemoryCacheProvider>(DependencyLifeStyle.Singleton, "memory");
+
+            var redisManager = UPrimeEngine.Instance.Resolve<ICacheProvider>("redis");
+            Response.Write(redisManager.Get("1"));
+
+            var memoryManager = UPrimeEngine.Instance.Resolve<ICacheProvider>("memory");
+            Response.Write(memoryManager.Get("1"));
+            //var failManager = container.ResolveNamed<ICacheProvider>("111");
+            //Response.Write(failManager.Get("1"));
             //Container = builder.Build();
 
             //var scope = Container;
@@ -48,6 +75,25 @@ namespace U.Tests.Web.Dependency
         }
     }
 
+    public interface ICacheProvider {
+        string Get(string key);
+    }
+
+    public class MemoryCacheProvider : ICacheProvider {
+
+        public string Get(string key) {
+            return "memory";
+        }
+    }
+
+    public class RedisCacheProvider : ICacheProvider
+    {
+
+        public string Get(string key)
+        {
+            return "redis";
+        }
+    }
 
 
     //public interface IWorkContext

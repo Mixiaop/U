@@ -10,15 +10,17 @@ namespace U.Dependency
         /// <summary>
         /// 从容器解析对象并返回
         /// </summary>
+        /// <param name="namedAlias"></param>
         /// <returns></returns>
-        T Resolve<T>() where T : class;
+        T Resolve<T>(string namedAlias = "") where T : class;
 
         /// <summary>
         /// 解析对象
         /// </summary>
         /// <param name="type"></param>
+        /// <param name="namedAlias"></param>
         /// <returns></returns>
-        object Resolve(Type type);
+        object Resolve(Type type, string namedAlias = "");
 
         /// <summary>
         /// 解析所有对象
@@ -34,19 +36,21 @@ namespace U.Dependency
         /// <returns></returns>
         T ResolveUnregistered<T>() where T : class;
         
-        /// <summary>
-        /// 检查指定的类型是否注册
-        /// </summary>
-        /// <param name="type">检查的类型</param>
-        /// <returns></returns>
-        bool IsRegistered(Type type);
 
         /// <summary>
         /// 检查指定的类型是否注册（泛型）
         /// </summary>
         /// <typeparam name="T">检查的类型</typeparam>
         /// <returns></returns>
-        bool IsRegistered<T>();
+        bool IsRegistered<T>(string namedAlias = "");
+
+        /// <summary>
+        /// 检查指定的类型是否注册
+        /// </summary>
+        /// <param name="type">检查的类型</param>
+        /// <param name="namedAlias"></param>
+        /// <returns></returns>
+        bool IsRegistered(Type type, string namedAlias = "");
 
         /// <summary>
         /// Release pre-resolved object.

@@ -46,7 +46,7 @@ namespace U.Runtime.Caching.Redis
 
         private string GetLocalizedKey(string key)
         {
-            return "n:" + Name + ",k:" + key;
+            return Name + "_" + key;
         }
 
         #region ClearCache
