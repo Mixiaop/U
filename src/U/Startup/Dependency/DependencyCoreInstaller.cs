@@ -28,7 +28,7 @@ namespace U.Startup
 
             builder.RegisterModule(new LoggingModule());
             builder.RegisterModule(new EventBusModule());
-            builder.RegisterModule(new UnitOfWorkModule());
+            //builder.RegisterModule(new UnitOfWorkModule());
             //builder.RegisterModule(new CachingModule());
             builder.RegisterSource(new SettingsSource());
 
