@@ -36,6 +36,9 @@ namespace U.Tests.Web.Caching
 
             //var zeroCacheManager = UPrimeEngine.Instance.Resolve<ICacheManager>("zero");
             //zeroCacheManager.GetCache("AreaService").RemoveByPattern("Get[5rW36bmP");
+
+            IAreaService areaService = UPrimeEngine.Instance.Resolve<IAreaService>();
+            var a = 1;
         }
 
         private void BtnGet_Click(object sender, EventArgs e)
@@ -201,9 +204,12 @@ namespace U.Tests.Web.Caching
     public class AreaService : IAreaService
     {
         IAreaRepository _areaRepository;
+        ICacheManager _cacheManager;
         public AreaService(IAreaRepository areaRepository)
         {
             _areaRepository = areaRepository;
+            _cacheManager = UPrimeEngine.Instance.Resolve<ICacheManager>();
+            var b = 1;
         }
 
         [Caching("zero", CachingBehavior.Get)]

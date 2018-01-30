@@ -1,6 +1,7 @@
 ﻿using Autofac;
 using Autofac.Extras.DynamicProxy2;
 using U.Runtime.Caching;
+using U.Application.Services;
 
 namespace U.Dependency
 {
@@ -19,9 +20,8 @@ namespace U.Dependency
                 .As<ITransientDependency>()
                 .AsSelf()
                 .AsImplementedInterfaces()
-                .InstancePerDependency()
-                .EnableClassInterceptors()
-                .InterceptedBy(typeof(CachingInterceptor));
+                .InstancePerDependency();
+                
 
 
             //Singleton
@@ -29,9 +29,18 @@ namespace U.Dependency
                 .As<ISingletonDependency>()
                 .AsSelf()
                 .AsImplementedInterfaces()
-                .SingleInstance()
+                .SingleInstance();
+            //.EnableClassInterceptors()
+            //.InterceptedBy(typeof(CachingInterceptor));
+
+
+            builder.RegisterAssemblyTypes(context.Assembly)
+                .As<IApplicationService>()
+                .AsSelf()
+                .AsImplementedInterfaces()
                 .EnableClassInterceptors()
                 .InterceptedBy(typeof(CachingInterceptor));
+
 
             builder.Update(context.IocManager.IocContainer);
         }
