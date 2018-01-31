@@ -43,6 +43,12 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="U.Extension.Collections">
+      <HintPath>..\packages\U.ExtensionMethods\U.Extension.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="U.Extension.Core">
+      <HintPath>..\packages\U.ExtensionMethods\U.Extension.Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dapper\DapperContextProvider.cs" />
@@ -86,10 +92,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ExtensionMethods\U.Extension.Core\U.Extension.Core.csproj">
-      <Project>{625bba45-38c1-4ec1-b0cb-58bb8acf8ce4}</Project>
-      <Name>U.Extension.Core</Name>
-    </ProjectReference>
     <ProjectReference Include="..\U\U.csproj">
       <Project>{69c8db8b-1da8-4236-b2ac-7daf57064b2f}</Project>
       <Name>U</Name>

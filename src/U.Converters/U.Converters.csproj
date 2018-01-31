@@ -43,6 +43,18 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="U.Extension.Collections">
+      <HintPath>..\packages\U.ExtensionMethods\U.Extension.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="U.Extension.Core">
+      <HintPath>..\packages\U.ExtensionMethods\U.Extension.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="U.Extension.Drawing">
+      <HintPath>..\packages\U.ExtensionMethods\U.Extension.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="U.Extension.Web">
+      <HintPath>..\packages\U.ExtensionMethods\U.Extension.Web.dll</HintPath>
+    </Reference>
     <Reference Include="WebDriver">
       <HintPath>..\packages\Selenium.WebDriver.3.4.0\lib\net40\WebDriver.dll</HintPath>
     </Reference>
@@ -55,22 +67,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ExtensionMethods\U.Extension.Collections\U.Extension.Collections.csproj">
-      <Project>{193b9757-2546-47ef-9342-70baab6df59d}</Project>
-      <Name>U.Extension.Collections</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ExtensionMethods\U.Extension.Core\U.Extension.Core.csproj">
-      <Project>{625bba45-38c1-4ec1-b0cb-58bb8acf8ce4}</Project>
-      <Name>U.Extension.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ExtensionMethods\U.Extension.Drawing\U.Extension.Drawing.csproj">
-      <Project>{0db5b966-b954-40ae-872a-fd0a926fea5a}</Project>
-      <Name>U.Extension.Drawing</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ExtensionMethods\U.Extension.Serialization\U.Extension.Serialization.csproj">
-      <Project>{9cfa1181-6d1a-471c-b98e-f9db178a1e86}</Project>
-      <Name>U.Extension.Serialization</Name>
-    </ProjectReference>
     <ProjectReference Include="..\U.Utilities\U.Utilities.csproj">
       <Project>{250f5724-011b-44e0-b34c-7f7292318351}</Project>
       <Name>U.Utilities</Name>

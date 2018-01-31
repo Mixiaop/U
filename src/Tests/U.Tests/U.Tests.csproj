@@ -61,6 +61,18 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.XML" />
+    <Reference Include="U.Extension.Collections">
+      <HintPath>..\..\packages\U.ExtensionMethods\U.Extension.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="U.Extension.Core">
+      <HintPath>..\..\packages\U.ExtensionMethods\U.Extension.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="U.Extension.Serialization">
+      <HintPath>..\..\packages\U.ExtensionMethods\U.Extension.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="U.Extension.Web">
+      <HintPath>..\..\packages\U.ExtensionMethods\U.Extension.Web.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -98,14 +110,6 @@
     <Compile Include="UTestsUPrime.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\ExtensionMethods\U.Extension.Collections\U.Extension.Collections.csproj">
-      <Project>{193b9757-2546-47ef-9342-70baab6df59d}</Project>
-      <Name>U.Extension.Collections</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\ExtensionMethods\U.Extension.Serialization\U.Extension.Serialization.csproj">
-      <Project>{9cfa1181-6d1a-471c-b98e-f9db178a1e86}</Project>
-      <Name>U.Extension.Serialization</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\U.Dapper\U.Dapper.csproj">
       <Project>{2dcefbe0-31cd-4366-aafe-431edeb22d39}</Project>
       <Name>U.Dapper</Name>

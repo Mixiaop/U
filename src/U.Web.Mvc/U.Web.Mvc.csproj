@@ -51,6 +51,15 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="U.Extension.Collections">
+      <HintPath>..\packages\U.ExtensionMethods\U.Extension.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="U.Extension.Core">
+      <HintPath>..\packages\U.ExtensionMethods\U.Extension.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="U.Extension.Web">
+      <HintPath>..\packages\U.ExtensionMethods\U.Extension.Web.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Web\Mvc\Controllers\ActionDescriptorHelper.cs" />
@@ -68,10 +77,6 @@
     <Compile Include="Web\Mvc\Views\UWebViewPageOfTModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ExtensionMethods\U.Extension.Core\U.Extension.Core.csproj">
-      <Project>{625bba45-38c1-4ec1-b0cb-58bb8acf8ce4}</Project>
-      <Name>U.Extension.Core</Name>
-    </ProjectReference>
     <ProjectReference Include="..\U.Web\U.Web.csproj">
       <Project>{5cb14121-85e8-45ae-816d-439cf63f9bfa}</Project>
       <Name>U.Web</Name>

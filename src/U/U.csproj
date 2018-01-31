@@ -84,6 +84,15 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="U.Extension.Collections">
+      <HintPath>..\packages\U.ExtensionMethods\U.Extension.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="U.Extension.Core">
+      <HintPath>..\packages\U.ExtensionMethods\U.Extension.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="U.Extension.Web">
+      <HintPath>..\packages\U.ExtensionMethods\U.Extension.Web.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Application\Services\Dto\AuditedEntityDto.cs" />
@@ -392,16 +401,6 @@
     <Compile Include="Timing\IDateTimeRange.cs" />
     <Compile Include="UPrimeEngine.cs" />
     <Compile Include="UException.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ExtensionMethods\U.Extension.Collections\U.Extension.Collections.csproj">
-      <Project>{193b9757-2546-47ef-9342-70baab6df59d}</Project>
-      <Name>U.Extension.Collections</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ExtensionMethods\U.Extension.Core\U.Extension.Core.csproj">
-      <Project>{625bba45-38c1-4ec1-b0cb-58bb8acf8ce4}</Project>
-      <Name>U.Extension.Core</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Storage\" />
