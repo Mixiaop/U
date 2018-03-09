@@ -12,11 +12,13 @@ namespace U.Hangfire
     public class HangfireBackgroundJobManager : BackgroundWorkerBase, IBackgroundJobManager
     {
         private readonly IUHangfireConfiguration _hangfireConfiguration;
-
+        private readonly IHangfireDataProvider _hangfireDataProvider;
         public HangfireBackgroundJobManager(
-            IUHangfireConfiguration hangfireConfiguration)
+            IUHangfireConfiguration hangfireConfiguration,
+            IHangfireDataProvider hangfireDataProvider)
         {
             _hangfireConfiguration = hangfireConfiguration;
+            _hangfireDataProvider = hangfireDataProvider;
         }
 
         public override void Start()
@@ -87,6 +89,10 @@ namespace U.Hangfire
 
         public void Delete(string jobId) {
             HangfireBackgroundJob.Delete(jobId);
+        }
+
+        public bool Exists(string jobId) {
+            return _hangfireDataProvider.Exists(jobId);
         }
     }
 }

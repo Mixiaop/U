@@ -75,5 +75,12 @@ namespace U.BackgroundJobs
         /// </summary>
         /// <param name="jobId"></param>
         void Delete(string jobId);
+
+        /// <summary>
+        /// 通过任务Id检查是否存在于任务列表中（计划、处理中）
+        /// </summary>
+        /// <param name="jobId"></param>
+        /// <returns></returns>
+        bool Exists(string jobId);
     }
 }

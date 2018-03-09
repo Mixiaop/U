@@ -72,6 +72,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Hangfire\IHangfireDataProvider.cs" />
     <Compile Include="Hangfire\Startup\Configuration\UHangfireConfiguration.cs" />
     <Compile Include="Hangfire\Startup\Configuration\HangfireSettings.cs" />
     <Compile Include="Hangfire\Startup\Configuration\IUHangfireConfiguration.cs" />
