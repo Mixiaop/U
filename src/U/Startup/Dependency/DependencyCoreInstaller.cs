@@ -13,6 +13,7 @@ using U.Dependency;
 using U.Domain.Uow;
 using U.Runtime.Caching;
 using U.Startup.Configuration;
+using U.Application.Services;
 
 namespace U.Startup
 {
@@ -46,6 +47,7 @@ namespace U.Startup
             builder.RegisterType<JSONSettingsManager>().As<ISettingsManager>().SingleInstance();
 
             builder.RegisterType<CachingInterceptor>().As<CachingInterceptor>();
+            builder.RegisterType<ApplicationMethodInterceptor>().As<ApplicationMethodInterceptor>();
 
             var iocManager = new IocManager(builder.Build());
             return iocManager;

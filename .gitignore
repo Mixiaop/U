@@ -7,3 +7,4 @@ src/Tests/U.Tests.Web/App_Data/Logs/u-debug-2017.06.04.log
 src/Tests/U.Tests.Web/App_Data/Logs/u-error-2017.06.04.log
 *.ide
 *.ide-journal
+*.log

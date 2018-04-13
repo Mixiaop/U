@@ -76,6 +76,7 @@
     <Compile Include="Access\DatabaseConfigInfo.cs" />
     <Compile Include="Access\DatabaseConfigs.cs" />
     <Compile Include="Compress\ZipHelper.cs" />
+    <Compile Include="Drawing\PhotoHelper.cs" />
     <Compile Include="Excel\ExcelHelper.cs" />
     <Compile Include="Excel\ExcelModel.cs" />
     <Compile Include="IIS\BaseService.cs" />

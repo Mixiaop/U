@@ -23,7 +23,9 @@ namespace U.Tests.Web
     {
         public override void PreInitialize()
         {
-            Engine.Configuration.BackgroundJob.IsJobExecutionEnabled = true;
+            Engine.Configuration.BackgroundJob.IsJobExecutionEnabled = false;
+            Engine.Configuration.Settings.IsOpenedApplicationLogExceptionInterceptor = true;
+            Engine.Configuration.Settings.IsOpenedCachingInterceptor = true;
 
             UPrimeEngine.Instance.Register<OneRedisCacheDatabaseProvider, OneRedisCacheDatabaseProvider>();
             UPrimeEngine.Instance.Register<ZeroRedisCacheDatabaseProvider, ZeroRedisCacheDatabaseProvider>();

@@ -3,10 +3,11 @@
 namespace U.Application.Services
 {
     /// <summary>
-    /// This class can be used as a base class for application services. 
+    /// 此类能被所有的应用服务继承
     /// </summary>
     public abstract class ApplicationService : UServiceBase, IApplicationService
     {
        
     }
 }
+ 

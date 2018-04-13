@@ -9,5 +9,9 @@ namespace U.Startup.Configuration
             get;
             set;
         }
+
+        public bool IsOpenedCachingInterceptor { get; set; }
+
+        public bool IsOpenedApplicationLogExceptionInterceptor { get; set; }
     }
 }

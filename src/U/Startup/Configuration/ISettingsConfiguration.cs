@@ -10,5 +10,9 @@ namespace U.Startup.Configuration
         /// Gets or sets settings storage files path.
         /// </summary>
         string SettingsPath { get; set; }
+
+        bool IsOpenedCachingInterceptor { get; set; }
+
+        bool IsOpenedApplicationLogExceptionInterceptor { get; set; }
     }
 }

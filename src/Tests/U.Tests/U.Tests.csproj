@@ -60,6 +60,10 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System.XML" />
     <Reference Include="U.Extension.Collections">
       <HintPath>..\..\packages\U.ExtensionMethods\U.Extension.Collections.dll</HintPath>
@@ -87,6 +91,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Application\MethodReturnInterceptor_Tests.cs" />
     <Compile Include="AutofacUtils\DynamicProxy2\DynamicProxyTests.cs" />
     <Compile Include="Dapper\ConfigurationTests.cs" />
     <Compile Include="Dapper\Extensions\DapperImplementorTests.cs" />
@@ -106,6 +111,7 @@
     <Compile Include="Events\Bus\TransientDisposableEventHandlerTest.cs" />
     <Compile Include="Extensions\CollectionTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestsBase.cs" />
     <Compile Include="UStarterHelperTests.cs" />
     <Compile Include="UTestsUPrime.cs" />
   </ItemGroup>
@@ -125,6 +131,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="SqlGenerator\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

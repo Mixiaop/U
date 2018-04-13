@@ -257,6 +257,7 @@
       <Link>phantomjs.exe</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Application\Services\MethodReturnInterceptor_Tests.aspx" />
     <Content Include="AsposeWords\Hello.aspx" />
     <Content Include="AsposeWords\Result.aspx" />
     <Content Include="AsposeWords\Result.html" />
@@ -568,6 +569,13 @@
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Application\Services\MethodReturnInterceptor_Tests.aspx.cs">
+      <DependentUpon>MethodReturnInterceptor_Tests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\Services\MethodReturnInterceptor_Tests.aspx.designer.cs">
+      <DependentUpon>MethodReturnInterceptor_Tests.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AsposeWords\Hello.aspx.cs">
       <DependentUpon>Hello.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

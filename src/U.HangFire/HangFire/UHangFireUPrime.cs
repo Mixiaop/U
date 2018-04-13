@@ -12,9 +12,16 @@ namespace U.Hangfire
         public override void PreInitialize()
         {
             Engine.Register<IUHangfireConfiguration, UHangfireConfiguration>();
-            var config = Engine.Resolve<IUHangfireConfiguration>();
-            config.GlobalConfiguration.UseActivator(new HangfireIocJobActivator(Engine.IocManager));
-            config.GlobalConfiguration.UseSqlServerStorage(config.SqlServerConn);
+            try
+            {
+                var config = Engine.Resolve<IUHangfireConfiguration>();
+                config.GlobalConfiguration.UseActivator(new HangfireIocJobActivator(Engine.IocManager));
+                config.GlobalConfiguration.UseSqlServerStorage(config.SqlServerConn);
+
+            }
+            catch (UException ex) {
+                
+            }
         }
         public override void Initialize()
         {

@@ -40,6 +40,7 @@ namespace U.Dependency
                 .AsImplementedInterfaces()
                 .EnableClassInterceptors()
                 .InterceptedBy(typeof(CachingInterceptor));
+            //, typeof(ApplicationMethodInterceptor)
 
 
             builder.Update(context.IocManager.IocContainer);

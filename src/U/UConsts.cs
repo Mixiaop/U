@@ -31,4 +31,5 @@ namespace U
     //0.5.11.11 修复了CachingInterceptor注册方式，从 ITransientDependency 修改成 IApplicationService
     //0.6.11.11 4.5.1 升级到 4.6.1
     //0.6.12.11 U.ExtentionMethods 已独立出项目
+    
 }

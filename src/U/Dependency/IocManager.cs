@@ -193,13 +193,13 @@ namespace U.Dependency
         /// <returns></returns>
         private ILifetimeScope Scope()
         {
-
+            //return this.IocContainer;
             try
             {
                 if (HttpContext.Current != null)
                     return AutofacDependencyResolver.Current.RequestLifetimeScope;
 
-                return IocContainer.BeginLifetimeScope();
+                    return IocContainer.BeginLifetimeScope();
             }
             catch (Exception exc)
             {
