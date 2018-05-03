@@ -137,6 +137,7 @@
     <Content Include="Config\U\Segmentation\Resources\prob_trans.json" />
     <Content Include="Config\U\Utilities\Access\Database.config" />
     <Content Include="Config\U\Utilities\SqlServer\Database.config" />
+    <Content Include="_Tests.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -197,6 +198,13 @@
     </Compile>
     <Compile Include="SiteAutoStart.aspx.designer.cs">
       <DependentUpon>SiteAutoStart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Tests.aspx.cs">
+      <DependentUpon>_Tests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Tests.aspx.designer.cs">
+      <DependentUpon>_Tests.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
