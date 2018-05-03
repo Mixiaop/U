@@ -50,6 +50,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "U.Segmentation", "U.Segment
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "U.Web.IISManage", "U.Web.IISManage\U.Web.IISManage.csproj", "{799F532B-2C3F-4CC0-B1D9-F61851242BA2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "U.Quartz", "U.Quartz\U.Quartz.csproj", "{C437FEA4-451E-46CB-B16D-E0FCD78DC833}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -136,6 +138,10 @@ Global
 		{799F532B-2C3F-4CC0-B1D9-F61851242BA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{799F532B-2C3F-4CC0-B1D9-F61851242BA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{799F532B-2C3F-4CC0-B1D9-F61851242BA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C437FEA4-451E-46CB-B16D-E0FCD78DC833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C437FEA4-451E-46CB-B16D-E0FCD78DC833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C437FEA4-451E-46CB-B16D-E0FCD78DC833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C437FEA4-451E-46CB-B16D-E0FCD78DC833}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
