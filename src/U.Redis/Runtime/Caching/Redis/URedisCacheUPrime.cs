@@ -6,7 +6,7 @@ using U.Runtime.Caching.Memory;
 namespace U.Runtime.Caching.Redis
 {
     [DependsOn(typeof(ULeadershipUPrime))]
-    public class URedisCacheUPrime : UPrime
+    public class URedisCacheUPrime : U.UPrimes.UPrime
     {
         public override void PreInitialize()
         {

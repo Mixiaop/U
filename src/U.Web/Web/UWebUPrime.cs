@@ -4,7 +4,7 @@ using U.UPrimes;
 namespace U.Web
 {
 
-    public class UWebUPrime : UPrime
+    public class UWebUPrime : U.UPrimes.UPrime
     {
         public override void Initialize()
         {

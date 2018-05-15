@@ -6,7 +6,7 @@ using U.Logging;
 namespace U.AutoMapper
 {
     [DependsOn(typeof(ULeadershipUPrime))]
-    public class UAutoMapperUPrime : UPrime
+    public class UAutoMapperUPrime : U.UPrimes.UPrime
     {
         public ILogger Logger { get; set; }
 

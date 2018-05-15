@@ -8,7 +8,7 @@ namespace U.Dapper
     [DependsOn(
         typeof(ULeadershipUPrime)
         )]
-    public class UDapperUPrime : UPrime
+    public class UDapperUPrime : U.UPrimes.UPrime
     {
         public override void PreInitialize()
         {

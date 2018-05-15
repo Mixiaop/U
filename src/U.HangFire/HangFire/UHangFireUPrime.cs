@@ -7,7 +7,7 @@ using U.Hangfire.Startup.Configuration;
 namespace U.Hangfire
 {
     [DependsOn(typeof(ULeadershipUPrime))]
-    public class UHangfireUPrime : UPrime
+    public class UHangfireUPrime : U.UPrimes.UPrime
     {
         public override void PreInitialize()
         {

@@ -5,7 +5,7 @@ using U.UPrimes;
 namespace U.WebApi
 {
     [DependsOn(typeof(UWebUPrime))]
-    public class UWebApiUPrime : UPrime
+    public class UWebApiUPrime : U.UPrimes.UPrime
     {
         public override void Initialize()
         {

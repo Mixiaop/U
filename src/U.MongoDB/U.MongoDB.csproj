@@ -47,13 +47,14 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="U.Extension.Collections, Version=0.1.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\U.ExtensionMethods\U.Extension.Collections.dll</HintPath>
+    <Reference Include="UPrime.Extensions.Collection">
+      <HintPath>..\packages\UPrime\UPrime.Extensions.Collection.dll</HintPath>
     </Reference>
-    <Reference Include="U.Extension.Core, Version=0.1.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\U.ExtensionMethods\U.Extension.Core.dll</HintPath>
+    <Reference Include="UPrime.Extensions.Core">
+      <HintPath>..\packages\UPrime\UPrime.Extensions.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="UPrime.Version">
+      <HintPath>..\packages\UPrime\UPrime.Version.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -4,7 +4,7 @@ using U.MongoDB.Startup.Configuration;
 
 namespace U.MongoDB
 {
-    public class MongoDbUPrime : UPrime
+    public class MongoDbUPrime : U.UPrimes.UPrime
     {
         public override void PreInitialize()
         {

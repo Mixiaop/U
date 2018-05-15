@@ -9,7 +9,7 @@ namespace U
         /// <summary>
         /// 当前版本
         /// </summary>
-        public const string CurrentVersion = "0.6.12.11";
+        public const string CurrentVersion = "0.6.13.11";
     }
     //0.5.4.1 修正了【AjaxProGeneratePageBase】生成ajaxservices兼容腾讯手机X5浏览器
     //0.5.4.2 CookHelper增加了重载支持存储domain
@@ -31,5 +31,6 @@ namespace U
     //0.5.11.11 修复了CachingInterceptor注册方式，从 ITransientDependency 修改成 IApplicationService
     //0.6.11.11 4.5.1 升级到 4.6.1
     //0.6.12.11 U.ExtentionMethods 已独立出项目
-    
+    //0.6.13.11 移除U.Extention的依赖，用UPrime.Extensions替换之
+
 }

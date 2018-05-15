@@ -19,7 +19,7 @@ namespace U.Tests.Web
         typeof(UDapperUPrime),
         typeof(UEntityFrameworkUPrime)
         )]
-    public class UTestsWebUPrime : UPrime
+    public class UTestsWebUPrime : U.UPrimes.UPrime
     {
         public override void PreInitialize()
         {

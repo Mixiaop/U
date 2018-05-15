@@ -9,7 +9,7 @@ using U.FakeMvc.Startup;
 
 namespace U.FakeMvc
 {
-    public class UFakeMvcUPrime : UPrime
+    public class UFakeMvcUPrime : U.UPrimes.UPrime
     {
         public override void PreInitialize()
         {

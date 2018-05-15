@@ -7,7 +7,7 @@ using U.Web.Mvc.Routes;
 namespace U.Web.Mvc
 {
     [DependsOn(typeof(UWebUPrime))]
-    public class UWebMvcUPrime : UPrime
+    public class UWebMvcUPrime : U.UPrimes.UPrime
     {
         public override void Initialize()
         {

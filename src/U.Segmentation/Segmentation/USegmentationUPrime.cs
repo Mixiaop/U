@@ -3,7 +3,7 @@ using U.UPrimes;
 
 namespace U.Segmentation
 {
-    public class USegmentationUPrime : UPrime
+    public class USegmentationUPrime : U.UPrimes.UPrime
     {
         public override void Initialize()
         {

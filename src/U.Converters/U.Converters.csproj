@@ -43,17 +43,20 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="U.Extension.Collections">
-      <HintPath>..\packages\U.ExtensionMethods\U.Extension.Collections.dll</HintPath>
-    </Reference>
-    <Reference Include="U.Extension.Core">
-      <HintPath>..\packages\U.ExtensionMethods\U.Extension.Core.dll</HintPath>
-    </Reference>
     <Reference Include="U.Extension.Drawing">
       <HintPath>..\packages\U.ExtensionMethods\U.Extension.Drawing.dll</HintPath>
     </Reference>
-    <Reference Include="U.Extension.Web">
-      <HintPath>..\packages\U.ExtensionMethods\U.Extension.Web.dll</HintPath>
+    <Reference Include="UPrime.Extensions.Collection">
+      <HintPath>..\packages\UPrime\UPrime.Extensions.Collection.dll</HintPath>
+    </Reference>
+    <Reference Include="UPrime.Extensions.Core">
+      <HintPath>..\packages\UPrime\UPrime.Extensions.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="UPrime.Extensions.Web">
+      <HintPath>..\packages\UPrime\UPrime.Extensions.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="UPrime.Version">
+      <HintPath>..\packages\UPrime\UPrime.Version.dll</HintPath>
     </Reference>
     <Reference Include="WebDriver">
       <HintPath>..\packages\Selenium.WebDriver.3.4.0\lib\net40\WebDriver.dll</HintPath>

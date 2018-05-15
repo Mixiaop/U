@@ -13,7 +13,7 @@ namespace U
     /// Core UPrime of the system
     /// it's automatically the first UPrime always.
     /// </summary>
-    public sealed class ULeadershipUPrime : UPrime
+    public sealed class ULeadershipUPrime : U.UPrimes.UPrime
     {
 
         public override void PreInitialize()

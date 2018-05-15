@@ -1,7 +1,4 @@
 ﻿using Autofac;
-using Autofac.Extras.DynamicProxy2;
-using U.Runtime.Caching;
-using U.Application.Services;
 
 namespace U.Dependency
 {
@@ -34,12 +31,12 @@ namespace U.Dependency
             //.InterceptedBy(typeof(CachingInterceptor));
 
 
-            builder.RegisterAssemblyTypes(context.Assembly)
-                .As<IApplicationService>()
-                .AsSelf()
-                .AsImplementedInterfaces()
-                .EnableClassInterceptors()
-                .InterceptedBy(typeof(CachingInterceptor));
+            //builder.RegisterAssemblyTypes(context.Assembly)
+            //    .As<IApplicationService>()
+            //    .AsSelf()
+            //    .AsImplementedInterfaces()
+            //    .EnableClassInterceptors()
+            //    .InterceptedBy(typeof(CachingInterceptor));
             //, typeof(ApplicationMethodInterceptor)
 
 

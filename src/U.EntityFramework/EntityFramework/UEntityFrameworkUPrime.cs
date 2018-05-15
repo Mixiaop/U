@@ -11,7 +11,7 @@ using U.EntityFramework.Startup.Dependecy;
 namespace U.EntityFramework
 {
     [DependsOn(typeof(ULeadershipUPrime))]
-    public class UEntityFrameworkUPrime : UPrime
+    public class UEntityFrameworkUPrime : U.UPrimes.UPrime
     {
         private readonly ITypeFinder _typeFinder;
         public UEntityFrameworkUPrime(ITypeFinder typeFinder) {

@@ -6,7 +6,7 @@ namespace U.Converters
     [DependsOn(
         typeof(ULeadershipUPrime)
         )]
-    public class UAsposeWordsUPrime : UPrime
+    public class UAsposeWordsUPrime : U.UPrimes.UPrime
     {
         public override void Initialize()
         {
