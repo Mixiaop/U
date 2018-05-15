@@ -232,9 +232,6 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="U.Extension.Drawing, Version=0.1.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\U.ExtensionMethods.0.1.1\lib\U.Extension.Drawing.dll</HintPath>
-    </Reference>
     <Reference Include="UPrime.Extensions.Collection, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\UPrime\UPrime.Extensions.Collection.dll</HintPath>

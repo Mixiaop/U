@@ -43,17 +43,11 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="U.Extension.Drawing">
-      <HintPath>..\packages\U.ExtensionMethods\U.Extension.Drawing.dll</HintPath>
-    </Reference>
     <Reference Include="UPrime.Extensions.Collection">
       <HintPath>..\packages\UPrime\UPrime.Extensions.Collection.dll</HintPath>
     </Reference>
     <Reference Include="UPrime.Extensions.Core">
       <HintPath>..\packages\UPrime\UPrime.Extensions.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="UPrime.Extensions.Web">
-      <HintPath>..\packages\UPrime\UPrime.Extensions.Web.dll</HintPath>
     </Reference>
     <Reference Include="UPrime.Version">
       <HintPath>..\packages\UPrime\UPrime.Version.dll</HintPath>

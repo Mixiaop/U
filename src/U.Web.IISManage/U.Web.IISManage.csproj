@@ -109,10 +109,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\UPrime\UPrime.Extensions.Core.dll</HintPath>
     </Reference>
-    <Reference Include="UPrime.Extensions.Web, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\UPrime\UPrime.Extensions.Web.dll</HintPath>
-    </Reference>
     <Reference Include="UPrime.Version, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\UPrime\UPrime.Version.dll</HintPath>

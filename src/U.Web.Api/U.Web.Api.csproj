@@ -56,9 +56,6 @@
     <Reference Include="UPrime.Extensions.Core">
       <HintPath>..\packages\UPrime\UPrime.Extensions.Core.dll</HintPath>
     </Reference>
-    <Reference Include="UPrime.Extensions.Web">
-      <HintPath>..\packages\UPrime\UPrime.Extensions.Web.dll</HintPath>
-    </Reference>
     <Reference Include="UPrime.Version">
       <HintPath>..\packages\UPrime\UPrime.Version.dll</HintPath>
     </Reference>
